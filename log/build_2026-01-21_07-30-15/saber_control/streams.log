@@ -1,0 +1,27 @@
+[0.058s] Invoking command in '/home/xiatenghui/saber_joint_controller/build/saber_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/xiatenghui/saber_joint_controller/build/saber_control -- -j8 -l8
+[0.426s] [ 20%] [32mBuilding CXX object CMakeFiles/saber_joint_controller.dir/src/saber_joint_controller.cpp.o[0m
+[15.998s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/saber_joint_controller.cpp:468:58:[m[K [01;31m[Kerror: [m[Knarrowing conversion of ‘[01m[K-1[m[K’ from ‘[01m[Kint[m[K’ to ‘[01m[Kunsigned char[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing-Wnarrowing]8;;[m[K]
+[15.998s]   468 |         array<uint8_t, 6> moveit2DH_directions_ = {1, 1, [01;31m[K-1[m[K, 1, 1, 1};
+[15.999s]       |                                                          [01;31m[K^~[m[K
+[15.999s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/saber_joint_controller.cpp:470:54:[m[K [01;31m[Kerror: [m[Knarrowing conversion of ‘[01m[K-1[m[K’ from ‘[01m[Kint[m[K’ to ‘[01m[Kunsigned char[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing-Wnarrowing]8;;[m[K]
+[16.000s]   470 |         array<uint8_t, 6> DH2motor_directions_ = {1, [01;31m[K-1[m[K, 1, -1, 1, 1};
+[16.000s]       |                                                      [01;31m[K^~[m[K
+[16.002s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/saber_joint_controller.cpp:470:61:[m[K [01;31m[Kerror: [m[Knarrowing conversion of ‘[01m[K-1[m[K’ from ‘[01m[Kint[m[K’ to ‘[01m[Kunsigned char[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing-Wnarrowing]8;;[m[K]
+[16.002s]   470 |         array<uint8_t, 6> DH2motor_directions_ = {1, -1, 1, [01;31m[K-1[m[K, 1, 1};
+[16.003s]       |                                                             [01;31m[K^~[m[K
+[16.224s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/saber_joint_controller.cpp:[m[K In member function ‘[01m[Krclcpp_action::GoalResponse saber_joint_controller::[01;32m[Khandle_goal[m[K(const rclcpp_action::GoalUUID&, std::shared_ptr<const control_msgs::action::FollowJointTrajectory_Goal_<std::allocator<void> > >)[m[K’:
+[16.225s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/saber_joint_controller.cpp:140:44:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kuuid[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[16.225s]   140 |             [01;35m[Kconst rclcpp_action::GoalUUID& uuid[m[K,
+[16.226s]       |             [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[16.226s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/saber_joint_controller.cpp:[m[K In member function ‘[01m[Krclcpp_action::CancelResponse saber_joint_controller::[01;32m[Khandle_cancel[m[K(std::shared_ptr<rclcpp_action::ServerGoalHandle<control_msgs::action::FollowJointTrajectory> >)[m[K’:
+[16.227s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/saber_joint_controller.cpp:162:47:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kgoal_handle[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[16.227s]   162 |             [01;35m[Kconst std::shared_ptr<GoalHandle> goal_handle[m[K)
+[16.228s]       |             [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~[m[K
+[16.387s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/saber_joint_controller.cpp:[m[K In member function ‘[01m[Kvoid saber_joint_controller::[01;32m[Krun[m[K()[m[K’:
+[16.388s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/saber_joint_controller.cpp:448:26:[m[K [01;31m[Kerror: [m[Kno post-increment operator for type
+[16.389s]   448 |                 if (count[01;31m[K++[m[K % 100 == 0)
+[16.389s]       |                          [01;31m[K^~[m[K
+[22.812s] gmake[2]: *** [CMakeFiles/saber_joint_controller.dir/build.make:76: CMakeFiles/saber_joint_controller.dir/src/saber_joint_controller.cpp.o] Error 1
+[22.814s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/saber_joint_controller.dir/all] Error 2
+[22.815s] gmake: *** [Makefile:146: all] Error 2
+[22.826s] Invoked command in '/home/xiatenghui/saber_joint_controller/build/saber_control' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/xiatenghui/saber_joint_controller/build/saber_control -- -j8 -l8

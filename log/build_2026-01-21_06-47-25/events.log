@@ -1,0 +1,427 @@
+[0.000000] (-) TimerEvent: {}
+[0.001947] (saber_control) JobQueued: {'identifier': 'saber_control', 'dependencies': OrderedDict()}
+[0.002860] (saber_control) JobStarted: {'identifier': 'saber_control'}
+[0.051484] (saber_control) JobProgress: {'identifier': 'saber_control', 'progress': 'cmake'}
+[0.059222] (saber_control) JobProgress: {'identifier': 'saber_control', 'progress': 'build'}
+[0.059889] (saber_control) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/xiatenghui/saber_joint_controller/build/saber_control', '--', '-j8', '-l8'], 'cwd': '/home/xiatenghui/saber_joint_controller/build/saber_control', 'env': OrderedDict({'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'HOSTNAME': 'ubuntu', 'GIT_ASKPASS': '/root/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'BROWSER': '/root/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/bin/helpers/browser.sh', 'HOME': '/root', 'TERM_PROGRAM_VERSION': '1.86.2', 'VSCODE_IPC_HOOK_CLI': '/tmp/vscode-ipc-1d8d72c3-967f-4157-9176-c09960b38f63.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/root/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/root/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/node', 'COLORTERM': 'truecolor', 'REMOTE_CONTAINERS': 'true', 'COLCON_PREFIX_PATH': '/home/xiatenghui/saber_joint_controller/install', 'ROS_DISTRO': 'jazzy', 'REMOTE_CONTAINERS_IPC': '/tmp/vscode-remote-containers-ipc-b0eba884-378b-470b-8c3c-04bf75869b48.sock', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/root/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/bin/remote-cli:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'REMOTE_CONTAINERS_SOCKETS': '["/tmp/vscode-ssh-auth-b0eba884-378b-470b-8c3c-04bf75869b48.sock","/root/.gnupg/S.gpg-agent"]', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/tmp/vscode-git-57d13ed399.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/tmp/vscode-ssh-auth-b0eba884-378b-470b-8c3c-04bf75869b48.sock', 'ROS_DOMAIN_ID': '77', 'AMENT_PREFIX_PATH': '/home/xiatenghui/saber_joint_controller/install/saber_control:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/xiatenghui/saber_joint_controller/build/saber_control', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/xiatenghui/saber_joint_controller/install/saber_control:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.098959] (-) TimerEvent: {}
+[0.199898] (-) TimerEvent: {}
+[0.300908] (-) TimerEvent: {}
+[0.403587] (-) TimerEvent: {}
+[0.467524] (saber_control) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/saber_joint_controller.dir/src/saber_joint_controller.cpp.o\x1b[0m\n'}
+[0.469211] (saber_control) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/saber_joint_controller.dir/src/saber_get_regression.cpp.o\x1b[0m\n'}
+[0.482827] (saber_control) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/saber_joint_controller.dir/src/disturbance_observer.cpp.o\x1b[0m\n'}
+[0.503825] (-) TimerEvent: {}
+[0.604647] (-) TimerEvent: {}
+[0.705458] (-) TimerEvent: {}
+[0.806280] (-) TimerEvent: {}
+[0.907677] (-) TimerEvent: {}
+[1.008833] (-) TimerEvent: {}
+[1.109981] (-) TimerEvent: {}
+[1.211578] (-) TimerEvent: {}
+[1.313134] (-) TimerEvent: {}
+[1.414777] (-) TimerEvent: {}
+[1.515984] (-) TimerEvent: {}
+[1.616779] (-) TimerEvent: {}
+[1.717532] (-) TimerEvent: {}
+[1.818387] (-) TimerEvent: {}
+[1.919627] (-) TimerEvent: {}
+[2.020361] (-) TimerEvent: {}
+[2.121582] (-) TimerEvent: {}
+[2.222448] (-) TimerEvent: {}
+[2.323485] (-) TimerEvent: {}
+[2.424427] (-) TimerEvent: {}
+[2.525331] (-) TimerEvent: {}
+[2.626307] (-) TimerEvent: {}
+[2.727282] (-) TimerEvent: {}
+[2.828211] (-) TimerEvent: {}
+[2.929820] (-) TimerEvent: {}
+[3.030668] (-) TimerEvent: {}
+[3.131536] (-) TimerEvent: {}
+[3.232389] (-) TimerEvent: {}
+[3.333242] (-) TimerEvent: {}
+[3.434839] (-) TimerEvent: {}
+[3.536016] (-) TimerEvent: {}
+[3.636940] (-) TimerEvent: {}
+[3.737811] (-) TimerEvent: {}
+[3.838843] (-) TimerEvent: {}
+[3.939882] (-) TimerEvent: {}
+[4.040754] (-) TimerEvent: {}
+[4.141668] (-) TimerEvent: {}
+[4.242908] (-) TimerEvent: {}
+[4.344686] (-) TimerEvent: {}
+[4.446286] (-) TimerEvent: {}
+[4.550282] (-) TimerEvent: {}
+[4.651880] (-) TimerEvent: {}
+[4.752717] (-) TimerEvent: {}
+[4.853743] (-) TimerEvent: {}
+[4.954722] (-) TimerEvent: {}
+[5.055934] (-) TimerEvent: {}
+[5.158173] (-) TimerEvent: {}
+[5.259139] (-) TimerEvent: {}
+[5.360104] (-) TimerEvent: {}
+[5.461044] (-) TimerEvent: {}
+[5.562709] (-) TimerEvent: {}
+[5.663729] (-) TimerEvent: {}
+[5.764718] (-) TimerEvent: {}
+[5.865791] (-) TimerEvent: {}
+[5.967450] (-) TimerEvent: {}
+[6.069134] (-) TimerEvent: {}
+[6.170268] (-) TimerEvent: {}
+[6.272055] (-) TimerEvent: {}
+[6.373182] (-) TimerEvent: {}
+[6.474238] (-) TimerEvent: {}
+[6.576080] (-) TimerEvent: {}
+[6.677755] (-) TimerEvent: {}
+[6.780303] (-) TimerEvent: {}
+[6.881338] (-) TimerEvent: {}
+[6.982326] (-) TimerEvent: {}
+[7.083286] (-) TimerEvent: {}
+[7.184696] (-) TimerEvent: {}
+[7.285753] (-) TimerEvent: {}
+[7.386643] (-) TimerEvent: {}
+[7.487492] (-) TimerEvent: {}
+[7.588991] (-) TimerEvent: {}
+[7.691130] (-) TimerEvent: {}
+[7.792224] (-) TimerEvent: {}
+[7.893129] (-) TimerEvent: {}
+[7.994069] (-) TimerEvent: {}
+[8.094999] (-) TimerEvent: {}
+[8.196032] (-) TimerEvent: {}
+[8.297100] (-) TimerEvent: {}
+[8.398252] (-) TimerEvent: {}
+[8.499895] (-) TimerEvent: {}
+[8.600830] (-) TimerEvent: {}
+[8.701665] (-) TimerEvent: {}
+[8.802560] (-) TimerEvent: {}
+[8.903532] (-) TimerEvent: {}
+[9.004506] (-) TimerEvent: {}
+[9.105398] (-) TimerEvent: {}
+[9.206398] (-) TimerEvent: {}
+[9.307445] (-) TimerEvent: {}
+[9.408284] (-) TimerEvent: {}
+[9.509064] (-) TimerEvent: {}
+[9.609885] (-) TimerEvent: {}
+[9.710738] (-) TimerEvent: {}
+[9.811677] (-) TimerEvent: {}
+[9.912454] (-) TimerEvent: {}
+[9.932629] (saber_control) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/saber_get_regression.cpp:1\x1b[m\x1b[K:\n'}
+[9.933624] (saber_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xiatenghui/saber_joint_controller/src/saber_control/include/saber_get_regression.hpp:6:44:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Karray\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[9.934280] (saber_control) StderrLine: {'line': b'    6 | void saber_get_regression(double* H, const \x1b[01;31m\x1b[Karray\x1b[m\x1b[K<double, 6>& q, const array<double, 6>& dq, const array<double, 6>& ddq, double g);\n'}
+[9.934773] (saber_control) StderrLine: {'line': b'      |                                            \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[9.935266] (saber_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xiatenghui/saber_joint_controller/src/saber_control/include/saber_get_regression.hpp:6:49:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K,\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K...\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K<\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[9.936516] (saber_control) StderrLine: {'line': b'    6 | void saber_get_regression(double* H, const array\x1b[01;31m\x1b[K<\x1b[m\x1b[Kdouble, 6>& q, const array<double, 6>& dq, const array<double, 6>& ddq, double g);\n'}
+[9.937093] (saber_control) StderrLine: {'line': b'      |                                                 \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[10.012925] (-) TimerEvent: {}
+[10.113780] (-) TimerEvent: {}
+[10.215019] (-) TimerEvent: {}
+[10.315848] (-) TimerEvent: {}
+[10.417136] (-) TimerEvent: {}
+[10.517932] (-) TimerEvent: {}
+[10.618705] (-) TimerEvent: {}
+[10.719578] (-) TimerEvent: {}
+[10.820425] (-) TimerEvent: {}
+[10.921266] (-) TimerEvent: {}
+[11.022095] (-) TimerEvent: {}
+[11.123038] (-) TimerEvent: {}
+[11.223982] (-) TimerEvent: {}
+[11.324784] (-) TimerEvent: {}
+[11.425661] (-) TimerEvent: {}
+[11.529282] (-) TimerEvent: {}
+[11.630114] (-) TimerEvent: {}
+[11.730973] (-) TimerEvent: {}
+[11.831846] (-) TimerEvent: {}
+[11.932706] (-) TimerEvent: {}
+[12.033527] (-) TimerEvent: {}
+[12.134378] (-) TimerEvent: {}
+[12.235302] (-) TimerEvent: {}
+[12.336230] (-) TimerEvent: {}
+[12.437265] (-) TimerEvent: {}
+[12.538128] (-) TimerEvent: {}
+[12.639049] (-) TimerEvent: {}
+[12.739985] (-) TimerEvent: {}
+[12.839425] (saber_control) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/xiatenghui/saber_joint_controller/src/saber_control/include/disturbance_observer.hpp:7\x1b[m\x1b[K,\n'}
+[12.840465] (-) TimerEvent: {}
+[12.841321] (saber_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/disturbance_observer.cpp:1\x1b[m\x1b[K:\n'}
+[12.842044] (saber_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xiatenghui/saber_joint_controller/src/saber_control/include/saber_get_regression.hpp:6:44:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Karray\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[12.842626] (saber_control) StderrLine: {'line': b'    6 | void saber_get_regression(double* H, const \x1b[01;31m\x1b[Karray\x1b[m\x1b[K<double, 6>& q, const array<double, 6>& dq, const array<double, 6>& ddq, double g);\n'}
+[12.843097] (saber_control) StderrLine: {'line': b'      |                                            \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[12.843783] (saber_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xiatenghui/saber_joint_controller/src/saber_control/include/saber_get_regression.hpp:6:49:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K,\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K...\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K<\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[12.844306] (saber_control) StderrLine: {'line': b'    6 | void saber_get_regression(double* H, const array\x1b[01;31m\x1b[K<\x1b[m\x1b[Kdouble, 6>& q, const array<double, 6>& dq, const array<double, 6>& ddq, double g);\n'}
+[12.844789] (saber_control) StderrLine: {'line': b'      |                                                 \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[12.905072] (saber_control) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/saber_joint_controller.dir/build.make:118: CMakeFiles/saber_joint_controller.dir/src/saber_get_regression.cpp.o] Error 1\n'}
+[12.906008] (saber_control) StderrLine: {'line': b'gmake[2]: *** Waiting for unfinished jobs....\n'}
+[12.940696] (-) TimerEvent: {}
+[13.041689] (-) TimerEvent: {}
+[13.143064] (-) TimerEvent: {}
+[13.243936] (-) TimerEvent: {}
+[13.344782] (-) TimerEvent: {}
+[13.445662] (-) TimerEvent: {}
+[13.547028] (-) TimerEvent: {}
+[13.648003] (-) TimerEvent: {}
+[13.748930] (-) TimerEvent: {}
+[13.850363] (-) TimerEvent: {}
+[13.951280] (-) TimerEvent: {}
+[14.052174] (-) TimerEvent: {}
+[14.152992] (-) TimerEvent: {}
+[14.253742] (-) TimerEvent: {}
+[14.354566] (-) TimerEvent: {}
+[14.455410] (-) TimerEvent: {}
+[14.557039] (-) TimerEvent: {}
+[14.658040] (-) TimerEvent: {}
+[14.758910] (-) TimerEvent: {}
+[14.859942] (-) TimerEvent: {}
+[14.960830] (-) TimerEvent: {}
+[15.061685] (-) TimerEvent: {}
+[15.140648] (saber_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/disturbance_observer.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[KEigen::MatrixXd DisturbanceObserver::\x1b[01;32m\x1b[Kcompute_mass_matrix\x1b[m\x1b[K(const Eigen::VectorXd&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[15.141567] (saber_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/disturbance_observer.cpp:229:49:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kcannot convert \xe2\x80\x98\x1b[01m\x1b[Kstd::array<double, 6>\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99\n'}
+[15.142165] (saber_control) StderrLine: {'line': b'  229 |         saber_get_regression(regression_matrix, \x1b[01;31m\x1b[Kpositions\x1b[m\x1b[K, velocities, v, 0);\n'}
+[15.142683] (saber_control) StderrLine: {'line': b'      |                                                 \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[15.143451] (saber_control) StderrLine: {'line': b'      |                                                 \x1b[01;31m\x1b[K|\x1b[m\x1b[K\n'}
+[15.143955] (saber_control) StderrLine: {'line': b'      |                                                 \x1b[01;31m\x1b[Kstd::array<double, 6>\x1b[m\x1b[K\n'}
+[15.144622] (saber_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xiatenghui/saber_joint_controller/src/saber_control/include/saber_get_regression.hpp:6:38:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  initializing argument 2 of \xe2\x80\x98\x1b[01m\x1b[Kvoid\x1b[01;32m\x1b[K saber_get_regression\x1b[m\x1b[K(double*, int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[15.145848] (saber_control) StderrLine: {'line': b'    6 | void saber_get_regression(double* H, \x1b[01;36m\x1b[Kconst array\x1b[m\x1b[K<double, 6>& q, const array<double, 6>& dq, const array<double, 6>& ddq, double g);\n'}
+[15.146336] (saber_control) StderrLine: {'line': b'      |                                      \x1b[01;36m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.161885] (-) TimerEvent: {}
+[15.263013] (-) TimerEvent: {}
+[15.272747] (saber_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/disturbance_observer.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[KEigen::VectorXd DisturbanceObserver::\x1b[01;32m\x1b[Kcompute_coriolis_term\x1b[m\x1b[K(const Eigen::VectorXd&, const Eigen::VectorXd&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[15.274515] (saber_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/disturbance_observer.cpp:252:45:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kcannot convert \xe2\x80\x98\x1b[01m\x1b[Kstd::array<double, 6>\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99\n'}
+[15.275163] (saber_control) StderrLine: {'line': b'  252 |     saber_get_regression(regression_matrix, \x1b[01;31m\x1b[Kpositions\x1b[m\x1b[K, velocities, accelerations, 0);\n'}
+[15.275974] (saber_control) StderrLine: {'line': b'      |                                             \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[15.276476] (saber_control) StderrLine: {'line': b'      |                                             \x1b[01;31m\x1b[K|\x1b[m\x1b[K\n'}
+[15.276928] (saber_control) StderrLine: {'line': b'      |                                             \x1b[01;31m\x1b[Kstd::array<double, 6>\x1b[m\x1b[K\n'}
+[15.277389] (saber_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xiatenghui/saber_joint_controller/src/saber_control/include/saber_get_regression.hpp:6:38:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  initializing argument 2 of \xe2\x80\x98\x1b[01m\x1b[Kvoid\x1b[01;32m\x1b[K saber_get_regression\x1b[m\x1b[K(double*, int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[15.278037] (saber_control) StderrLine: {'line': b'    6 | void saber_get_regression(double* H, \x1b[01;36m\x1b[Kconst array\x1b[m\x1b[K<double, 6>& q, const array<double, 6>& dq, const array<double, 6>& ddq, double g);\n'}
+[15.279538] (saber_control) StderrLine: {'line': b'      |                                      \x1b[01;36m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.281181] (saber_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/disturbance_observer.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[KEigen::VectorXd DisturbanceObserver::\x1b[01;32m\x1b[Kcompute_massdot_qdot\x1b[m\x1b[K(const Eigen::VectorXd&, const Eigen::VectorXd&, double)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[15.281780] (saber_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/disturbance_observer.cpp:292:49:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kcannot convert \xe2\x80\x98\x1b[01m\x1b[Kstd::array<double, 6>\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99\n'}
+[15.282242] (saber_control) StderrLine: {'line': b'  292 |         saber_get_regression(regression_matrix, \x1b[01;31m\x1b[Kpositions_perturbed\x1b[m\x1b[K, velocities, accelerations, 0);\n'}
+[15.282719] (saber_control) StderrLine: {'line': b'      |                                                 \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.283137] (saber_control) StderrLine: {'line': b'      |                                                 \x1b[01;31m\x1b[K|\x1b[m\x1b[K\n'}
+[15.283842] (saber_control) StderrLine: {'line': b'      |                                                 \x1b[01;31m\x1b[Kstd::array<double, 6>\x1b[m\x1b[K\n'}
+[15.284629] (saber_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xiatenghui/saber_joint_controller/src/saber_control/include/saber_get_regression.hpp:6:38:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  initializing argument 2 of \xe2\x80\x98\x1b[01m\x1b[Kvoid\x1b[01;32m\x1b[K saber_get_regression\x1b[m\x1b[K(double*, int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[15.285301] (saber_control) StderrLine: {'line': b'    6 | void saber_get_regression(double* H, \x1b[01;36m\x1b[Kconst array\x1b[m\x1b[K<double, 6>& q, const array<double, 6>& dq, const array<double, 6>& ddq, double g);\n'}
+[15.286189] (saber_control) StderrLine: {'line': b'      |                                      \x1b[01;36m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.286988] (saber_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/disturbance_observer.cpp:297:49:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kcannot convert \xe2\x80\x98\x1b[01m\x1b[Kstd::array<double, 6>\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99\n'}
+[15.287544] (saber_control) StderrLine: {'line': b'  297 |         saber_get_regression(regression_matrix, \x1b[01;31m\x1b[Kpositions_perturbed\x1b[m\x1b[K, velocities, accelerations, 0);\n'}
+[15.288241] (saber_control) StderrLine: {'line': b'      |                                                 \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.288906] (saber_control) StderrLine: {'line': b'      |                                                 \x1b[01;31m\x1b[K|\x1b[m\x1b[K\n'}
+[15.289374] (saber_control) StderrLine: {'line': b'      |                                                 \x1b[01;31m\x1b[Kstd::array<double, 6>\x1b[m\x1b[K\n'}
+[15.289829] (saber_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xiatenghui/saber_joint_controller/src/saber_control/include/saber_get_regression.hpp:6:38:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  initializing argument 2 of \xe2\x80\x98\x1b[01m\x1b[Kvoid\x1b[01;32m\x1b[K saber_get_regression\x1b[m\x1b[K(double*, int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[15.290291] (saber_control) StderrLine: {'line': b'    6 | void saber_get_regression(double* H, \x1b[01;36m\x1b[Kconst array\x1b[m\x1b[K<double, 6>& q, const array<double, 6>& dq, const array<double, 6>& ddq, double g);\n'}
+[15.291599] (saber_control) StderrLine: {'line': b'      |                                      \x1b[01;36m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.343578] (saber_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/disturbance_observer.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[KEigen::VectorXd DisturbanceObserver::\x1b[01;32m\x1b[Kcompute_gravity_term\x1b[m\x1b[K(const Eigen::VectorXd&, const Eigen::VectorXd&, Update_Type)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[15.344424] (saber_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/disturbance_observer.cpp:325:49:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kcannot convert \xe2\x80\x98\x1b[01m\x1b[Kstd::array<double, 6>\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99\n'}
+[15.345007] (saber_control) StderrLine: {'line': b'  325 |         saber_get_regression(regression_matrix, \x1b[01;31m\x1b[Kpositions\x1b[m\x1b[K, velocities, accelerations, 9.81);\n'}
+[15.345514] (saber_control) StderrLine: {'line': b'      |                                                 \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[15.345930] (saber_control) StderrLine: {'line': b'      |                                                 \x1b[01;31m\x1b[K|\x1b[m\x1b[K\n'}
+[15.346398] (saber_control) StderrLine: {'line': b'      |                                                 \x1b[01;31m\x1b[Kstd::array<double, 6>\x1b[m\x1b[K\n'}
+[15.347072] (saber_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xiatenghui/saber_joint_controller/src/saber_control/include/saber_get_regression.hpp:6:38:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  initializing argument 2 of \xe2\x80\x98\x1b[01m\x1b[Kvoid\x1b[01;32m\x1b[K saber_get_regression\x1b[m\x1b[K(double*, int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[15.347738] (saber_control) StderrLine: {'line': b'    6 | void saber_get_regression(double* H, \x1b[01;36m\x1b[Kconst array\x1b[m\x1b[K<double, 6>& q, const array<double, 6>& dq, const array<double, 6>& ddq, double g);\n'}
+[15.348353] (saber_control) StderrLine: {'line': b'      |                                      \x1b[01;36m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.349204] (saber_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/disturbance_observer.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[KEigen::VectorXd DisturbanceObserver::\x1b[01;32m\x1b[Kcompute_friction_term\x1b[m\x1b[K(const Eigen::VectorXd&, const Eigen::VectorXd&, const Eigen::VectorXd&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[15.349694] (saber_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/disturbance_observer.cpp:345:109:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kqd\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[15.350093] (saber_control) StderrLine: {'line': b'  345 | Eigen::VectorXd DisturbanceObserver::compute_friction_term(const Eigen::VectorXd& q, \x1b[01;35m\x1b[Kconst Eigen::VectorXd& qd\x1b[m\x1b[K, const Eigen::VectorXd& tau)\n'}
+[15.350534] (saber_control) StderrLine: {'line': b'      |                                                                                      \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~^~\x1b[m\x1b[K\n'}
+[15.350932] (saber_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/disturbance_observer.cpp:345:136:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ktau\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[15.351469] (saber_control) StderrLine: {'line': b'  345 | Eigen::VectorXd DisturbanceObserver::compute_friction_term(const Eigen::VectorXd& q, const Eigen::VectorXd& qd, \x1b[01;35m\x1b[Kconst Eigen::VectorXd& tau\x1b[m\x1b[K)\n'}
+[15.351995] (saber_control) StderrLine: {'line': b'      |                                                                                                                 \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[15.363275] (-) TimerEvent: {}
+[15.449480] (saber_control) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/xiatenghui/saber_joint_controller/src/saber_control/include/disturbance_observer.hpp:7\x1b[m\x1b[K,\n'}
+[15.450567] (saber_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/saber_joint_controller.cpp:3\x1b[m\x1b[K:\n'}
+[15.451089] (saber_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xiatenghui/saber_joint_controller/src/saber_control/include/saber_get_regression.hpp:6:44:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Karray\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[15.451644] (saber_control) StderrLine: {'line': b'    6 | void saber_get_regression(double* H, const \x1b[01;31m\x1b[Karray\x1b[m\x1b[K<double, 6>& q, const array<double, 6>& dq, const array<double, 6>& ddq, double g);\n'}
+[15.452055] (saber_control) StderrLine: {'line': b'      |                                            \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[15.452490] (saber_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xiatenghui/saber_joint_controller/src/saber_control/include/saber_get_regression.hpp:6:49:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K,\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K...\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K<\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[15.452948] (saber_control) StderrLine: {'line': b'    6 | void saber_get_regression(double* H, const array\x1b[01;31m\x1b[K<\x1b[m\x1b[Kdouble, 6>& q, const array<double, 6>& dq, const array<double, 6>& ddq, double g);\n'}
+[15.453349] (saber_control) StderrLine: {'line': b'      |                                                 \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[15.463542] (-) TimerEvent: {}
+[15.564448] (-) TimerEvent: {}
+[15.598872] (saber_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xiatenghui/saber_joint_controller/src/saber_control/include/disturbance_observer.hpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KDisturbanceObserver::\x1b[01;32m\x1b[KDisturbanceObserver\x1b[m\x1b[K(int, double, const rclcpp::Logger&, const Eigen::MatrixXd&, const Eigen::MatrixXd&, const Eigen::MatrixXd&, const Eigen::MatrixXd&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[15.601288] (saber_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xiatenghui/saber_joint_controller/src/saber_control/include/disturbance_observer.hpp:134:20:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KDisturbanceObserver::logger_\x1b[m\x1b[K\xe2\x80\x99 will be initialized after [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder\x07-Wreorder\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[15.601966] (saber_control) StderrLine: {'line': b'  134 |     rclcpp::Logger \x1b[01;35m\x1b[Klogger_\x1b[m\x1b[K;\n'}
+[15.602499] (saber_control) StderrLine: {'line': b'      |                    \x1b[01;35m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[15.603013] (saber_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xiatenghui/saber_joint_controller/src/saber_control/include/disturbance_observer.hpp:102:21:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[KEigen::MatrixXd DisturbanceObserver::A_tau_\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder\x07-Wreorder\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[15.604383] (saber_control) StderrLine: {'line': b'  102 |     Eigen::MatrixXd \x1b[01;35m\x1b[KA_tau_\x1b[m\x1b[K;      // \xe5\xa4\x96\xe5\x8a\x9b\xe5\x8f\x98\xe5\x8c\x96\xe8\xb6\x8b\xe5\x8a\xbf\xe7\x9f\xa9\xe9\x98\xb5\n'}
+[15.604917] (saber_control) StderrLine: {'line': b'      |                     \x1b[01;35m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[15.605442] (saber_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/disturbance_observer.cpp:454:1:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K  when initialized here [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder\x07-Wreorder\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[15.605920] (saber_control) StderrLine: {'line': b'  454 | \x1b[01;35m\x1b[KDisturbanceObserver\x1b[m\x1b[K::DisturbanceObserver(int n_joints, double fs, const rclcpp::Logger& logger,\n'}
+[15.606413] (saber_control) StderrLine: {'line': b'      | \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.606862] (saber_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xiatenghui/saber_joint_controller/src/saber_control/include/disturbance_observer.hpp:105:21:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KDisturbanceObserver::R_c_\x1b[m\x1b[K\xe2\x80\x99 will be initialized after [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder\x07-Wreorder\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[15.607414] (saber_control) StderrLine: {'line': b'  105 |     Eigen::MatrixXd \x1b[01;35m\x1b[KR_c_\x1b[m\x1b[K;        // \xe6\xb5\x8b\xe9\x87\x8f\xe5\x99\xaa\xe5\xa3\xb0\xe5\x8d\x8f\xe6\x96\xb9\xe5\xb7\xae\n'}
+[15.607903] (saber_control) StderrLine: {'line': b'      |                     \x1b[01;35m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[15.608463] (saber_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xiatenghui/saber_joint_controller/src/saber_control/include/disturbance_observer.hpp:99:10:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kbool DisturbanceObserver::is_initialized_\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder\x07-Wreorder\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[15.608945] (saber_control) StderrLine: {'line': b'   99 |     bool \x1b[01;35m\x1b[Kis_initialized_\x1b[m\x1b[K;                   // \xe6\x98\xaf\xe5\x90\xa6\xe5\xb7\xb2\xe5\x88\x9d\xe5\xa7\x8b\xe5\x8c\x96\n'}
+[15.609941] (saber_control) StderrLine: {'line': b'      |          \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.610472] (saber_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/disturbance_observer.cpp:454:1:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K  when initialized here [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder\x07-Wreorder\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[15.611003] (saber_control) StderrLine: {'line': b'  454 | \x1b[01;35m\x1b[KDisturbanceObserver\x1b[m\x1b[K::DisturbanceObserver(int n_joints, double fs, const rclcpp::Logger& logger,\n'}
+[15.611529] (saber_control) StderrLine: {'line': b'      | \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.664698] (-) TimerEvent: {}
+[15.765774] (-) TimerEvent: {}
+[15.866705] (-) TimerEvent: {}
+[15.967672] (-) TimerEvent: {}
+[16.068560] (-) TimerEvent: {}
+[16.169502] (-) TimerEvent: {}
+[16.270432] (-) TimerEvent: {}
+[16.371308] (-) TimerEvent: {}
+[16.472244] (-) TimerEvent: {}
+[16.573281] (-) TimerEvent: {}
+[16.674110] (-) TimerEvent: {}
+[16.774986] (-) TimerEvent: {}
+[16.875916] (-) TimerEvent: {}
+[16.976991] (-) TimerEvent: {}
+[17.077901] (-) TimerEvent: {}
+[17.116725] (saber_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/saber_joint_controller.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Krclcpp_action::GoalResponse saber_joint_controller::\x1b[01;32m\x1b[Khandle_goal\x1b[m\x1b[K(const rclcpp_action::GoalUUID&, std::shared_ptr<const control_msgs::action::FollowJointTrajectory_Goal_<std::allocator<void> > >)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[17.117667] (saber_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/saber_joint_controller.cpp:140:44:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kuuid\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[17.118315] (saber_control) StderrLine: {'line': b'  140 |             \x1b[01;35m\x1b[Kconst rclcpp_action::GoalUUID& uuid\x1b[m\x1b[K,\n'}
+[17.119415] (saber_control) StderrLine: {'line': b'      |             \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[17.120016] (saber_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/saber_joint_controller.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Krclcpp_action::CancelResponse saber_joint_controller::\x1b[01;32m\x1b[Khandle_cancel\x1b[m\x1b[K(std::shared_ptr<rclcpp_action::ServerGoalHandle<control_msgs::action::FollowJointTrajectory> >)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[17.120771] (saber_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/saber_joint_controller.cpp:162:47:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kgoal_handle\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[17.121284] (saber_control) StderrLine: {'line': b'  162 |             \x1b[01;35m\x1b[Kconst std::shared_ptr<GoalHandle> goal_handle\x1b[m\x1b[K)\n'}
+[17.121825] (saber_control) StderrLine: {'line': b'      |             \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[17.178325] (-) TimerEvent: {}
+[17.280291] (-) TimerEvent: {}
+[17.287603] (saber_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/saber_joint_controller.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid saber_joint_controller::\x1b[01;32m\x1b[Krun\x1b[m\x1b[K()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[17.288681] (saber_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/saber_joint_controller.cpp:432:22:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kduration\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[17.289673] (saber_control) StderrLine: {'line': b'  432 |                 auto \x1b[01;35m\x1b[Kduration\x1b[m\x1b[K = std::chrono::duration_cast<std::chrono::microseconds>(end - start).count();\n'}
+[17.290304] (saber_control) StderrLine: {'line': b'      |                      \x1b[01;35m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[17.291000] (saber_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/saber_joint_controller.cpp:434:24:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kcost_seconds\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[17.292907] (saber_control) StderrLine: {'line': b'  434 |                 double \x1b[01;35m\x1b[Kcost_seconds\x1b[m\x1b[K = diff.count(); // \xe8\x8e\xb7\xe5\x8f\x96\xe7\xa7\x92\xe6\x95\xb0\xe5\x80\xbc (double \xe7\xb1\xbb\xe5\x9e\x8b)\n'}
+[17.293542] (saber_control) StderrLine: {'line': b'      |                        \x1b[01;35m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[17.380591] (-) TimerEvent: {}
+[17.481458] (-) TimerEvent: {}
+[17.582481] (-) TimerEvent: {}
+[17.683417] (-) TimerEvent: {}
+[17.784292] (-) TimerEvent: {}
+[17.885215] (-) TimerEvent: {}
+[17.986175] (-) TimerEvent: {}
+[18.087121] (-) TimerEvent: {}
+[18.188140] (-) TimerEvent: {}
+[18.289140] (-) TimerEvent: {}
+[18.390118] (-) TimerEvent: {}
+[18.491782] (-) TimerEvent: {}
+[18.593477] (-) TimerEvent: {}
+[18.694430] (-) TimerEvent: {}
+[18.795532] (-) TimerEvent: {}
+[18.896625] (-) TimerEvent: {}
+[18.997460] (-) TimerEvent: {}
+[19.098500] (-) TimerEvent: {}
+[19.199456] (-) TimerEvent: {}
+[19.300334] (-) TimerEvent: {}
+[19.401231] (-) TimerEvent: {}
+[19.502125] (-) TimerEvent: {}
+[19.603167] (-) TimerEvent: {}
+[19.704184] (-) TimerEvent: {}
+[19.805025] (-) TimerEvent: {}
+[19.905936] (-) TimerEvent: {}
+[20.006821] (-) TimerEvent: {}
+[20.107798] (-) TimerEvent: {}
+[20.208754] (-) TimerEvent: {}
+[20.309691] (-) TimerEvent: {}
+[20.410614] (-) TimerEvent: {}
+[20.511565] (-) TimerEvent: {}
+[20.612406] (-) TimerEvent: {}
+[20.713299] (-) TimerEvent: {}
+[20.814137] (-) TimerEvent: {}
+[20.914940] (-) TimerEvent: {}
+[21.015907] (-) TimerEvent: {}
+[21.116803] (-) TimerEvent: {}
+[21.217596] (-) TimerEvent: {}
+[21.318439] (-) TimerEvent: {}
+[21.419248] (-) TimerEvent: {}
+[21.520154] (-) TimerEvent: {}
+[21.620963] (-) TimerEvent: {}
+[21.721833] (-) TimerEvent: {}
+[21.822639] (-) TimerEvent: {}
+[21.923538] (-) TimerEvent: {}
+[22.024371] (-) TimerEvent: {}
+[22.125145] (-) TimerEvent: {}
+[22.225988] (-) TimerEvent: {}
+[22.326837] (-) TimerEvent: {}
+[22.427747] (-) TimerEvent: {}
+[22.528587] (-) TimerEvent: {}
+[22.629499] (-) TimerEvent: {}
+[22.730359] (-) TimerEvent: {}
+[22.831275] (-) TimerEvent: {}
+[22.932230] (-) TimerEvent: {}
+[23.033080] (-) TimerEvent: {}
+[23.134009] (-) TimerEvent: {}
+[23.234849] (-) TimerEvent: {}
+[23.335775] (-) TimerEvent: {}
+[23.436650] (-) TimerEvent: {}
+[23.458607] (saber_control) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/saber_joint_controller.dir/build.make:76: CMakeFiles/saber_joint_controller.dir/src/saber_joint_controller.cpp.o] Error 1\n'}
+[23.536893] (-) TimerEvent: {}
+[23.637747] (-) TimerEvent: {}
+[23.738564] (-) TimerEvent: {}
+[23.839465] (-) TimerEvent: {}
+[23.940427] (-) TimerEvent: {}
+[24.041260] (-) TimerEvent: {}
+[24.142075] (-) TimerEvent: {}
+[24.242925] (-) TimerEvent: {}
+[24.343807] (-) TimerEvent: {}
+[24.444634] (-) TimerEvent: {}
+[24.545506] (-) TimerEvent: {}
+[24.646941] (-) TimerEvent: {}
+[24.747903] (-) TimerEvent: {}
+[24.848771] (-) TimerEvent: {}
+[24.949647] (-) TimerEvent: {}
+[25.050549] (-) TimerEvent: {}
+[25.151477] (-) TimerEvent: {}
+[25.252338] (-) TimerEvent: {}
+[25.353202] (-) TimerEvent: {}
+[25.454064] (-) TimerEvent: {}
+[25.554963] (-) TimerEvent: {}
+[25.655898] (-) TimerEvent: {}
+[25.756797] (-) TimerEvent: {}
+[25.857697] (-) TimerEvent: {}
+[25.958581] (-) TimerEvent: {}
+[26.059482] (-) TimerEvent: {}
+[26.160390] (-) TimerEvent: {}
+[26.261241] (-) TimerEvent: {}
+[26.362137] (-) TimerEvent: {}
+[26.463000] (-) TimerEvent: {}
+[26.563896] (-) TimerEvent: {}
+[26.664883] (-) TimerEvent: {}
+[26.765752] (-) TimerEvent: {}
+[26.866564] (-) TimerEvent: {}
+[26.967484] (-) TimerEvent: {}
+[27.068345] (-) TimerEvent: {}
+[27.169195] (-) TimerEvent: {}
+[27.270080] (-) TimerEvent: {}
+[27.370926] (-) TimerEvent: {}
+[27.471970] (-) TimerEvent: {}
+[27.572833] (-) TimerEvent: {}
+[27.673731] (-) TimerEvent: {}
+[27.774590] (-) TimerEvent: {}
+[27.875492] (-) TimerEvent: {}
+[27.976355] (-) TimerEvent: {}
+[28.077262] (-) TimerEvent: {}
+[28.178132] (-) TimerEvent: {}
+[28.279097] (-) TimerEvent: {}
+[28.380025] (-) TimerEvent: {}
+[28.480941] (-) TimerEvent: {}
+[28.581805] (-) TimerEvent: {}
+[28.682656] (-) TimerEvent: {}
+[28.783558] (-) TimerEvent: {}
+[28.884417] (-) TimerEvent: {}
+[28.985289] (-) TimerEvent: {}
+[29.086082] (-) TimerEvent: {}
+[29.164578] (saber_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/disturbance_observer.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[KEigen::VectorXd DisturbanceObserver::\x1b[01;32m\x1b[Kupdate\x1b[m\x1b[K(const Eigen::VectorXd&, const Eigen::VectorXd&, const Eigen::VectorXd&, Update_Type)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[29.165452] (saber_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/disturbance_observer.cpp:169:1:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcontrol reaches end of non-void function [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type\x07-Wreturn-type\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[29.165992] (saber_control) StderrLine: {'line': b'  169 | \x1b[01;35m\x1b[K}\x1b[m\x1b[K\n'}
+[29.166397] (saber_control) StderrLine: {'line': b'      | \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[29.186302] (-) TimerEvent: {}
+[29.287118] (-) TimerEvent: {}
+[29.388050] (-) TimerEvent: {}
+[29.488940] (-) TimerEvent: {}
+[29.589806] (-) TimerEvent: {}
+[29.690670] (-) TimerEvent: {}
+[29.791645] (-) TimerEvent: {}
+[29.892500] (-) TimerEvent: {}
+[29.956109] (saber_control) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/saber_joint_controller.dir/build.make:104: CMakeFiles/saber_joint_controller.dir/src/disturbance_observer.cpp.o] Error 1\n'}
+[29.957522] (saber_control) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/saber_joint_controller.dir/all] Error 2\n'}
+[29.958505] (saber_control) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[29.968670] (saber_control) CommandEnded: {'returncode': 2}
+[29.992704] (-) TimerEvent: {}
+[30.030501] (saber_control) JobEnded: {'identifier': 'saber_control', 'rc': 2}
+[30.042278] (-) EventReactorShutdown: {}

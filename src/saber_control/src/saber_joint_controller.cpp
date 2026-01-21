@@ -21,14 +21,6 @@ using namespace std;
 using namespace Eigen;
 using Vector6d = Vector<double, 6>;
 
-struct Cybergear{
-    double angle;
-    double angular_velocity;
-    double angular_velocity_pre;
-    double angular_acceleration;
-    double torque;
-};
-
 class saber_joint_controller : public rclcpp::Node
 {
     public:
@@ -71,6 +63,10 @@ class saber_joint_controller : public rclcpp::Node
                 B_.push_back(B);
                 C_[i] = fourier_series_data(10, i);
             }
+
+            // 关节角度初始化
+            positions_[1] = -M_PI/2.0;positions_[3] = -M_PI/2.0;
+            target_positions_[1] = -M_PI/2.0;target_positions_[3] = -M_PI/2.0;
 
             // 200Hz的频率发布状态
             timer_ = this->create_wall_timer(5ms,bind(&saber_joint_controller::timer_callback, this));
@@ -118,7 +114,17 @@ class saber_joint_controller : public rclcpp::Node
             joint_state_message.position.resize(6);
             joint_state_message.velocity.resize(6);
             joint_state_message.effort.resize(6);
-
+            for(int i = 0;i < joint_nums_;i++)
+            {
+                joint_state_message.position[i] = positions_[i];
+                joint_state_message.velocity[i] = velocities_[i];
+                joint_state_message.effort[i] = torques_[i];
+            }
+            joint_state_message.position[1] = joint_state_message.position[1] + M_PI/2.0;
+            joint_state_message.position[2] = -joint_state_message.position[2];
+            joint_state_message.velocity[2] = -joint_state_message.velocity[2];
+            joint_state_message.effort[2] = -joint_state_message.effort[2];
+            joint_state_message.position[3] = joint_state_message.position[3] + M_PI/2.0;
             joint_state_pub_->publish(joint_state_message);
         }
 
@@ -189,7 +195,7 @@ class saber_joint_controller : public rclcpp::Node
             auto feedback = std::make_shared<FollowJointTrajectory::Feedback>();
             const auto & points = goal->trajectory.points;
 
-            double rate = 200;  // 200Hz 插补
+            double rate = 300;  // 300Hz 插补
             rclcpp::Rate loop_rate(rate);
             double end_time = points.back().time_from_start.sec + points.back().time_from_start.nanosec * 1e-9;
             size_t idx = 0; // 路径段索引
@@ -258,6 +264,7 @@ class saber_joint_controller : public rclcpp::Node
                 positions[1] = positions[1] - M_PI/2.0;
                 positions[2] = -positions[2];
                 positions[3] = positions[3] - M_PI/2.0;
+                std::copy(positions.begin(), positions.end(), target_positions_.begin());
                 
                 Eigen::Vector<double, 6> velocities;
                 Eigen::Vector<double, 6> t_vector_d;
@@ -269,6 +276,7 @@ class saber_joint_controller : public rclcpp::Node
                 t_vector_d[5] = 5 * pow(duration_time, 4);
                 velocities = coef * t_vector_d;
                 velocities[2] = -velocities[2];
+                std::copy(velocities.begin(), velocities.end(), target_velocities_.begin());
                 
                 Eigen::Vector<double, 6> accelerations;
                 Eigen::Vector<double, 6> t_vector_dd;
@@ -280,9 +288,12 @@ class saber_joint_controller : public rclcpp::Node
                 t_vector_dd[5] = 20 * pow(duration_time, 3);
                 accelerations = coef * t_vector_dd;
                 accelerations[2] = -accelerations[2];
+                std::copy(accelerations.begin(), accelerations.end(), target_accelerations_.begin());
                 
                 // 提取六个关节的期望数据
                 array<double, 6> q, qd;
+                std::copy(positions_.begin(), positions_.begin() + 6, q.begin());
+                std::copy(target_positions_.begin(), target_positions_.begin() + 6, qd.begin());
                 q[1] += M_PI/2.0;qd[1] += M_PI/2.0;
                 q[2] = -q[2];qd[2] = -qd[2];
                 q[3] += M_PI/2.0;qd[3] += M_PI/2.0;
@@ -295,7 +306,7 @@ class saber_joint_controller : public rclcpp::Node
                 feedback->actual.positions.assign(q.begin(), q.end());     // 当前实际关节角
                 feedback->desired.positions.assign(qd.begin(), qd.end());    // 期望关节角
                 feedback->joint_names = joint_names_;
-                for (size_t j = 0; j < positions_.size(); j++) 
+                for (size_t j = 0; j < joint_nums_; j++) 
                 {
                     feedback->error.positions[j] = feedback->desired.positions[j] - feedback->actual.positions[j];
                 }
@@ -303,6 +314,9 @@ class saber_joint_controller : public rclcpp::Node
                 goal_handle->publish_feedback(feedback);
                 loop_rate.sleep();
             }
+
+            target_velocities_.fill(0);
+            target_accelerations_.fill(0);
 
             result->error_code = FollowJointTrajectory::Result::SUCCESSFUL;
             result->error_string = "Goal Reached Successfully";
@@ -312,7 +326,6 @@ class saber_joint_controller : public rclcpp::Node
 
         void process_can_msgs()
         {
-            // cout << "开始处理电机反馈数据！" << endl;
             can_id = (RxMessage.can_id>>8) & 0xFF;
             uncalibrated_flag = (RxMessage.can_id>>21) & 0x1;
             hall_flag = (RxMessage.can_id>>20) & 0x1;
@@ -325,10 +338,21 @@ class saber_joint_controller : public rclcpp::Node
             current_angular_velocity = data_conversion(RxMessage.data[2]<<8|RxMessage.data[3],angular_velocity_min,angular_velocity_max);
             current_torque = data_conversion(RxMessage.data[4]<<8|RxMessage.data[5],moment_min,moment_max);
             current_temperature = (RxMessage.data[6]<<8|RxMessage.data[7])/10;
-            motors[can_id-1].angle = current_angle;
-            motors[can_id-1].angular_velocity_pre = motors[can_id-1].angular_velocity;
-            motors[can_id-1].angular_velocity = current_angular_velocity;
-            motors[can_id-1].torque = current_torque;
+            if(can_id == 2)
+            {
+                positions_[can_id-1] = current_angle * DH2motor_directions_[can_id-1] - M_PI/2.0;
+            }
+            else if(can_id == 4)
+            {
+                positions_[can_id-1] = current_angle * DH2motor_directions_[can_id-1] - M_PI/2.0;
+            }
+            else
+            {
+                positions_[can_id-1] = current_angle * DH2motor_directions_[can_id-1];
+            }
+            velocities_pre_[can_id-1] = velocities_[can_id-1];
+            velocities_[can_id-1] = current_angular_velocity * DH2motor_directions_[can_id-1];
+            torques_[can_id-1] = current_torque * DH2motor_directions_[can_id-1];
         }
 
         void read_can_data()
@@ -416,42 +440,44 @@ class saber_joint_controller : public rclcpp::Node
             }
         }
 
-        void write_motors(array<double, 6> torques, array<double, 6> target_positions, array<double, 6> target_velocities)
+        void write_motors(array<double, 6> torques, array<double, 6> positions)
         {
-            for(int i = 0;i < joint_nums_;i++)
-            {
-                motor_controlmode(motors_id[i], torques[i] * directions_[i], 
-                                target_positions[i] * directions_[i], 
-                                target_velocities[i] * directions_[i], 66, 0.6, sock_);
-            }
+            motor_controlmode(motors_id[0], torques[0], positions[0], 0, 50, 0.2, sock_);
+            motor_controlmode(motors_id[1], torques[1], positions[1], 0, 100, 0.2, sock_);
+            motor_controlmode(motors_id[2], torques[2], positions[2], 0, 80, 0.2, sock_);
+            motor_controlmode(motors_id[3], torques[3], positions[3], 0, 60, 0.2, sock_);
+            motor_controlmode(motors_id[4], torques[4], positions[4], 0, 40, 0.2, sock_);
+            motor_controlmode(motors_id[5], torques[5], positions[5], 0, 20, 0.2, sock_);
         }
 
         void run()
         {
             // 设置控制频率
-            rclcpp::Rate loop_rate(500);
+            rclcpp::Rate loop_rate(300);
+            array<double, 6> feedforward_torques;
             while(rclcpp::ok())
             {
-                auto start = std::chrono::high_resolution_clock::now();
+                // auto start = std::chrono::high_resolution_clock::now();
+                // 转换成电机期望的方向和角度
+                array<double, 6> q;
+                std::copy(target_positions_.begin(), target_positions_.end(), q.begin());
                 for(int i = 0;i < joint_nums_;i++)
                 {
-                    motor_controlmode(motors_id[i], 0, 0, 0, 66, 0.6, sock_);
+                    q[i] = q[i] * DH2motor_directions_[i];
                 }
-                auto end = std::chrono::high_resolution_clock::now();
-                auto duration = std::chrono::duration_cast<std::chrono::microseconds>(end - start).count();
-                std::chrono::duration<double> diff = end - start;
-                double cost_seconds = diff.count(); // 获取秒数值 (double 类型)
-                static int count = 0;
-                if (count++ % 1000 == 0)
-                {
-                    // RCLCPP_INFO(this->get_logger(), "核心控制耗时: %.6f s (秒)", cost_seconds);
-                    for(int i = 0;i < joint_nums_;i++)
-                    {
-                        RCLCPP_INFO(this->get_logger(), "positions_[%d]: %.6f", i, positions_[i]);
-                        RCLCPP_INFO(this->get_logger(), "velocities_[%d]: %.6f", i, velocities_[i]);
-                        RCLCPP_INFO(this->get_logger(), "torques_[%d]: %.6f", i, torques_[i]);
-                    }
-                }
+                q[1] += M_PI/2.0;
+                q[3] += M_PI/2.0;
+                write_motors(feedforward_torques, q);
+                loop_rate.sleep();
+                // auto end = std::chrono::high_resolution_clock::now();
+                // auto duration = std::chrono::duration_cast<std::chrono::microseconds>(end - start).count();
+                // std::chrono::duration<double> diff = end - start;
+                // double cost_seconds = diff.count(); // 获取秒数值 (double 类型)
+                // static int count = 0;
+                // if (count++ % 100 == 0)
+                // {
+                //     RCLCPP_INFO(this->get_logger(), "核心控制耗时: %.6f s (秒)", cost_seconds);
+                // }
             }
         }
 
@@ -461,8 +487,10 @@ class saber_joint_controller : public rclcpp::Node
         vector<string> joint_names_;
         uint8_t joint_nums_ = 6;
 
-        // moveit to real robot
-        array<double, 6> directions_ = {1, 1, 1, 1, 1, 1};
+        // moveit to DH
+        array<int8_t, 6> moveit2DH_directions_ = {1, 1, -1, 1, 1, 1};
+        // DH to motor
+        array<int8_t, 6> DH2motor_directions_ = {-1, 1, -1, 1, -1, -1};
 
         // saber关节控制器发布状态
         rclcpp::Publisher<sensor_msgs::msg::JointState>::SharedPtr joint_state_pub_;
@@ -477,11 +505,13 @@ class saber_joint_controller : public rclcpp::Node
         // saber各个关节实际状态
         array<double, 6> positions_;
         array<double, 6> velocities_;
+        array<double, 6> velocities_pre_;
         array<double, 6> torques_;
 
         // saber各个关节期望状态
         array<double, 6> target_positions_;
         array<double, 6> target_velocities_;
+        array<double, 6> target_accelerations_;
 
         // 最小惯性参数集和傅里叶级数系数
         VectorXd PA_ = VectorXd::Zero(48);
@@ -496,9 +526,6 @@ class saber_joint_controller : public rclcpp::Node
         // CAN通信所需变量
         struct can_frame RxMessage;
         int sock_;
-
-        // 存放六个电机数据的变量
-        array<Cybergear, 6> motors;
 
         //小米微电机反馈数据
         uint8_t can_id = 0;

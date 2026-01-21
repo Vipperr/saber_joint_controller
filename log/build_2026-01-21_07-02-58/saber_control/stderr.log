@@ -1,0 +1,12 @@
+[01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/saber_joint_controller.cpp:[m[K In member function ‘[01m[Krclcpp_action::GoalResponse saber_joint_controller::[01;32m[Khandle_goal[m[K(const rclcpp_action::GoalUUID&, std::shared_ptr<const control_msgs::action::FollowJointTrajectory_Goal_<std::allocator<void> > >)[m[K’:
+[01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/saber_joint_controller.cpp:140:44:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kuuid[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  140 |             [01;35m[Kconst rclcpp_action::GoalUUID& uuid[m[K,
+      |             [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/saber_joint_controller.cpp:[m[K In member function ‘[01m[Krclcpp_action::CancelResponse saber_joint_controller::[01;32m[Khandle_cancel[m[K(std::shared_ptr<rclcpp_action::ServerGoalHandle<control_msgs::action::FollowJointTrajectory> >)[m[K’:
+[01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/saber_joint_controller.cpp:162:47:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kgoal_handle[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  162 |             [01;35m[Kconst std::shared_ptr<GoalHandle> goal_handle[m[K)
+      |             [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~[m[K
+[01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/saber_joint_controller.cpp:[m[K In member function ‘[01m[Kvoid saber_joint_controller::[01;32m[Krun[m[K()[m[K’:
+[01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/saber_joint_controller.cpp:433:22:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kduration[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  433 |                 auto [01;35m[Kduration[m[K = std::chrono::duration_cast<std::chrono::microseconds>(end - start).count();
+      |                      [01;35m[K^~~~~~~~[m[K

@@ -1,0 +1,6 @@
+[0.061s] Invoking command in '/home/xiatenghui/saber_joint_controller/build/saber_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/xiatenghui/saber_joint_controller/build/saber_control -- -j8 -l8
+[0.439s] [ 20%] [32mBuilding CXX object CMakeFiles/saber_joint_controller.dir/src/saber_joint_controller.cpp.o[0m
+[8.263s] gmake[2]: *** [CMakeFiles/saber_joint_controller.dir/build.make:76: CMakeFiles/saber_joint_controller.dir/src/saber_joint_controller.cpp.o] Interrupt
+[8.265s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/saber_joint_controller.dir/all] Interrupt
+[8.266s] gmake: *** [Makefile:146: all] Interrupt
+[8.338s] Invoked command in '/home/xiatenghui/saber_joint_controller/build/saber_control' returned '-2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/xiatenghui/saber_joint_controller/build/saber_control -- -j8 -l8

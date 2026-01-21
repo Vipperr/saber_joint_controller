@@ -1,5 +1,4 @@
 #include "saber_get_regression.hpp"
-using namespace std;
 
 void saber_get_regression(double* H,  const array<double, 6>& q, const array<double, 6>& dq, const array<double, 6>& ddq, double g)
 {

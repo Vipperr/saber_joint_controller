@@ -1,0 +1,141 @@
+[0.504s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.505s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0xffffb30252e0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffffb3209910>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffffb3209910>>, mixin_verb=('build',))
+[0.671s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.673s] INFO:colcon.colcon_metadata.package_discovery.colcon_meta:Using configuration from '/root/.colcon/metadata/default/Gazebo.meta'
+[0.674s] INFO:colcon.colcon_metadata.package_discovery.colcon_meta:Using configuration from '/root/.colcon/metadata/default/fastdds.meta'
+[0.676s] INFO:colcon.colcon_metadata.package_discovery.colcon_meta:Using configuration from '/root/.colcon/metadata/default/fastrtps.meta'
+[0.676s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.676s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.676s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.677s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.677s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.677s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/xiatenghui/saber_joint_controller'
+[0.678s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.678s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.679s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.679s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.679s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.679s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.679s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.680s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.680s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.795s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.795s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.795s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.795s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.795s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.796s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.797s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.797s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.797s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.798s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.798s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.798s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.799s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.799s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.799s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.800s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.800s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.800s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.800s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.801s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.801s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.801s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.801s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.801s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.802s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.802s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.802s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.802s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.803s] Level 1:colcon.colcon_core.package_identification:_identify(src/saber_control) by extensions ['ignore', 'ignore_ament_install']
+[0.803s] Level 1:colcon.colcon_core.package_identification:_identify(src/saber_control) by extension 'ignore'
+[0.803s] Level 1:colcon.colcon_core.package_identification:_identify(src/saber_control) by extension 'ignore_ament_install'
+[0.803s] Level 1:colcon.colcon_core.package_identification:_identify(src/saber_control) by extensions ['colcon_pkg']
+[0.803s] Level 1:colcon.colcon_core.package_identification:_identify(src/saber_control) by extension 'colcon_pkg'
+[0.804s] Level 1:colcon.colcon_core.package_identification:_identify(src/saber_control) by extensions ['colcon_meta']
+[0.804s] Level 1:colcon.colcon_core.package_identification:_identify(src/saber_control) by extension 'colcon_meta'
+[0.804s] Level 1:colcon.colcon_core.package_identification:_identify(src/saber_control) by extensions ['ros']
+[0.804s] Level 1:colcon.colcon_core.package_identification:_identify(src/saber_control) by extension 'ros'
+[0.814s] DEBUG:colcon.colcon_core.package_identification:Package 'src/saber_control' with type 'ros.ament_cmake' and name 'saber_control'
+[0.814s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.814s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.814s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.814s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.815s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.883s] Level 5:colcon.colcon_core.verb:set package 'saber_control' build argument 'cmake_args' from command line to 'None'
+[0.883s] Level 5:colcon.colcon_core.verb:set package 'saber_control' build argument 'cmake_target' from command line to 'None'
+[0.883s] Level 5:colcon.colcon_core.verb:set package 'saber_control' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.883s] Level 5:colcon.colcon_core.verb:set package 'saber_control' build argument 'cmake_clean_cache' from command line to 'False'
+[0.883s] Level 5:colcon.colcon_core.verb:set package 'saber_control' build argument 'cmake_clean_first' from command line to 'False'
+[0.884s] Level 5:colcon.colcon_core.verb:set package 'saber_control' build argument 'cmake_force_configure' from command line to 'False'
+[0.884s] Level 5:colcon.colcon_core.verb:set package 'saber_control' build argument 'ament_cmake_args' from command line to 'None'
+[0.884s] Level 5:colcon.colcon_core.verb:set package 'saber_control' build argument 'catkin_cmake_args' from command line to 'None'
+[0.884s] Level 5:colcon.colcon_core.verb:set package 'saber_control' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.884s] DEBUG:colcon.colcon_core.verb:Building package 'saber_control' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/xiatenghui/saber_joint_controller/build/saber_control', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/xiatenghui/saber_joint_controller/install/saber_control', 'merge_install': False, 'path': '/home/xiatenghui/saber_joint_controller/src/saber_control', 'symlink_install': False, 'test_result_base': None}
+[0.885s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.888s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.889s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/xiatenghui/saber_joint_controller/src/saber_control' with build type 'ament_cmake'
+[0.890s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/xiatenghui/saber_joint_controller/src/saber_control'
+[0.900s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.901s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.901s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.949s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/xiatenghui/saber_joint_controller/build/saber_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/xiatenghui/saber_joint_controller/build/saber_control -- -j8 -l8
+[33.654s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/xiatenghui/saber_joint_controller/build/saber_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/xiatenghui/saber_joint_controller/build/saber_control -- -j8 -l8
+[33.702s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/xiatenghui/saber_joint_controller/build/saber_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/xiatenghui/saber_joint_controller/build/saber_control
+[33.806s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(saber_control)
+[33.813s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/xiatenghui/saber_joint_controller/build/saber_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/xiatenghui/saber_joint_controller/build/saber_control
+[33.823s] Level 1:colcon.colcon_core.environment:checking '/home/xiatenghui/saber_joint_controller/install/saber_control' for CMake module files
+[33.826s] Level 1:colcon.colcon_core.environment:checking '/home/xiatenghui/saber_joint_controller/install/saber_control' for CMake config files
+[33.827s] Level 1:colcon.colcon_core.shell:create_environment_hook('saber_control', 'cmake_prefix_path')
+[33.828s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xiatenghui/saber_joint_controller/install/saber_control/share/saber_control/hook/cmake_prefix_path.ps1'
+[33.831s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/xiatenghui/saber_joint_controller/install/saber_control/share/saber_control/hook/cmake_prefix_path.dsv'
+[33.834s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xiatenghui/saber_joint_controller/install/saber_control/share/saber_control/hook/cmake_prefix_path.sh'
+[33.837s] Level 1:colcon.colcon_core.environment:checking '/home/xiatenghui/saber_joint_controller/install/saber_control/lib'
+[33.838s] Level 1:colcon.colcon_core.environment:checking '/home/xiatenghui/saber_joint_controller/install/saber_control/bin'
+[33.838s] Level 1:colcon.colcon_core.environment:checking '/home/xiatenghui/saber_joint_controller/install/saber_control/lib/pkgconfig/saber_control.pc'
+[33.846s] Level 1:colcon.colcon_core.environment:checking '/home/xiatenghui/saber_joint_controller/install/saber_control/lib/python3.12/site-packages'
+[33.847s] Level 1:colcon.colcon_core.environment:checking '/home/xiatenghui/saber_joint_controller/install/saber_control/bin'
+[33.849s] INFO:colcon.colcon_core.shell:Creating package script '/home/xiatenghui/saber_joint_controller/install/saber_control/share/saber_control/package.ps1'
+[33.852s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/xiatenghui/saber_joint_controller/install/saber_control/share/saber_control/package.dsv'
+[33.855s] INFO:colcon.colcon_core.shell:Creating package script '/home/xiatenghui/saber_joint_controller/install/saber_control/share/saber_control/package.sh'
+[33.858s] INFO:colcon.colcon_core.shell:Creating package script '/home/xiatenghui/saber_joint_controller/install/saber_control/share/saber_control/package.bash'
+[33.861s] INFO:colcon.colcon_core.shell:Creating package script '/home/xiatenghui/saber_joint_controller/install/saber_control/share/saber_control/package.zsh'
+[33.863s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/xiatenghui/saber_joint_controller/install/saber_control/share/colcon-core/packages/saber_control)
+[33.866s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(saber_control)
+[33.867s] Level 1:colcon.colcon_core.environment:checking '/home/xiatenghui/saber_joint_controller/install/saber_control' for CMake module files
+[33.870s] Level 1:colcon.colcon_core.environment:checking '/home/xiatenghui/saber_joint_controller/install/saber_control' for CMake config files
+[33.871s] Level 1:colcon.colcon_core.shell:create_environment_hook('saber_control', 'cmake_prefix_path')
+[33.871s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xiatenghui/saber_joint_controller/install/saber_control/share/saber_control/hook/cmake_prefix_path.ps1'
+[33.873s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/xiatenghui/saber_joint_controller/install/saber_control/share/saber_control/hook/cmake_prefix_path.dsv'
+[33.875s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xiatenghui/saber_joint_controller/install/saber_control/share/saber_control/hook/cmake_prefix_path.sh'
+[33.877s] Level 1:colcon.colcon_core.environment:checking '/home/xiatenghui/saber_joint_controller/install/saber_control/lib'
+[33.878s] Level 1:colcon.colcon_core.environment:checking '/home/xiatenghui/saber_joint_controller/install/saber_control/bin'
+[33.878s] Level 1:colcon.colcon_core.environment:checking '/home/xiatenghui/saber_joint_controller/install/saber_control/lib/pkgconfig/saber_control.pc'
+[33.879s] Level 1:colcon.colcon_core.environment:checking '/home/xiatenghui/saber_joint_controller/install/saber_control/lib/python3.12/site-packages'
+[33.881s] Level 1:colcon.colcon_core.environment:checking '/home/xiatenghui/saber_joint_controller/install/saber_control/bin'
+[33.882s] INFO:colcon.colcon_core.shell:Creating package script '/home/xiatenghui/saber_joint_controller/install/saber_control/share/saber_control/package.ps1'
+[33.884s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/xiatenghui/saber_joint_controller/install/saber_control/share/saber_control/package.dsv'
+[33.886s] INFO:colcon.colcon_core.shell:Creating package script '/home/xiatenghui/saber_joint_controller/install/saber_control/share/saber_control/package.sh'
+[33.888s] INFO:colcon.colcon_core.shell:Creating package script '/home/xiatenghui/saber_joint_controller/install/saber_control/share/saber_control/package.bash'
+[33.890s] INFO:colcon.colcon_core.shell:Creating package script '/home/xiatenghui/saber_joint_controller/install/saber_control/share/saber_control/package.zsh'
+[33.892s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/xiatenghui/saber_joint_controller/install/saber_control/share/colcon-core/packages/saber_control)
+[33.893s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[33.895s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[33.896s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[33.896s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[33.924s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[33.924s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[33.925s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[33.925s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[33.932s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.Spawn.ExecFailed: /usr/bin/dbus-launch terminated abnormally without any error message
+[33.934s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[33.939s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/xiatenghui/saber_joint_controller/install/local_setup.ps1'
+[33.944s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/xiatenghui/saber_joint_controller/install/_local_setup_util_ps1.py'
+[33.950s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/xiatenghui/saber_joint_controller/install/setup.ps1'
+[33.955s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/xiatenghui/saber_joint_controller/install/local_setup.sh'
+[33.958s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/xiatenghui/saber_joint_controller/install/_local_setup_util_sh.py'
+[33.961s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/xiatenghui/saber_joint_controller/install/setup.sh'
+[33.966s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/xiatenghui/saber_joint_controller/install/local_setup.bash'
+[33.968s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/xiatenghui/saber_joint_controller/install/setup.bash'
+[33.973s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/xiatenghui/saber_joint_controller/install/local_setup.zsh'
+[33.975s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/xiatenghui/saber_joint_controller/install/setup.zsh'

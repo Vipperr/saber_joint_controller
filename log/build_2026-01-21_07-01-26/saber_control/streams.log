@@ -1,0 +1,37 @@
+[0.056s] Invoking command in '/home/xiatenghui/saber_joint_controller/build/saber_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/xiatenghui/saber_joint_controller/build/saber_control -- -j8 -l8
+[0.418s] [ 20%] [32mBuilding CXX object CMakeFiles/saber_joint_controller.dir/src/saber_joint_controller.cpp.o[0m
+[17.047s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/saber_joint_controller.cpp:[m[K In member function ‘[01m[Krclcpp_action::GoalResponse saber_joint_controller::[01;32m[Khandle_goal[m[K(const rclcpp_action::GoalUUID&, std::shared_ptr<const control_msgs::action::FollowJointTrajectory_Goal_<std::allocator<void> > >)[m[K’:
+[17.048s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/saber_joint_controller.cpp:140:44:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kuuid[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[17.049s]   140 |             [01;35m[Kconst rclcpp_action::GoalUUID& uuid[m[K,
+[17.049s]       |             [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[17.050s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/saber_joint_controller.cpp:[m[K In member function ‘[01m[Krclcpp_action::CancelResponse saber_joint_controller::[01;32m[Khandle_cancel[m[K(std::shared_ptr<rclcpp_action::ServerGoalHandle<control_msgs::action::FollowJointTrajectory> >)[m[K’:
+[17.050s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/saber_joint_controller.cpp:162:47:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kgoal_handle[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[17.051s]   162 |             [01;35m[Kconst std::shared_ptr<GoalHandle> goal_handle[m[K)
+[17.051s]       |             [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~[m[K
+[17.223s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/saber_joint_controller.cpp:[m[K In member function ‘[01m[Kvoid saber_joint_controller::[01;32m[Krun[m[K()[m[K’:
+[17.223s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/saber_joint_controller.cpp:432:22:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kduration[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[17.224s]   432 |                 auto [01;35m[Kduration[m[K = std::chrono::duration_cast<std::chrono::microseconds>(end - start).count();
+[17.224s]       |                      [01;35m[K^~~~~~~~[m[K
+[30.726s] [ 40%] [32m[1mLinking CXX executable saber_joint_controller[0m
+[32.709s] [100%] Built target saber_joint_controller
+[32.762s] Invoked command in '/home/xiatenghui/saber_joint_controller/build/saber_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/xiatenghui/saber_joint_controller/build/saber_control -- -j8 -l8
+[32.810s] Invoking command in '/home/xiatenghui/saber_joint_controller/build/saber_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/xiatenghui/saber_joint_controller/build/saber_control
+[32.848s] -- Install configuration: ""
+[32.851s] -- Installing: /home/xiatenghui/saber_joint_controller/install/saber_control/lib/saber_control/saber_joint_controller
+[32.904s] -- Set non-toolchain portion of runtime path of "/home/xiatenghui/saber_joint_controller/install/saber_control/lib/saber_control/saber_joint_controller" to ""
+[32.905s] -- Up-to-date: /home/xiatenghui/saber_joint_controller/install/saber_control/share/ament_index/resource_index/package_run_dependencies/saber_control
+[32.907s] -- Up-to-date: /home/xiatenghui/saber_joint_controller/install/saber_control/share/ament_index/resource_index/parent_prefix_path/saber_control
+[32.908s] -- Up-to-date: /home/xiatenghui/saber_joint_controller/install/saber_control/share/saber_control/environment/ament_prefix_path.sh
+[32.909s] -- Up-to-date: /home/xiatenghui/saber_joint_controller/install/saber_control/share/saber_control/environment/ament_prefix_path.dsv
+[32.909s] -- Up-to-date: /home/xiatenghui/saber_joint_controller/install/saber_control/share/saber_control/environment/path.sh
+[32.910s] -- Up-to-date: /home/xiatenghui/saber_joint_controller/install/saber_control/share/saber_control/environment/path.dsv
+[32.910s] -- Up-to-date: /home/xiatenghui/saber_joint_controller/install/saber_control/share/saber_control/local_setup.bash
+[32.911s] -- Up-to-date: /home/xiatenghui/saber_joint_controller/install/saber_control/share/saber_control/local_setup.sh
+[32.911s] -- Up-to-date: /home/xiatenghui/saber_joint_controller/install/saber_control/share/saber_control/local_setup.zsh
+[32.912s] -- Up-to-date: /home/xiatenghui/saber_joint_controller/install/saber_control/share/saber_control/local_setup.dsv
+[32.915s] -- Installing: /home/xiatenghui/saber_joint_controller/install/saber_control/share/saber_control/package.dsv
+[32.917s] -- Up-to-date: /home/xiatenghui/saber_joint_controller/install/saber_control/share/ament_index/resource_index/packages/saber_control
+[32.918s] -- Up-to-date: /home/xiatenghui/saber_joint_controller/install/saber_control/share/saber_control/cmake/saber_controlConfig.cmake
+[32.918s] -- Up-to-date: /home/xiatenghui/saber_joint_controller/install/saber_control/share/saber_control/cmake/saber_controlConfig-version.cmake
+[32.921s] -- Up-to-date: /home/xiatenghui/saber_joint_controller/install/saber_control/share/saber_control/package.xml
+[32.922s] Invoked command in '/home/xiatenghui/saber_joint_controller/build/saber_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/xiatenghui/saber_joint_controller/build/saber_control

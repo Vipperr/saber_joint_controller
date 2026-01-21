@@ -1,0 +1,550 @@
+[0.000000] (-) TimerEvent: {}
+[0.002135] (saber_control) JobQueued: {'identifier': 'saber_control', 'dependencies': OrderedDict()}
+[0.002874] (saber_control) JobStarted: {'identifier': 'saber_control'}
+[0.050007] (saber_control) JobProgress: {'identifier': 'saber_control', 'progress': 'cmake'}
+[0.052351] (saber_control) JobProgress: {'identifier': 'saber_control', 'progress': 'build'}
+[0.055565] (saber_control) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/xiatenghui/saber_joint_controller/build/saber_control', '--', '-j8', '-l8'], 'cwd': '/home/xiatenghui/saber_joint_controller/build/saber_control', 'env': OrderedDict({'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'HOSTNAME': 'ubuntu', 'GIT_ASKPASS': '/root/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'BROWSER': '/root/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/bin/helpers/browser.sh', 'HOME': '/root', 'TERM_PROGRAM_VERSION': '1.86.2', 'VSCODE_IPC_HOOK_CLI': '/tmp/vscode-ipc-1d8d72c3-967f-4157-9176-c09960b38f63.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/root/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/root/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/node', 'COLORTERM': 'truecolor', 'REMOTE_CONTAINERS': 'true', 'COLCON_PREFIX_PATH': '/home/xiatenghui/saber_joint_controller/install', 'ROS_DISTRO': 'jazzy', 'REMOTE_CONTAINERS_IPC': '/tmp/vscode-remote-containers-ipc-b0eba884-378b-470b-8c3c-04bf75869b48.sock', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/root/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/bin/remote-cli:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'REMOTE_CONTAINERS_SOCKETS': '["/tmp/vscode-ssh-auth-b0eba884-378b-470b-8c3c-04bf75869b48.sock","/root/.gnupg/S.gpg-agent"]', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/tmp/vscode-git-57d13ed399.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/tmp/vscode-ssh-auth-b0eba884-378b-470b-8c3c-04bf75869b48.sock', 'ROS_DOMAIN_ID': '77', 'AMENT_PREFIX_PATH': '/home/xiatenghui/saber_joint_controller/install/saber_control:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/xiatenghui/saber_joint_controller/build/saber_control', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/xiatenghui/saber_joint_controller/install/saber_control:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.098811] (-) TimerEvent: {}
+[0.199980] (-) TimerEvent: {}
+[0.300858] (-) TimerEvent: {}
+[0.401764] (-) TimerEvent: {}
+[0.478389] (saber_control) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/saber_joint_controller.dir/src/disturbance_observer.cpp.o\x1b[0m\n'}
+[0.482598] (saber_control) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/saber_joint_controller.dir/src/saber_get_regression.cpp.o\x1b[0m\n'}
+[0.483698] (saber_control) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/saber_joint_controller.dir/src/saber_joint_controller.cpp.o\x1b[0m\n'}
+[0.502048] (-) TimerEvent: {}
+[0.603287] (-) TimerEvent: {}
+[0.704391] (-) TimerEvent: {}
+[0.805757] (-) TimerEvent: {}
+[0.906555] (-) TimerEvent: {}
+[1.007442] (-) TimerEvent: {}
+[1.108288] (-) TimerEvent: {}
+[1.209836] (-) TimerEvent: {}
+[1.310589] (-) TimerEvent: {}
+[1.411624] (-) TimerEvent: {}
+[1.512365] (-) TimerEvent: {}
+[1.613479] (-) TimerEvent: {}
+[1.714201] (-) TimerEvent: {}
+[1.815106] (-) TimerEvent: {}
+[1.916556] (-) TimerEvent: {}
+[2.018533] (-) TimerEvent: {}
+[2.119843] (-) TimerEvent: {}
+[2.221284] (-) TimerEvent: {}
+[2.322390] (-) TimerEvent: {}
+[2.423259] (-) TimerEvent: {}
+[2.524200] (-) TimerEvent: {}
+[2.625276] (-) TimerEvent: {}
+[2.727404] (-) TimerEvent: {}
+[2.829599] (-) TimerEvent: {}
+[2.931898] (-) TimerEvent: {}
+[3.038055] (-) TimerEvent: {}
+[3.140614] (-) TimerEvent: {}
+[3.241610] (-) TimerEvent: {}
+[3.344220] (-) TimerEvent: {}
+[3.448347] (-) TimerEvent: {}
+[3.551875] (-) TimerEvent: {}
+[3.653255] (-) TimerEvent: {}
+[3.754039] (-) TimerEvent: {}
+[3.855344] (-) TimerEvent: {}
+[3.956335] (-) TimerEvent: {}
+[4.057436] (-) TimerEvent: {}
+[4.158573] (-) TimerEvent: {}
+[4.259465] (-) TimerEvent: {}
+[4.361497] (-) TimerEvent: {}
+[4.464182] (-) TimerEvent: {}
+[4.565238] (-) TimerEvent: {}
+[4.666076] (-) TimerEvent: {}
+[4.768683] (-) TimerEvent: {}
+[4.870588] (-) TimerEvent: {}
+[4.977232] (-) TimerEvent: {}
+[5.078153] (-) TimerEvent: {}
+[5.178971] (-) TimerEvent: {}
+[5.281174] (-) TimerEvent: {}
+[5.382520] (-) TimerEvent: {}
+[5.484358] (-) TimerEvent: {}
+[5.585934] (-) TimerEvent: {}
+[5.686920] (-) TimerEvent: {}
+[5.790664] (-) TimerEvent: {}
+[5.892122] (-) TimerEvent: {}
+[5.995385] (-) TimerEvent: {}
+[6.098788] (-) TimerEvent: {}
+[6.201291] (-) TimerEvent: {}
+[6.302212] (-) TimerEvent: {}
+[6.403408] (-) TimerEvent: {}
+[6.504958] (-) TimerEvent: {}
+[6.606555] (-) TimerEvent: {}
+[6.708150] (-) TimerEvent: {}
+[6.809779] (-) TimerEvent: {}
+[6.911307] (-) TimerEvent: {}
+[7.014170] (-) TimerEvent: {}
+[7.116267] (-) TimerEvent: {}
+[7.217984] (-) TimerEvent: {}
+[7.319573] (-) TimerEvent: {}
+[7.422364] (-) TimerEvent: {}
+[7.524013] (-) TimerEvent: {}
+[7.625483] (-) TimerEvent: {}
+[7.727008] (-) TimerEvent: {}
+[7.828551] (-) TimerEvent: {}
+[7.930191] (-) TimerEvent: {}
+[8.031146] (-) TimerEvent: {}
+[8.132091] (-) TimerEvent: {}
+[8.233183] (-) TimerEvent: {}
+[8.334223] (-) TimerEvent: {}
+[8.439580] (-) TimerEvent: {}
+[8.540997] (-) TimerEvent: {}
+[8.641960] (-) TimerEvent: {}
+[8.742938] (-) TimerEvent: {}
+[8.845391] (-) TimerEvent: {}
+[8.947484] (-) TimerEvent: {}
+[9.051599] (-) TimerEvent: {}
+[9.152532] (-) TimerEvent: {}
+[9.254248] (-) TimerEvent: {}
+[9.355543] (-) TimerEvent: {}
+[9.457361] (-) TimerEvent: {}
+[9.559282] (-) TimerEvent: {}
+[9.660042] (-) TimerEvent: {}
+[9.761202] (-) TimerEvent: {}
+[9.862056] (-) TimerEvent: {}
+[9.964068] (-) TimerEvent: {}
+[10.064889] (-) TimerEvent: {}
+[10.167088] (-) TimerEvent: {}
+[10.268758] (-) TimerEvent: {}
+[10.370947] (-) TimerEvent: {}
+[10.473282] (-) TimerEvent: {}
+[10.574874] (-) TimerEvent: {}
+[10.676730] (-) TimerEvent: {}
+[10.778923] (-) TimerEvent: {}
+[10.882135] (-) TimerEvent: {}
+[10.983445] (-) TimerEvent: {}
+[11.084681] (-) TimerEvent: {}
+[11.188158] (-) TimerEvent: {}
+[11.289114] (-) TimerEvent: {}
+[11.390302] (-) TimerEvent: {}
+[11.491165] (-) TimerEvent: {}
+[11.592064] (-) TimerEvent: {}
+[11.694193] (-) TimerEvent: {}
+[11.796222] (-) TimerEvent: {}
+[11.898880] (-) TimerEvent: {}
+[11.999784] (-) TimerEvent: {}
+[12.100995] (-) TimerEvent: {}
+[12.203584] (-) TimerEvent: {}
+[12.304413] (-) TimerEvent: {}
+[12.405290] (-) TimerEvent: {}
+[12.506145] (-) TimerEvent: {}
+[12.606987] (-) TimerEvent: {}
+[12.708425] (-) TimerEvent: {}
+[12.809311] (-) TimerEvent: {}
+[12.916754] (-) TimerEvent: {}
+[13.018294] (-) TimerEvent: {}
+[13.119254] (-) TimerEvent: {}
+[13.220675] (-) TimerEvent: {}
+[13.321658] (-) TimerEvent: {}
+[13.423172] (-) TimerEvent: {}
+[13.524055] (-) TimerEvent: {}
+[13.625010] (-) TimerEvent: {}
+[13.726918] (-) TimerEvent: {}
+[13.827862] (-) TimerEvent: {}
+[13.929732] (-) TimerEvent: {}
+[14.030604] (-) TimerEvent: {}
+[14.131556] (-) TimerEvent: {}
+[14.233688] (-) TimerEvent: {}
+[14.335095] (-) TimerEvent: {}
+[14.435929] (-) TimerEvent: {}
+[14.536743] (-) TimerEvent: {}
+[14.641227] (-) TimerEvent: {}
+[14.742084] (-) TimerEvent: {}
+[14.843129] (-) TimerEvent: {}
+[14.944036] (-) TimerEvent: {}
+[15.044970] (-) TimerEvent: {}
+[15.145971] (-) TimerEvent: {}
+[15.247154] (-) TimerEvent: {}
+[15.348138] (-) TimerEvent: {}
+[15.449393] (-) TimerEvent: {}
+[15.550668] (-) TimerEvent: {}
+[15.651672] (-) TimerEvent: {}
+[15.752588] (-) TimerEvent: {}
+[15.853682] (-) TimerEvent: {}
+[15.954675] (-) TimerEvent: {}
+[16.055633] (-) TimerEvent: {}
+[16.156445] (-) TimerEvent: {}
+[16.258027] (-) TimerEvent: {}
+[16.359144] (-) TimerEvent: {}
+[16.460190] (-) TimerEvent: {}
+[16.562011] (-) TimerEvent: {}
+[16.663612] (-) TimerEvent: {}
+[16.765240] (-) TimerEvent: {}
+[16.866625] (-) TimerEvent: {}
+[16.967680] (-) TimerEvent: {}
+[17.068556] (-) TimerEvent: {}
+[17.169615] (-) TimerEvent: {}
+[17.270487] (-) TimerEvent: {}
+[17.346319] (saber_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/disturbance_observer.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[KEigen::VectorXd DisturbanceObserver::\x1b[01;32m\x1b[Kcompute_friction_term\x1b[m\x1b[K(const Eigen::VectorXd&, const Eigen::VectorXd&, const Eigen::VectorXd&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[17.347813] (saber_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/disturbance_observer.cpp:345:109:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kqd\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[17.348564] (saber_control) StderrLine: {'line': b'  345 | Eigen::VectorXd DisturbanceObserver::compute_friction_term(const Eigen::VectorXd& q, \x1b[01;35m\x1b[Kconst Eigen::VectorXd& qd\x1b[m\x1b[K, const Eigen::VectorXd& tau)\n'}
+[17.349447] (saber_control) StderrLine: {'line': b'      |                                                                                      \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~^~\x1b[m\x1b[K\n'}
+[17.350087] (saber_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/disturbance_observer.cpp:345:136:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ktau\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[17.350697] (saber_control) StderrLine: {'line': b'  345 | Eigen::VectorXd DisturbanceObserver::compute_friction_term(const Eigen::VectorXd& q, const Eigen::VectorXd& qd, \x1b[01;35m\x1b[Kconst Eigen::VectorXd& tau\x1b[m\x1b[K)\n'}
+[17.351517] (saber_control) StderrLine: {'line': b'      |                                                                                                                 \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[17.370758] (-) TimerEvent: {}
+[17.471846] (-) TimerEvent: {}
+[17.572940] (-) TimerEvent: {}
+[17.627177] (saber_control) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/disturbance_observer.cpp:1\x1b[m\x1b[K:\n'}
+[17.628681] (saber_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xiatenghui/saber_joint_controller/src/saber_control/include/disturbance_observer.hpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KDisturbanceObserver::\x1b[01;32m\x1b[KDisturbanceObserver\x1b[m\x1b[K(int, double, const rclcpp::Logger&, const Eigen::MatrixXd&, const Eigen::MatrixXd&, const Eigen::MatrixXd&, const Eigen::MatrixXd&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[17.629429] (saber_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xiatenghui/saber_joint_controller/src/saber_control/include/disturbance_observer.hpp:134:20:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KDisturbanceObserver::logger_\x1b[m\x1b[K\xe2\x80\x99 will be initialized after [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder\x07-Wreorder\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[17.630015] (saber_control) StderrLine: {'line': b'  134 |     rclcpp::Logger \x1b[01;35m\x1b[Klogger_\x1b[m\x1b[K;\n'}
+[17.630571] (saber_control) StderrLine: {'line': b'      |                    \x1b[01;35m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[17.631046] (saber_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xiatenghui/saber_joint_controller/src/saber_control/include/disturbance_observer.hpp:102:21:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[KEigen::MatrixXd DisturbanceObserver::A_tau_\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder\x07-Wreorder\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[17.631550] (saber_control) StderrLine: {'line': b'  102 |     Eigen::MatrixXd \x1b[01;35m\x1b[KA_tau_\x1b[m\x1b[K;      // \xe5\xa4\x96\xe5\x8a\x9b\xe5\x8f\x98\xe5\x8c\x96\xe8\xb6\x8b\xe5\x8a\xbf\xe7\x9f\xa9\xe9\x98\xb5\n'}
+[17.634056] (saber_control) StderrLine: {'line': b'      |                     \x1b[01;35m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[17.634657] (saber_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/disturbance_observer.cpp:454:1:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K  when initialized here [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder\x07-Wreorder\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[17.635236] (saber_control) StderrLine: {'line': b'  454 | \x1b[01;35m\x1b[KDisturbanceObserver\x1b[m\x1b[K::DisturbanceObserver(int n_joints, double fs, const rclcpp::Logger& logger,\n'}
+[17.635767] (saber_control) StderrLine: {'line': b'      | \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[17.636361] (saber_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xiatenghui/saber_joint_controller/src/saber_control/include/disturbance_observer.hpp:105:21:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KDisturbanceObserver::R_c_\x1b[m\x1b[K\xe2\x80\x99 will be initialized after [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder\x07-Wreorder\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[17.636954] (saber_control) StderrLine: {'line': b'  105 |     Eigen::MatrixXd \x1b[01;35m\x1b[KR_c_\x1b[m\x1b[K;        // \xe6\xb5\x8b\xe9\x87\x8f\xe5\x99\xaa\xe5\xa3\xb0\xe5\x8d\x8f\xe6\x96\xb9\xe5\xb7\xae\n'}
+[17.637777] (saber_control) StderrLine: {'line': b'      |                     \x1b[01;35m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[17.638398] (saber_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xiatenghui/saber_joint_controller/src/saber_control/include/disturbance_observer.hpp:99:10:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kbool DisturbanceObserver::is_initialized_\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder\x07-Wreorder\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[17.638952] (saber_control) StderrLine: {'line': b'   99 |     bool \x1b[01;35m\x1b[Kis_initialized_\x1b[m\x1b[K;                   // \xe6\x98\xaf\xe5\x90\xa6\xe5\xb7\xb2\xe5\x88\x9d\xe5\xa7\x8b\xe5\x8c\x96\n'}
+[17.639660] (saber_control) StderrLine: {'line': b'      |          \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[17.640188] (saber_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/disturbance_observer.cpp:454:1:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K  when initialized here [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder\x07-Wreorder\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[17.640639] (saber_control) StderrLine: {'line': b'  454 | \x1b[01;35m\x1b[KDisturbanceObserver\x1b[m\x1b[K::DisturbanceObserver(int n_joints, double fs, const rclcpp::Logger& logger,\n'}
+[17.641238] (saber_control) StderrLine: {'line': b'      | \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[17.673247] (-) TimerEvent: {}
+[17.774187] (-) TimerEvent: {}
+[17.875040] (-) TimerEvent: {}
+[17.975928] (-) TimerEvent: {}
+[18.077010] (-) TimerEvent: {}
+[18.179250] (-) TimerEvent: {}
+[18.280622] (-) TimerEvent: {}
+[18.381583] (-) TimerEvent: {}
+[18.482498] (-) TimerEvent: {}
+[18.583488] (-) TimerEvent: {}
+[18.684513] (-) TimerEvent: {}
+[18.786629] (-) TimerEvent: {}
+[18.862576] (saber_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/saber_joint_controller.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Krclcpp_action::GoalResponse saber_joint_controller::\x1b[01;32m\x1b[Khandle_goal\x1b[m\x1b[K(const rclcpp_action::GoalUUID&, std::shared_ptr<const control_msgs::action::FollowJointTrajectory_Goal_<std::allocator<void> > >)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[18.863573] (saber_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/saber_joint_controller.cpp:140:44:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kuuid\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[18.864619] (saber_control) StderrLine: {'line': b'  140 |             \x1b[01;35m\x1b[Kconst rclcpp_action::GoalUUID& uuid\x1b[m\x1b[K,\n'}
+[18.865379] (saber_control) StderrLine: {'line': b'      |             \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[18.865931] (saber_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/saber_joint_controller.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Krclcpp_action::CancelResponse saber_joint_controller::\x1b[01;32m\x1b[Khandle_cancel\x1b[m\x1b[K(std::shared_ptr<rclcpp_action::ServerGoalHandle<control_msgs::action::FollowJointTrajectory> >)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[18.866525] (saber_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/saber_joint_controller.cpp:162:47:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kgoal_handle\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[18.867066] (saber_control) StderrLine: {'line': b'  162 |             \x1b[01;35m\x1b[Kconst std::shared_ptr<GoalHandle> goal_handle\x1b[m\x1b[K)\n'}
+[18.867613] (saber_control) StderrLine: {'line': b'      |             \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[18.888557] (-) TimerEvent: {}
+[18.989575] (-) TimerEvent: {}
+[19.047595] (saber_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/saber_joint_controller.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid saber_joint_controller::\x1b[01;32m\x1b[Krun\x1b[m\x1b[K()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[19.048555] (saber_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/saber_joint_controller.cpp:432:22:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kduration\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[19.049383] (saber_control) StderrLine: {'line': b'  432 |                 auto \x1b[01;35m\x1b[Kduration\x1b[m\x1b[K = std::chrono::duration_cast<std::chrono::microseconds>(end - start).count();\n'}
+[19.049955] (saber_control) StderrLine: {'line': b'      |                      \x1b[01;35m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[19.050734] (saber_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/saber_joint_controller.cpp:434:24:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kcost_seconds\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[19.051414] (saber_control) StderrLine: {'line': b'  434 |                 double \x1b[01;35m\x1b[Kcost_seconds\x1b[m\x1b[K = diff.count(); // \xe8\x8e\xb7\xe5\x8f\x96\xe7\xa7\x92\xe6\x95\xb0\xe5\x80\xbc (double \xe7\xb1\xbb\xe5\x9e\x8b)\n'}
+[19.051943] (saber_control) StderrLine: {'line': b'      |                        \x1b[01;35m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[19.089797] (-) TimerEvent: {}
+[19.190727] (-) TimerEvent: {}
+[19.291830] (-) TimerEvent: {}
+[19.393179] (-) TimerEvent: {}
+[19.494547] (-) TimerEvent: {}
+[19.596522] (-) TimerEvent: {}
+[19.697458] (-) TimerEvent: {}
+[19.798433] (-) TimerEvent: {}
+[19.900016] (-) TimerEvent: {}
+[20.000967] (-) TimerEvent: {}
+[20.102137] (-) TimerEvent: {}
+[20.203088] (-) TimerEvent: {}
+[20.304034] (-) TimerEvent: {}
+[20.405640] (-) TimerEvent: {}
+[20.509276] (-) TimerEvent: {}
+[20.610244] (-) TimerEvent: {}
+[20.711191] (-) TimerEvent: {}
+[20.812087] (-) TimerEvent: {}
+[20.913087] (-) TimerEvent: {}
+[21.013958] (-) TimerEvent: {}
+[21.122071] (-) TimerEvent: {}
+[21.223010] (-) TimerEvent: {}
+[21.323974] (-) TimerEvent: {}
+[21.424909] (-) TimerEvent: {}
+[21.525846] (-) TimerEvent: {}
+[21.626769] (-) TimerEvent: {}
+[21.727690] (-) TimerEvent: {}
+[21.828668] (-) TimerEvent: {}
+[21.929622] (-) TimerEvent: {}
+[22.031022] (-) TimerEvent: {}
+[22.131844] (-) TimerEvent: {}
+[22.232920] (-) TimerEvent: {}
+[22.333880] (-) TimerEvent: {}
+[22.434846] (-) TimerEvent: {}
+[22.536396] (-) TimerEvent: {}
+[22.638119] (-) TimerEvent: {}
+[22.739058] (-) TimerEvent: {}
+[22.840006] (-) TimerEvent: {}
+[22.940953] (-) TimerEvent: {}
+[23.041946] (-) TimerEvent: {}
+[23.142901] (-) TimerEvent: {}
+[23.243828] (-) TimerEvent: {}
+[23.344768] (-) TimerEvent: {}
+[23.445870] (-) TimerEvent: {}
+[23.546795] (-) TimerEvent: {}
+[23.648207] (-) TimerEvent: {}
+[23.749171] (-) TimerEvent: {}
+[23.851987] (-) TimerEvent: {}
+[23.952924] (-) TimerEvent: {}
+[24.054538] (-) TimerEvent: {}
+[24.155524] (-) TimerEvent: {}
+[24.256529] (-) TimerEvent: {}
+[24.357626] (-) TimerEvent: {}
+[24.459362] (-) TimerEvent: {}
+[24.561267] (-) TimerEvent: {}
+[24.662226] (-) TimerEvent: {}
+[24.763247] (-) TimerEvent: {}
+[24.864753] (-) TimerEvent: {}
+[24.965818] (-) TimerEvent: {}
+[25.067380] (-) TimerEvent: {}
+[25.169171] (-) TimerEvent: {}
+[25.270131] (-) TimerEvent: {}
+[25.371130] (-) TimerEvent: {}
+[25.472191] (-) TimerEvent: {}
+[25.573241] (-) TimerEvent: {}
+[25.674205] (-) TimerEvent: {}
+[25.775159] (-) TimerEvent: {}
+[25.876183] (-) TimerEvent: {}
+[25.977200] (-) TimerEvent: {}
+[26.078204] (-) TimerEvent: {}
+[26.179192] (-) TimerEvent: {}
+[26.280093] (-) TimerEvent: {}
+[26.381716] (-) TimerEvent: {}
+[26.483212] (-) TimerEvent: {}
+[26.584264] (-) TimerEvent: {}
+[26.685180] (-) TimerEvent: {}
+[26.786096] (-) TimerEvent: {}
+[26.886944] (-) TimerEvent: {}
+[26.987821] (-) TimerEvent: {}
+[27.088671] (-) TimerEvent: {}
+[27.189544] (-) TimerEvent: {}
+[27.290457] (-) TimerEvent: {}
+[27.391478] (-) TimerEvent: {}
+[27.492287] (-) TimerEvent: {}
+[27.593179] (-) TimerEvent: {}
+[27.694196] (-) TimerEvent: {}
+[27.795074] (-) TimerEvent: {}
+[27.895972] (-) TimerEvent: {}
+[27.997088] (-) TimerEvent: {}
+[28.098093] (-) TimerEvent: {}
+[28.198925] (-) TimerEvent: {}
+[28.299807] (-) TimerEvent: {}
+[28.400772] (-) TimerEvent: {}
+[28.501735] (-) TimerEvent: {}
+[28.602722] (-) TimerEvent: {}
+[28.703601] (-) TimerEvent: {}
+[28.805207] (-) TimerEvent: {}
+[28.906060] (-) TimerEvent: {}
+[29.007025] (-) TimerEvent: {}
+[29.107916] (-) TimerEvent: {}
+[29.208779] (-) TimerEvent: {}
+[29.309707] (-) TimerEvent: {}
+[29.410620] (-) TimerEvent: {}
+[29.511507] (-) TimerEvent: {}
+[29.612376] (-) TimerEvent: {}
+[29.713328] (-) TimerEvent: {}
+[29.814179] (-) TimerEvent: {}
+[29.915178] (-) TimerEvent: {}
+[30.015998] (-) TimerEvent: {}
+[30.116837] (-) TimerEvent: {}
+[30.217786] (-) TimerEvent: {}
+[30.318647] (-) TimerEvent: {}
+[30.419621] (-) TimerEvent: {}
+[30.520503] (-) TimerEvent: {}
+[30.621587] (-) TimerEvent: {}
+[30.722528] (-) TimerEvent: {}
+[30.823411] (-) TimerEvent: {}
+[30.925122] (-) TimerEvent: {}
+[31.026041] (-) TimerEvent: {}
+[31.126892] (-) TimerEvent: {}
+[31.227768] (-) TimerEvent: {}
+[31.328952] (-) TimerEvent: {}
+[31.429896] (-) TimerEvent: {}
+[31.530803] (-) TimerEvent: {}
+[31.631794] (-) TimerEvent: {}
+[31.732787] (-) TimerEvent: {}
+[31.833916] (-) TimerEvent: {}
+[31.934907] (-) TimerEvent: {}
+[32.035783] (-) TimerEvent: {}
+[32.136625] (-) TimerEvent: {}
+[32.237641] (-) TimerEvent: {}
+[32.338577] (-) TimerEvent: {}
+[32.439604] (-) TimerEvent: {}
+[32.540457] (-) TimerEvent: {}
+[32.641419] (-) TimerEvent: {}
+[32.694278] (saber_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/disturbance_observer.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[KEigen::VectorXd DisturbanceObserver::\x1b[01;32m\x1b[Kupdate\x1b[m\x1b[K(const Eigen::VectorXd&, const Eigen::VectorXd&, const Eigen::VectorXd&, Update_Type)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[32.695292] (saber_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/disturbance_observer.cpp:169:1:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcontrol reaches end of non-void function [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type\x07-Wreturn-type\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[32.695955] (saber_control) StderrLine: {'line': b'  169 | \x1b[01;35m\x1b[K}\x1b[m\x1b[K\n'}
+[32.696540] (saber_control) StderrLine: {'line': b'      | \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[32.741676] (-) TimerEvent: {}
+[32.842588] (-) TimerEvent: {}
+[32.943523] (-) TimerEvent: {}
+[33.044316] (-) TimerEvent: {}
+[33.146209] (-) TimerEvent: {}
+[33.247070] (-) TimerEvent: {}
+[33.348064] (-) TimerEvent: {}
+[33.448912] (-) TimerEvent: {}
+[33.549816] (-) TimerEvent: {}
+[33.650626] (-) TimerEvent: {}
+[33.751464] (-) TimerEvent: {}
+[33.852250] (-) TimerEvent: {}
+[33.953134] (-) TimerEvent: {}
+[34.053965] (-) TimerEvent: {}
+[34.154778] (-) TimerEvent: {}
+[34.255669] (-) TimerEvent: {}
+[34.356553] (-) TimerEvent: {}
+[34.457373] (-) TimerEvent: {}
+[34.559550] (-) TimerEvent: {}
+[34.660868] (-) TimerEvent: {}
+[34.763176] (-) TimerEvent: {}
+[34.864055] (-) TimerEvent: {}
+[34.964942] (-) TimerEvent: {}
+[35.065975] (-) TimerEvent: {}
+[35.166964] (-) TimerEvent: {}
+[35.267847] (-) TimerEvent: {}
+[35.368727] (-) TimerEvent: {}
+[35.469724] (-) TimerEvent: {}
+[35.570721] (-) TimerEvent: {}
+[35.671796] (-) TimerEvent: {}
+[35.772895] (-) TimerEvent: {}
+[35.873859] (-) TimerEvent: {}
+[35.974809] (-) TimerEvent: {}
+[36.075747] (-) TimerEvent: {}
+[36.176782] (-) TimerEvent: {}
+[36.277811] (-) TimerEvent: {}
+[36.378855] (-) TimerEvent: {}
+[36.479851] (-) TimerEvent: {}
+[36.580843] (-) TimerEvent: {}
+[36.681942] (-) TimerEvent: {}
+[36.783091] (-) TimerEvent: {}
+[36.884060] (-) TimerEvent: {}
+[36.985150] (-) TimerEvent: {}
+[37.086141] (-) TimerEvent: {}
+[37.187124] (-) TimerEvent: {}
+[37.288110] (-) TimerEvent: {}
+[37.389011] (-) TimerEvent: {}
+[37.490046] (-) TimerEvent: {}
+[37.590941] (-) TimerEvent: {}
+[37.691859] (-) TimerEvent: {}
+[37.792740] (-) TimerEvent: {}
+[37.893696] (-) TimerEvent: {}
+[37.994689] (-) TimerEvent: {}
+[38.095601] (-) TimerEvent: {}
+[38.196604] (-) TimerEvent: {}
+[38.297766] (-) TimerEvent: {}
+[38.398754] (-) TimerEvent: {}
+[38.500327] (-) TimerEvent: {}
+[38.601845] (-) TimerEvent: {}
+[38.702896] (-) TimerEvent: {}
+[38.804409] (-) TimerEvent: {}
+[38.906036] (-) TimerEvent: {}
+[39.006872] (-) TimerEvent: {}
+[39.107691] (-) TimerEvent: {}
+[39.208489] (-) TimerEvent: {}
+[39.309436] (-) TimerEvent: {}
+[39.410236] (-) TimerEvent: {}
+[39.511025] (-) TimerEvent: {}
+[39.611820] (-) TimerEvent: {}
+[39.712577] (-) TimerEvent: {}
+[39.813400] (-) TimerEvent: {}
+[39.914159] (-) TimerEvent: {}
+[40.014982] (-) TimerEvent: {}
+[40.115828] (-) TimerEvent: {}
+[40.216801] (-) TimerEvent: {}
+[40.317658] (-) TimerEvent: {}
+[40.418453] (-) TimerEvent: {}
+[40.519276] (-) TimerEvent: {}
+[40.620080] (-) TimerEvent: {}
+[40.720847] (-) TimerEvent: {}
+[40.821736] (-) TimerEvent: {}
+[40.922558] (-) TimerEvent: {}
+[41.023373] (-) TimerEvent: {}
+[41.124193] (-) TimerEvent: {}
+[41.225129] (-) TimerEvent: {}
+[41.325954] (-) TimerEvent: {}
+[41.426766] (-) TimerEvent: {}
+[41.527640] (-) TimerEvent: {}
+[41.628473] (-) TimerEvent: {}
+[41.729427] (-) TimerEvent: {}
+[41.830256] (-) TimerEvent: {}
+[41.931048] (-) TimerEvent: {}
+[42.031865] (-) TimerEvent: {}
+[42.132873] (-) TimerEvent: {}
+[42.233801] (-) TimerEvent: {}
+[42.334622] (-) TimerEvent: {}
+[42.435469] (-) TimerEvent: {}
+[42.536297] (-) TimerEvent: {}
+[42.637187] (-) TimerEvent: {}
+[42.738059] (-) TimerEvent: {}
+[42.838907] (-) TimerEvent: {}
+[42.939697] (-) TimerEvent: {}
+[43.040511] (-) TimerEvent: {}
+[43.141491] (-) TimerEvent: {}
+[43.242350] (-) TimerEvent: {}
+[43.343192] (-) TimerEvent: {}
+[43.444112] (-) TimerEvent: {}
+[43.544999] (-) TimerEvent: {}
+[43.645892] (-) TimerEvent: {}
+[43.746794] (-) TimerEvent: {}
+[43.847682] (-) TimerEvent: {}
+[43.948553] (-) TimerEvent: {}
+[44.049566] (-) TimerEvent: {}
+[44.150428] (-) TimerEvent: {}
+[44.251303] (-) TimerEvent: {}
+[44.352178] (-) TimerEvent: {}
+[44.453013] (-) TimerEvent: {}
+[44.553858] (-) TimerEvent: {}
+[44.654664] (-) TimerEvent: {}
+[44.755539] (-) TimerEvent: {}
+[44.856465] (-) TimerEvent: {}
+[44.957384] (-) TimerEvent: {}
+[45.058240] (-) TimerEvent: {}
+[45.159088] (-) TimerEvent: {}
+[45.172672] (saber_control) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking CXX executable saber_joint_controller\x1b[0m\n'}
+[45.259294] (-) TimerEvent: {}
+[45.360129] (-) TimerEvent: {}
+[45.461070] (-) TimerEvent: {}
+[45.561886] (-) TimerEvent: {}
+[45.662757] (-) TimerEvent: {}
+[45.764145] (-) TimerEvent: {}
+[45.865103] (-) TimerEvent: {}
+[45.965983] (-) TimerEvent: {}
+[46.067144] (-) TimerEvent: {}
+[46.168042] (-) TimerEvent: {}
+[46.268907] (-) TimerEvent: {}
+[46.369928] (-) TimerEvent: {}
+[46.470803] (-) TimerEvent: {}
+[46.571648] (-) TimerEvent: {}
+[46.672573] (-) TimerEvent: {}
+[46.773501] (-) TimerEvent: {}
+[46.874435] (-) TimerEvent: {}
+[46.975400] (-) TimerEvent: {}
+[47.076276] (-) TimerEvent: {}
+[47.177203] (-) TimerEvent: {}
+[47.236272] (saber_control) StdoutLine: {'line': b'[100%] Built target saber_joint_controller\n'}
+[47.277523] (-) TimerEvent: {}
+[47.285084] (saber_control) CommandEnded: {'returncode': 0}
+[47.288438] (saber_control) JobProgress: {'identifier': 'saber_control', 'progress': 'install'}
+[47.330110] (saber_control) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/xiatenghui/saber_joint_controller/build/saber_control'], 'cwd': '/home/xiatenghui/saber_joint_controller/build/saber_control', 'env': OrderedDict({'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'HOSTNAME': 'ubuntu', 'GIT_ASKPASS': '/root/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'BROWSER': '/root/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/bin/helpers/browser.sh', 'HOME': '/root', 'TERM_PROGRAM_VERSION': '1.86.2', 'VSCODE_IPC_HOOK_CLI': '/tmp/vscode-ipc-1d8d72c3-967f-4157-9176-c09960b38f63.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/root/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/root/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/node', 'COLORTERM': 'truecolor', 'REMOTE_CONTAINERS': 'true', 'COLCON_PREFIX_PATH': '/home/xiatenghui/saber_joint_controller/install', 'ROS_DISTRO': 'jazzy', 'REMOTE_CONTAINERS_IPC': '/tmp/vscode-remote-containers-ipc-b0eba884-378b-470b-8c3c-04bf75869b48.sock', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/root/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/bin/remote-cli:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'REMOTE_CONTAINERS_SOCKETS': '["/tmp/vscode-ssh-auth-b0eba884-378b-470b-8c3c-04bf75869b48.sock","/root/.gnupg/S.gpg-agent"]', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/tmp/vscode-git-57d13ed399.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/tmp/vscode-ssh-auth-b0eba884-378b-470b-8c3c-04bf75869b48.sock', 'ROS_DOMAIN_ID': '77', 'AMENT_PREFIX_PATH': '/home/xiatenghui/saber_joint_controller/install/saber_control:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/xiatenghui/saber_joint_controller/build/saber_control', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/xiatenghui/saber_joint_controller/install/saber_control:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[47.364061] (saber_control) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[47.365789] (saber_control) StdoutLine: {'line': b'-- Installing: /home/xiatenghui/saber_joint_controller/install/saber_control/lib/saber_control/saber_joint_controller\n'}
+[47.377729] (-) TimerEvent: {}
+[47.418630] (saber_control) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/xiatenghui/saber_joint_controller/install/saber_control/lib/saber_control/saber_joint_controller" to ""\n'}
+[47.419752] (saber_control) StdoutLine: {'line': b'-- Up-to-date: /home/xiatenghui/saber_joint_controller/install/saber_control/share/ament_index/resource_index/package_run_dependencies/saber_control\n'}
+[47.420628] (saber_control) StdoutLine: {'line': b'-- Up-to-date: /home/xiatenghui/saber_joint_controller/install/saber_control/share/ament_index/resource_index/parent_prefix_path/saber_control\n'}
+[47.426791] (saber_control) StdoutLine: {'line': b'-- Up-to-date: /home/xiatenghui/saber_joint_controller/install/saber_control/share/saber_control/environment/ament_prefix_path.sh\n'}
+[47.427751] (saber_control) StdoutLine: {'line': b'-- Up-to-date: /home/xiatenghui/saber_joint_controller/install/saber_control/share/saber_control/environment/ament_prefix_path.dsv\n'}
+[47.432183] (saber_control) StdoutLine: {'line': b'-- Up-to-date: /home/xiatenghui/saber_joint_controller/install/saber_control/share/saber_control/environment/path.sh\n'}
+[47.434447] (saber_control) StdoutLine: {'line': b'-- Up-to-date: /home/xiatenghui/saber_joint_controller/install/saber_control/share/saber_control/environment/path.dsv\n'}
+[47.439196] (saber_control) StdoutLine: {'line': b'-- Up-to-date: /home/xiatenghui/saber_joint_controller/install/saber_control/share/saber_control/local_setup.bash\n'}
+[47.441800] (saber_control) StdoutLine: {'line': b'-- Up-to-date: /home/xiatenghui/saber_joint_controller/install/saber_control/share/saber_control/local_setup.sh\n'}
+[47.443001] (saber_control) StdoutLine: {'line': b'-- Up-to-date: /home/xiatenghui/saber_joint_controller/install/saber_control/share/saber_control/local_setup.zsh\n'}
+[47.443673] (saber_control) StdoutLine: {'line': b'-- Up-to-date: /home/xiatenghui/saber_joint_controller/install/saber_control/share/saber_control/local_setup.dsv\n'}
+[47.444862] (saber_control) StdoutLine: {'line': b'-- Installing: /home/xiatenghui/saber_joint_controller/install/saber_control/share/saber_control/package.dsv\n'}
+[47.446304] (saber_control) StdoutLine: {'line': b'-- Up-to-date: /home/xiatenghui/saber_joint_controller/install/saber_control/share/ament_index/resource_index/packages/saber_control\n'}
+[47.447344] (saber_control) StdoutLine: {'line': b'-- Up-to-date: /home/xiatenghui/saber_joint_controller/install/saber_control/share/saber_control/cmake/saber_controlConfig.cmake\n'}
+[47.449551] (saber_control) StdoutLine: {'line': b'-- Up-to-date: /home/xiatenghui/saber_joint_controller/install/saber_control/share/saber_control/cmake/saber_controlConfig-version.cmake\n'}
+[47.450382] (saber_control) StdoutLine: {'line': b'-- Up-to-date: /home/xiatenghui/saber_joint_controller/install/saber_control/share/saber_control/package.xml\n'}
+[47.451061] (saber_control) CommandEnded: {'returncode': 0}
+[47.483282] (-) TimerEvent: {}
+[47.535427] (saber_control) JobEnded: {'identifier': 'saber_control', 'rc': 0}
+[47.539722] (-) EventReactorShutdown: {}

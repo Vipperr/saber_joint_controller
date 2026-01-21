@@ -1,0 +1,128 @@
+[0.056s] Invoking command in '/home/xiatenghui/saber_joint_controller/build/saber_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/xiatenghui/saber_joint_controller/build/saber_control -- -j8 -l8
+[0.442s] [ 20%] [32mBuilding CXX object CMakeFiles/saber_joint_controller.dir/src/saber_joint_controller.cpp.o[0m
+[0.447s] [ 40%] [32mBuilding CXX object CMakeFiles/saber_joint_controller.dir/src/disturbance_observer.cpp.o[0m
+[0.449s] [ 60%] [32mBuilding CXX object CMakeFiles/saber_joint_controller.dir/src/saber_get_regression.cpp.o[0m
+[10.229s] In file included from [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/saber_get_regression.cpp:1[m[K:
+[10.230s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/include/saber_get_regression.hpp:6:44:[m[K [01;31m[Kerror: [m[K‘[01m[Karray[m[K’ does not name a type
+[10.231s]     6 | void saber_get_regression(double* H, const [01;31m[Karray[m[K<double, 6>& q, const array<double, 6>& dq, const array<double, 6>& ddq, double g);
+[10.232s]       |                                            [01;31m[K^~~~~[m[K
+[10.233s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/include/saber_get_regression.hpp:6:49:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before ‘[01m[K<[m[K’ token
+[10.233s]     6 | void saber_get_regression(double* H, const array[01;31m[K<[m[Kdouble, 6>& q, const array<double, 6>& dq, const array<double, 6>& ddq, double g);
+[10.234s]       |                                                 [01;31m[K^[m[K
+[13.086s] gmake[2]: *** [CMakeFiles/saber_joint_controller.dir/build.make:118: CMakeFiles/saber_joint_controller.dir/src/saber_get_regression.cpp.o] Error 1
+[13.086s] gmake[2]: *** Waiting for unfinished jobs....
+[13.532s] In file included from [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/include/disturbance_observer.hpp:7[m[K,
+[13.533s]                  from [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/disturbance_observer.cpp:1[m[K:
+[13.534s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/include/saber_get_regression.hpp:6:44:[m[K [01;31m[Kerror: [m[K‘[01m[Karray[m[K’ does not name a type
+[13.534s]     6 | void saber_get_regression(double* H, const [01;31m[Karray[m[K<double, 6>& q, const array<double, 6>& dq, const array<double, 6>& ddq, double g);
+[13.535s]       |                                            [01;31m[K^~~~~[m[K
+[13.536s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/include/saber_get_regression.hpp:6:49:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before ‘[01m[K<[m[K’ token
+[13.536s]     6 | void saber_get_regression(double* H, const array[01;31m[K<[m[Kdouble, 6>& q, const array<double, 6>& dq, const array<double, 6>& ddq, double g);
+[13.538s]       |                                                 [01;31m[K^[m[K
+[16.106s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/disturbance_observer.cpp:[m[K In member function ‘[01m[KEigen::MatrixXd DisturbanceObserver::[01;32m[Kcompute_mass_matrix[m[K(const Eigen::VectorXd&)[m[K’:
+[16.108s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/disturbance_observer.cpp:229:49:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kstd::array<double, 6>[m[K’ to ‘[01m[Kint[m[K’
+[16.109s]   229 |         saber_get_regression(regression_matrix, [01;31m[Kpositions[m[K, velocities, v, 0);
+[16.109s]       |                                                 [01;31m[K^~~~~~~~~[m[K
+[16.110s]       |                                                 [01;31m[K|[m[K
+[16.111s]       |                                                 [01;31m[Kstd::array<double, 6>[m[K
+[16.111s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/include/saber_get_regression.hpp:6:38:[m[K [01;36m[Knote: [m[K  initializing argument 2 of ‘[01m[Kvoid[01;32m[K saber_get_regression[m[K(double*, int)[m[K’
+[16.112s]     6 | void saber_get_regression(double* H, [01;36m[Kconst array[m[K<double, 6>& q, const array<double, 6>& dq, const array<double, 6>& ddq, double g);
+[16.112s]       |                                      [01;36m[K^~~~~~~~~~~[m[K
+[16.136s] In file included from [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/include/disturbance_observer.hpp:7[m[K,
+[16.137s]                  from [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/saber_joint_controller.cpp:3[m[K:
+[16.138s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/include/saber_get_regression.hpp:6:44:[m[K [01;31m[Kerror: [m[K‘[01m[Karray[m[K’ does not name a type
+[16.139s]     6 | void saber_get_regression(double* H, const [01;31m[Karray[m[K<double, 6>& q, const array<double, 6>& dq, const array<double, 6>& ddq, double g);
+[16.139s]       |                                            [01;31m[K^~~~~[m[K
+[16.140s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/include/saber_get_regression.hpp:6:49:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before ‘[01m[K<[m[K’ token
+[16.141s]     6 | void saber_get_regression(double* H, const array[01;31m[K<[m[Kdouble, 6>& q, const array<double, 6>& dq, const array<double, 6>& ddq, double g);
+[16.142s]       |                                                 [01;31m[K^[m[K
+[16.243s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/disturbance_observer.cpp:[m[K In member function ‘[01m[KEigen::VectorXd DisturbanceObserver::[01;32m[Kcompute_coriolis_term[m[K(const Eigen::VectorXd&, const Eigen::VectorXd&)[m[K’:
+[16.243s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/disturbance_observer.cpp:252:45:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kstd::array<double, 6>[m[K’ to ‘[01m[Kint[m[K’
+[16.244s]   252 |     saber_get_regression(regression_matrix, [01;31m[Kpositions[m[K, velocities, accelerations, 0);
+[16.244s]       |                                             [01;31m[K^~~~~~~~~[m[K
+[16.245s]       |                                             [01;31m[K|[m[K
+[16.245s]       |                                             [01;31m[Kstd::array<double, 6>[m[K
+[16.247s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/include/saber_get_regression.hpp:6:38:[m[K [01;36m[Knote: [m[K  initializing argument 2 of ‘[01m[Kvoid[01;32m[K saber_get_regression[m[K(double*, int)[m[K’
+[16.249s]     6 | void saber_get_regression(double* H, [01;36m[Kconst array[m[K<double, 6>& q, const array<double, 6>& dq, const array<double, 6>& ddq, double g);
+[16.251s]       |                                      [01;36m[K^~~~~~~~~~~[m[K
+[16.252s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/disturbance_observer.cpp:[m[K In member function ‘[01m[KEigen::VectorXd DisturbanceObserver::[01;32m[Kcompute_massdot_qdot[m[K(const Eigen::VectorXd&, const Eigen::VectorXd&, double)[m[K’:
+[16.253s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/disturbance_observer.cpp:292:49:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kstd::array<double, 6>[m[K’ to ‘[01m[Kint[m[K’
+[16.253s]   292 |         saber_get_regression(regression_matrix, [01;31m[Kpositions_perturbed[m[K, velocities, accelerations, 0);
+[16.254s]       |                                                 [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[16.255s]       |                                                 [01;31m[K|[m[K
+[16.255s]       |                                                 [01;31m[Kstd::array<double, 6>[m[K
+[16.255s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/include/saber_get_regression.hpp:6:38:[m[K [01;36m[Knote: [m[K  initializing argument 2 of ‘[01m[Kvoid[01;32m[K saber_get_regression[m[K(double*, int)[m[K’
+[16.256s]     6 | void saber_get_regression(double* H, [01;36m[Kconst array[m[K<double, 6>& q, const array<double, 6>& dq, const array<double, 6>& ddq, double g);
+[16.257s]       |                                      [01;36m[K^~~~~~~~~~~[m[K
+[16.257s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/disturbance_observer.cpp:297:49:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kstd::array<double, 6>[m[K’ to ‘[01m[Kint[m[K’
+[16.258s]   297 |         saber_get_regression(regression_matrix, [01;31m[Kpositions_perturbed[m[K, velocities, accelerations, 0);
+[16.258s]       |                                                 [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[16.258s]       |                                                 [01;31m[K|[m[K
+[16.259s]       |                                                 [01;31m[Kstd::array<double, 6>[m[K
+[16.259s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/include/saber_get_regression.hpp:6:38:[m[K [01;36m[Knote: [m[K  initializing argument 2 of ‘[01m[Kvoid[01;32m[K saber_get_regression[m[K(double*, int)[m[K’
+[16.260s]     6 | void saber_get_regression(double* H, [01;36m[Kconst array[m[K<double, 6>& q, const array<double, 6>& dq, const array<double, 6>& ddq, double g);
+[16.260s]       |                                      [01;36m[K^~~~~~~~~~~[m[K
+[16.311s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/disturbance_observer.cpp:[m[K In member function ‘[01m[KEigen::VectorXd DisturbanceObserver::[01;32m[Kcompute_gravity_term[m[K(const Eigen::VectorXd&, const Eigen::VectorXd&, Update_Type)[m[K’:
+[16.312s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/disturbance_observer.cpp:325:49:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kstd::array<double, 6>[m[K’ to ‘[01m[Kint[m[K’
+[16.313s]   325 |         saber_get_regression(regression_matrix, [01;31m[Kpositions[m[K, velocities, accelerations, 9.81);
+[16.314s]       |                                                 [01;31m[K^~~~~~~~~[m[K
+[16.316s]       |                                                 [01;31m[K|[m[K
+[16.316s]       |                                                 [01;31m[Kstd::array<double, 6>[m[K
+[16.317s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/include/saber_get_regression.hpp:6:38:[m[K [01;36m[Knote: [m[K  initializing argument 2 of ‘[01m[Kvoid[01;32m[K saber_get_regression[m[K(double*, int)[m[K’
+[16.318s]     6 | void saber_get_regression(double* H, [01;36m[Kconst array[m[K<double, 6>& q, const array<double, 6>& dq, const array<double, 6>& ddq, double g);
+[16.319s]       |                                      [01;36m[K^~~~~~~~~~~[m[K
+[16.319s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/disturbance_observer.cpp:[m[K In member function ‘[01m[KEigen::VectorXd DisturbanceObserver::[01;32m[Kcompute_friction_term[m[K(const Eigen::VectorXd&, const Eigen::VectorXd&, const Eigen::VectorXd&)[m[K’:
+[16.320s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/disturbance_observer.cpp:345:109:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kqd[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[16.320s]   345 | Eigen::VectorXd DisturbanceObserver::compute_friction_term(const Eigen::VectorXd& q, [01;35m[Kconst Eigen::VectorXd& qd[m[K, const Eigen::VectorXd& tau)
+[16.321s]       |                                                                                      [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[16.322s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/disturbance_observer.cpp:345:136:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktau[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[16.322s]   345 | Eigen::VectorXd DisturbanceObserver::compute_friction_term(const Eigen::VectorXd& q, const Eigen::VectorXd& qd, [01;35m[Kconst Eigen::VectorXd& tau[m[K)
+[16.323s]       |                                                                                                                 [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[16.568s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/include/disturbance_observer.hpp:[m[K In constructor ‘[01m[KDisturbanceObserver::[01;32m[KDisturbanceObserver[m[K(int, double, const rclcpp::Logger&, const Eigen::MatrixXd&, const Eigen::MatrixXd&, const Eigen::MatrixXd&, const Eigen::MatrixXd&)[m[K’:
+[16.568s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/include/disturbance_observer.hpp:134:20:[m[K [01;35m[Kwarning: [m[K‘[01m[KDisturbanceObserver::logger_[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[16.569s]   134 |     rclcpp::Logger [01;35m[Klogger_[m[K;
+[16.569s]       |                    [01;35m[K^~~~~~~[m[K
+[16.570s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/include/disturbance_observer.hpp:102:21:[m[K [01;35m[Kwarning: [m[K  ‘[01m[KEigen::MatrixXd DisturbanceObserver::A_tau_[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[16.570s]   102 |     Eigen::MatrixXd [01;35m[KA_tau_[m[K;      // 外力变化趋势矩阵
+[16.571s]       |                     [01;35m[K^~~~~~[m[K
+[16.571s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/disturbance_observer.cpp:454:1:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[16.572s]   454 | [01;35m[KDisturbanceObserver[m[K::DisturbanceObserver(int n_joints, double fs, const rclcpp::Logger& logger,
+[16.572s]       | [01;35m[K^~~~~~~~~~~~~~~~~~~[m[K
+[16.573s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/include/disturbance_observer.hpp:105:21:[m[K [01;35m[Kwarning: [m[K‘[01m[KDisturbanceObserver::R_c_[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[16.573s]   105 |     Eigen::MatrixXd [01;35m[KR_c_[m[K;        // 测量噪声协方差
+[16.574s]       |                     [01;35m[K^~~~[m[K
+[16.574s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/include/disturbance_observer.hpp:99:10:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kbool DisturbanceObserver::is_initialized_[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[16.575s]    99 |     bool [01;35m[Kis_initialized_[m[K;                   // 是否已初始化
+[16.575s]       |          [01;35m[K^~~~~~~~~~~~~~~[m[K
+[16.575s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/disturbance_observer.cpp:454:1:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[16.576s]   454 | [01;35m[KDisturbanceObserver[m[K::DisturbanceObserver(int n_joints, double fs, const rclcpp::Logger& logger,
+[16.577s]       | [01;35m[K^~~~~~~~~~~~~~~~~~~[m[K
+[17.737s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/saber_joint_controller.cpp:[m[K In member function ‘[01m[Krclcpp_action::GoalResponse saber_joint_controller::[01;32m[Khandle_goal[m[K(const rclcpp_action::GoalUUID&, std::shared_ptr<const control_msgs::action::FollowJointTrajectory_Goal_<std::allocator<void> > >)[m[K’:
+[17.739s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/saber_joint_controller.cpp:140:44:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kuuid[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[17.740s]   140 |             [01;35m[Kconst rclcpp_action::GoalUUID& uuid[m[K,
+[17.741s]       |             [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[17.741s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/saber_joint_controller.cpp:[m[K In member function ‘[01m[Krclcpp_action::CancelResponse saber_joint_controller::[01;32m[Khandle_cancel[m[K(std::shared_ptr<rclcpp_action::ServerGoalHandle<control_msgs::action::FollowJointTrajectory> >)[m[K’:
+[17.742s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/saber_joint_controller.cpp:162:47:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kgoal_handle[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[17.743s]   162 |             [01;35m[Kconst std::shared_ptr<GoalHandle> goal_handle[m[K)
+[17.745s]       |             [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~[m[K
+[17.928s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/saber_joint_controller.cpp:[m[K In member function ‘[01m[Kvoid saber_joint_controller::[01;32m[Kexecute_trajectory_quintic_interpolation[m[K(std::shared_ptr<rclcpp_action::ServerGoalHandle<control_msgs::action::FollowJointTrajectory> >)[m[K’:
+[17.929s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/saber_joint_controller.cpp:290:40:[m[K [01;31m[Kerror: [m[K‘[01m[Kpositions_[m[K’ was not declared in this scope; did you mean ‘[01m[Kpositions[m[K’?
+[17.930s]   290 |                 for (size_t j = 0; j < [01;31m[Kpositions_[m[K.size(); j++)
+[17.930s]       |                                        [01;31m[K^~~~~~~~~~[m[K
+[17.932s]       |                                        [32m[Kpositions[m[K
+[17.955s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/saber_joint_controller.cpp:[m[K In member function ‘[01m[Kvoid saber_joint_controller::[01;32m[Krun[m[K()[m[K’:
+[17.955s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/saber_joint_controller.cpp:432:22:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kduration[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[17.956s]   432 |                 auto [01;35m[Kduration[m[K = std::chrono::duration_cast<std::chrono::microseconds>(end - start).count();
+[17.957s]       |                      [01;35m[K^~~~~~~~[m[K
+[17.958s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/saber_joint_controller.cpp:434:24:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kcost_seconds[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[17.958s]   434 |                 double [01;35m[Kcost_seconds[m[K = diff.count(); // 获取秒数值 (double 类型)
+[17.959s]       |                        [01;35m[K^~~~~~~~~~~~[m[K
+[24.501s] gmake[2]: *** [CMakeFiles/saber_joint_controller.dir/build.make:76: CMakeFiles/saber_joint_controller.dir/src/saber_joint_controller.cpp.o] Error 1
+[30.925s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/disturbance_observer.cpp:[m[K In member function ‘[01m[KEigen::VectorXd DisturbanceObserver::[01;32m[Kupdate[m[K(const Eigen::VectorXd&, const Eigen::VectorXd&, const Eigen::VectorXd&, Update_Type)[m[K’:
+[30.926s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/disturbance_observer.cpp:169:1:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+[30.926s]   169 | [01;35m[K}[m[K
+[30.927s]       | [01;35m[K^[m[K
+[31.727s] gmake[2]: *** [CMakeFiles/saber_joint_controller.dir/build.make:104: CMakeFiles/saber_joint_controller.dir/src/disturbance_observer.cpp.o] Error 1
+[31.729s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/saber_joint_controller.dir/all] Error 2
+[31.730s] gmake: *** [Makefile:146: all] Error 2
+[31.740s] Invoked command in '/home/xiatenghui/saber_joint_controller/build/saber_control' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/xiatenghui/saber_joint_controller/build/saber_control -- -j8 -l8
