@@ -1,0 +1,50 @@
+[0.060s] Invoking command in '/home/xiatenghui/saber_joint_controller/build/saber_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/xiatenghui/saber_joint_controller/build/saber_control -- -j8 -l8
+[0.191s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.106s] -- Found rclcpp: 28.1.12 (/opt/ros/jazzy/share/rclcpp/cmake)
+[1.243s] -- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.298s] -- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.357s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.422s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.650s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[1.656s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[1.894s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.093s] -- Found rclcpp_action: 28.1.13 (/opt/ros/jazzy/share/rclcpp_action/cmake)
+[2.213s] -- Found control_msgs: 5.5.0 (/opt/ros/jazzy/share/control_msgs/cmake)
+[2.538s] -- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[2.935s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.935s] -- Configured cppcheck include dirs: /home/xiatenghui/saber_joint_controller/src/saber_control/include
+[2.936s] -- Configured cppcheck exclude dirs and/or files: 
+[2.939s] -- Added test 'lint_cmake' to check CMake code style
+[2.945s] -- Added test 'uncrustify' to check C / C++ code style
+[2.946s] -- Configured uncrustify additional arguments: 
+[2.947s] -- Added test 'xmllint' to check XML markup files
+[2.950s] -- Configuring done (2.8s)
+[3.038s] -- Generating done (0.0s)
+[3.064s] -- Build files have been written to: /home/xiatenghui/saber_joint_controller/build/saber_control
+[3.360s] [ 20%] [32mBuilding CXX object CMakeFiles/saber_joint_controller.dir/src/Cybergear_control.cpp.o[0m
+[5.248s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/Cybergear_control.cpp:5:25:[m[K [01;35m[Kwarning: [m[K‘[01m[KRxMessage[m[K’ defined but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[5.249s]     5 | static struct can_frame [01;35m[KRxMessage[m[K;
+[5.249s]       |                         [01;35m[K^~~~~~~~~[m[K
+[5.403s] [ 40%] [32m[1mLinking CXX executable saber_joint_controller[0m
+[7.475s] [100%] Built target saber_joint_controller
+[7.522s] Invoked command in '/home/xiatenghui/saber_joint_controller/build/saber_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/xiatenghui/saber_joint_controller/build/saber_control -- -j8 -l8
+[7.573s] Invoking command in '/home/xiatenghui/saber_joint_controller/build/saber_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/xiatenghui/saber_joint_controller/build/saber_control
+[7.611s] -- Install configuration: ""
+[7.613s] -- Installing: /home/xiatenghui/saber_joint_controller/install/saber_control/lib/saber_control/saber_joint_controller
+[7.669s] -- Set non-toolchain portion of runtime path of "/home/xiatenghui/saber_joint_controller/install/saber_control/lib/saber_control/saber_joint_controller" to ""
+[7.669s] -- Up-to-date: /home/xiatenghui/saber_joint_controller/install/saber_control/share/ament_index/resource_index/package_run_dependencies/saber_control
+[7.670s] -- Installing: /home/xiatenghui/saber_joint_controller/install/saber_control/share/ament_index/resource_index/parent_prefix_path/saber_control
+[7.670s] -- Up-to-date: /home/xiatenghui/saber_joint_controller/install/saber_control/share/saber_control/environment/ament_prefix_path.sh
+[7.671s] -- Up-to-date: /home/xiatenghui/saber_joint_controller/install/saber_control/share/saber_control/environment/ament_prefix_path.dsv
+[7.672s] -- Up-to-date: /home/xiatenghui/saber_joint_controller/install/saber_control/share/saber_control/environment/path.sh
+[7.672s] -- Up-to-date: /home/xiatenghui/saber_joint_controller/install/saber_control/share/saber_control/environment/path.dsv
+[7.673s] -- Up-to-date: /home/xiatenghui/saber_joint_controller/install/saber_control/share/saber_control/local_setup.bash
+[7.674s] -- Up-to-date: /home/xiatenghui/saber_joint_controller/install/saber_control/share/saber_control/local_setup.sh
+[7.674s] -- Up-to-date: /home/xiatenghui/saber_joint_controller/install/saber_control/share/saber_control/local_setup.zsh
+[7.675s] -- Up-to-date: /home/xiatenghui/saber_joint_controller/install/saber_control/share/saber_control/local_setup.dsv
+[7.675s] -- Installing: /home/xiatenghui/saber_joint_controller/install/saber_control/share/saber_control/package.dsv
+[7.676s] -- Up-to-date: /home/xiatenghui/saber_joint_controller/install/saber_control/share/ament_index/resource_index/packages/saber_control
+[7.676s] -- Up-to-date: /home/xiatenghui/saber_joint_controller/install/saber_control/share/saber_control/cmake/saber_controlConfig.cmake
+[7.677s] -- Up-to-date: /home/xiatenghui/saber_joint_controller/install/saber_control/share/saber_control/cmake/saber_controlConfig-version.cmake
+[7.677s] -- Up-to-date: /home/xiatenghui/saber_joint_controller/install/saber_control/share/saber_control/package.xml
+[7.682s] Invoked command in '/home/xiatenghui/saber_joint_controller/build/saber_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/xiatenghui/saber_joint_controller/build/saber_control

@@ -1,0 +1,43 @@
+[0.062s] Invoking command in '/home/xiatenghui/saber_joint_controller/build/saber_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/xiatenghui/saber_joint_controller/build/saber_control -- -j8 -l8
+[0.355s] [ 25%] [32mBuilding CXX object CMakeFiles/saber_joint_controller.dir/src/saber_joint_controller.cpp.o[0m
+[0.361s] [ 50%] [32mBuilding CXX object CMakeFiles/saber_joint_controller.dir/src/disturbance_observer.cpp.o[0m
+[15.196s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/disturbance_observer.cpp:[m[K In member function ‘[01m[KEigen::VectorXd DisturbanceObserver::[01;32m[Kcompute_friction_term[m[K(const Eigen::VectorXd&, const Eigen::VectorXd&, const Eigen::VectorXd&)[m[K’:
+[15.197s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/disturbance_observer.cpp:345:109:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kqd[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[15.197s]   345 | Eigen::VectorXd DisturbanceObserver::compute_friction_term(const Eigen::VectorXd& q, [01;35m[Kconst Eigen::VectorXd& qd[m[K, const Eigen::VectorXd& tau)
+[15.198s]       |                                                                                      [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[15.198s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/disturbance_observer.cpp:345:136:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktau[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[15.199s]   345 | Eigen::VectorXd DisturbanceObserver::compute_friction_term(const Eigen::VectorXd& q, const Eigen::VectorXd& qd, [01;35m[Kconst Eigen::VectorXd& tau[m[K)
+[15.199s]       |                                                                                                                 [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[15.463s] In file included from [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/disturbance_observer.cpp:1[m[K:
+[15.464s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/include/disturbance_observer.hpp:[m[K In constructor ‘[01m[KDisturbanceObserver::[01;32m[KDisturbanceObserver[m[K(int, double, const rclcpp::Logger&, const Eigen::MatrixXd&, const Eigen::MatrixXd&, const Eigen::MatrixXd&, const Eigen::MatrixXd&)[m[K’:
+[15.465s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/include/disturbance_observer.hpp:134:20:[m[K [01;35m[Kwarning: [m[K‘[01m[KDisturbanceObserver::logger_[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[15.465s]   134 |     rclcpp::Logger [01;35m[Klogger_[m[K;
+[15.466s]       |                    [01;35m[K^~~~~~~[m[K
+[15.468s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/include/disturbance_observer.hpp:102:21:[m[K [01;35m[Kwarning: [m[K  ‘[01m[KEigen::MatrixXd DisturbanceObserver::A_tau_[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[15.468s]   102 |     Eigen::MatrixXd [01;35m[KA_tau_[m[K;      // 外力变化趋势矩阵
+[15.469s]       |                     [01;35m[K^~~~~~[m[K
+[15.469s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/disturbance_observer.cpp:454:1:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[15.470s]   454 | [01;35m[KDisturbanceObserver[m[K::DisturbanceObserver(int n_joints, double fs, const rclcpp::Logger& logger,
+[15.470s]       | [01;35m[K^~~~~~~~~~~~~~~~~~~[m[K
+[15.471s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/include/disturbance_observer.hpp:105:21:[m[K [01;35m[Kwarning: [m[K‘[01m[KDisturbanceObserver::R_c_[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[15.471s]   105 |     Eigen::MatrixXd [01;35m[KR_c_[m[K;        // 测量噪声协方差
+[15.472s]       |                     [01;35m[K^~~~[m[K
+[15.472s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/include/disturbance_observer.hpp:99:10:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kbool DisturbanceObserver::is_initialized_[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[15.473s]    99 |     bool [01;35m[Kis_initialized_[m[K;                   // 是否已初始化
+[15.474s]       |          [01;35m[K^~~~~~~~~~~~~~~[m[K
+[15.474s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/disturbance_observer.cpp:454:1:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[15.474s]   454 | [01;35m[KDisturbanceObserver[m[K::DisturbanceObserver(int n_joints, double fs, const rclcpp::Logger& logger,
+[15.475s]       | [01;35m[K^~~~~~~~~~~~~~~~~~~[m[K
+[29.179s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/disturbance_observer.cpp:[m[K In member function ‘[01m[KEigen::VectorXd DisturbanceObserver::[01;32m[Kupdate[m[K(const Eigen::VectorXd&, const Eigen::VectorXd&, const Eigen::VectorXd&, Update_Type)[m[K’:
+[29.180s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/disturbance_observer.cpp:169:1:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+[29.181s]   169 | [01;35m[K}[m[K
+[29.181s]       | [01;35m[K^[m[K
+[41.696s] [ 75%] [32m[1mLinking CXX executable saber_joint_controller[0m
+[43.181s] /usr/bin/ld: /usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/Scrt1.o: in function `_start':
+[43.181s] (.text+0x1c): undefined reference to `main'
+[43.182s] /usr/bin/ld: (.text+0x20): undefined reference to `main'
+[43.407s] collect2: error: ld returned 1 exit status
+[43.413s] gmake[2]: *** [CMakeFiles/saber_joint_controller.dir/build.make:247: saber_joint_controller] Error 1
+[43.415s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/saber_joint_controller.dir/all] Error 2
+[43.416s] gmake: *** [Makefile:146: all] Error 2
+[43.427s] Invoked command in '/home/xiatenghui/saber_joint_controller/build/saber_control' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/xiatenghui/saber_joint_controller/build/saber_control -- -j8 -l8

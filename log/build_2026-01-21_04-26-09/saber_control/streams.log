@@ -1,0 +1,92 @@
+[0.059s] Invoking command in '/home/xiatenghui/saber_joint_controller/build/saber_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/xiatenghui/saber_joint_controller/build/saber_control -- -j8 -l8
+[0.182s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.100s] -- Found rclcpp: 28.1.12 (/opt/ros/jazzy/share/rclcpp/cmake)
+[1.227s] -- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.275s] -- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.325s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.386s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.609s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[1.614s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[1.843s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.041s] -- Found rclcpp_action: 28.1.13 (/opt/ros/jazzy/share/rclcpp_action/cmake)
+[2.158s] -- Found control_msgs: 5.5.0 (/opt/ros/jazzy/share/control_msgs/cmake)
+[2.489s] -- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[2.880s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.881s] -- Configured cppcheck include dirs: /home/xiatenghui/saber_joint_controller/src/saber_control/include
+[2.882s] -- Configured cppcheck exclude dirs and/or files: 
+[2.884s] -- Added test 'lint_cmake' to check CMake code style
+[2.888s] -- Added test 'uncrustify' to check C / C++ code style
+[2.889s] -- Configured uncrustify additional arguments: 
+[2.890s] -- Added test 'xmllint' to check XML markup files
+[2.893s] -- Configuring done (2.7s)
+[2.975s] -- Generating done (0.0s)
+[2.998s] -- Build files have been written to: /home/xiatenghui/saber_joint_controller/build/saber_control
+[3.275s] [ 25%] [32mBuilding CXX object CMakeFiles/saber_joint_controller.dir/src/saber_joint_controller.cpp.o[0m
+[3.279s] [ 50%] [32mBuilding CXX object CMakeFiles/saber_joint_controller.dir/src/disturbance_observer.cpp.o[0m
+[3.286s] [ 75%] [32mBuilding CXX object CMakeFiles/saber_joint_controller.dir/src/saber_get_regression.cpp.o[0m
+[18.207s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/disturbance_observer.cpp:[m[K In member function ‘[01m[KEigen::VectorXd DisturbanceObserver::[01;32m[Kcompute_friction_term[m[K(const Eigen::VectorXd&, const Eigen::VectorXd&, const Eigen::VectorXd&)[m[K’:
+[18.208s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/disturbance_observer.cpp:345:109:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kqd[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[18.208s]   345 | Eigen::VectorXd DisturbanceObserver::compute_friction_term(const Eigen::VectorXd& q, [01;35m[Kconst Eigen::VectorXd& qd[m[K, const Eigen::VectorXd& tau)
+[18.210s]       |                                                                                      [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[18.211s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/disturbance_observer.cpp:345:136:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktau[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[18.212s]   345 | Eigen::VectorXd DisturbanceObserver::compute_friction_term(const Eigen::VectorXd& q, const Eigen::VectorXd& qd, [01;35m[Kconst Eigen::VectorXd& tau[m[K)
+[18.212s]       |                                                                                                                 [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[18.464s] In file included from [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/disturbance_observer.cpp:1[m[K:
+[18.464s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/include/disturbance_observer.hpp:[m[K In constructor ‘[01m[KDisturbanceObserver::[01;32m[KDisturbanceObserver[m[K(int, double, const rclcpp::Logger&, const Eigen::MatrixXd&, const Eigen::MatrixXd&, const Eigen::MatrixXd&, const Eigen::MatrixXd&)[m[K’:
+[18.465s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/include/disturbance_observer.hpp:134:20:[m[K [01;35m[Kwarning: [m[K‘[01m[KDisturbanceObserver::logger_[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[18.465s]   134 |     rclcpp::Logger [01;35m[Klogger_[m[K;
+[18.466s]       |                    [01;35m[K^~~~~~~[m[K
+[18.466s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/include/disturbance_observer.hpp:102:21:[m[K [01;35m[Kwarning: [m[K  ‘[01m[KEigen::MatrixXd DisturbanceObserver::A_tau_[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[18.467s]   102 |     Eigen::MatrixXd [01;35m[KA_tau_[m[K;      // 外力变化趋势矩阵
+[18.467s]       |                     [01;35m[K^~~~~~[m[K
+[18.468s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/disturbance_observer.cpp:454:1:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[18.468s]   454 | [01;35m[KDisturbanceObserver[m[K::DisturbanceObserver(int n_joints, double fs, const rclcpp::Logger& logger,
+[18.469s]       | [01;35m[K^~~~~~~~~~~~~~~~~~~[m[K
+[18.469s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/include/disturbance_observer.hpp:105:21:[m[K [01;35m[Kwarning: [m[K‘[01m[KDisturbanceObserver::R_c_[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[18.469s]   105 |     Eigen::MatrixXd [01;35m[KR_c_[m[K;        // 测量噪声协方差
+[18.470s]       |                     [01;35m[K^~~~[m[K
+[18.470s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/include/disturbance_observer.hpp:99:10:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kbool DisturbanceObserver::is_initialized_[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[18.471s]    99 |     bool [01;35m[Kis_initialized_[m[K;                   // 是否已初始化
+[18.471s]       |          [01;35m[K^~~~~~~~~~~~~~~[m[K
+[18.472s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/disturbance_observer.cpp:454:1:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[18.472s]   454 | [01;35m[KDisturbanceObserver[m[K::DisturbanceObserver(int n_joints, double fs, const rclcpp::Logger& logger,
+[18.472s]       | [01;35m[K^~~~~~~~~~~~~~~~~~~[m[K
+[18.815s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/saber_joint_controller.cpp:[m[K In member function ‘[01m[Krclcpp_action::GoalResponse saber_joint_controller::[01;32m[Khandle_goal[m[K(const rclcpp_action::GoalUUID&, std::shared_ptr<const control_msgs::action::FollowJointTrajectory_Goal_<std::allocator<void> > >)[m[K’:
+[18.815s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/saber_joint_controller.cpp:119:44:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kuuid[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[18.816s]   119 |             [01;35m[Kconst rclcpp_action::GoalUUID& uuid[m[K,
+[18.818s]       |             [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[18.819s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/saber_joint_controller.cpp:[m[K In member function ‘[01m[Krclcpp_action::CancelResponse saber_joint_controller::[01;32m[Khandle_cancel[m[K(std::shared_ptr<rclcpp_action::ServerGoalHandle<control_msgs::action::FollowJointTrajectory> >)[m[K’:
+[18.819s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/saber_joint_controller.cpp:141:47:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kgoal_handle[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[18.820s]   141 |             [01;35m[Kconst std::shared_ptr<GoalHandle> goal_handle[m[K)
+[18.820s]       |             [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~[m[K
+[18.947s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/saber_joint_controller.cpp:[m[K In member function ‘[01m[Kvoid saber_joint_controller::[01;32m[Kexecute_trajectory_quintic_interpolation[m[K(std::shared_ptr<rclcpp_action::ServerGoalHandle<control_msgs::action::FollowJointTrajectory> >)[m[K’:
+[18.948s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/saber_joint_controller.cpp:162:26:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kjoint_names[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[18.948s]   162 |             const auto & [01;35m[Kjoint_names[m[K = goal->trajectory.joint_names;
+[18.949s]       |                          [01;35m[K^~~~~~~~~~~[m[K
+[32.907s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/disturbance_observer.cpp:[m[K In member function ‘[01m[KEigen::VectorXd DisturbanceObserver::[01;32m[Kupdate[m[K(const Eigen::VectorXd&, const Eigen::VectorXd&, const Eigen::VectorXd&, Update_Type)[m[K’:
+[32.907s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/disturbance_observer.cpp:169:1:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+[32.908s]   169 | [01;35m[K}[m[K
+[32.908s]       | [01;35m[K^[m[K
+[44.886s] [100%] [32m[1mLinking CXX executable saber_joint_controller[0m
+[47.006s] [100%] Built target saber_joint_controller
+[47.051s] Invoked command in '/home/xiatenghui/saber_joint_controller/build/saber_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/xiatenghui/saber_joint_controller/build/saber_control -- -j8 -l8
+[47.098s] Invoking command in '/home/xiatenghui/saber_joint_controller/build/saber_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/xiatenghui/saber_joint_controller/build/saber_control
+[47.132s] -- Install configuration: ""
+[47.133s] -- Installing: /home/xiatenghui/saber_joint_controller/install/saber_control/lib/saber_control/saber_joint_controller
+[47.175s] -- Set non-toolchain portion of runtime path of "/home/xiatenghui/saber_joint_controller/install/saber_control/lib/saber_control/saber_joint_controller" to ""
+[47.176s] -- Installing: /home/xiatenghui/saber_joint_controller/install/saber_control/share/ament_index/resource_index/package_run_dependencies/saber_control
+[47.177s] -- Installing: /home/xiatenghui/saber_joint_controller/install/saber_control/share/ament_index/resource_index/parent_prefix_path/saber_control
+[47.178s] -- Installing: /home/xiatenghui/saber_joint_controller/install/saber_control/share/saber_control/environment/ament_prefix_path.sh
+[47.179s] -- Installing: /home/xiatenghui/saber_joint_controller/install/saber_control/share/saber_control/environment/ament_prefix_path.dsv
+[47.180s] -- Installing: /home/xiatenghui/saber_joint_controller/install/saber_control/share/saber_control/environment/path.sh
+[47.180s] -- Installing: /home/xiatenghui/saber_joint_controller/install/saber_control/share/saber_control/environment/path.dsv
+[47.181s] -- Installing: /home/xiatenghui/saber_joint_controller/install/saber_control/share/saber_control/local_setup.bash
+[47.182s] -- Installing: /home/xiatenghui/saber_joint_controller/install/saber_control/share/saber_control/local_setup.sh
+[47.183s] -- Installing: /home/xiatenghui/saber_joint_controller/install/saber_control/share/saber_control/local_setup.zsh
+[47.184s] -- Installing: /home/xiatenghui/saber_joint_controller/install/saber_control/share/saber_control/local_setup.dsv
+[47.184s] -- Installing: /home/xiatenghui/saber_joint_controller/install/saber_control/share/saber_control/package.dsv
+[47.186s] -- Installing: /home/xiatenghui/saber_joint_controller/install/saber_control/share/ament_index/resource_index/packages/saber_control
+[47.187s] -- Installing: /home/xiatenghui/saber_joint_controller/install/saber_control/share/saber_control/cmake/saber_controlConfig.cmake
+[47.188s] -- Installing: /home/xiatenghui/saber_joint_controller/install/saber_control/share/saber_control/cmake/saber_controlConfig-version.cmake
+[47.189s] -- Installing: /home/xiatenghui/saber_joint_controller/install/saber_control/share/saber_control/package.xml
+[47.196s] Invoked command in '/home/xiatenghui/saber_joint_controller/build/saber_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/xiatenghui/saber_joint_controller/build/saber_control

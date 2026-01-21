@@ -1,0 +1,16 @@
+/home/xiatenghui/saber_joint_controller/install/saber_control/lib/saber_control/saber_joint_controller
+/home/xiatenghui/saber_joint_controller/install/saber_control/share/ament_index/resource_index/package_run_dependencies/saber_control
+/home/xiatenghui/saber_joint_controller/install/saber_control/share/ament_index/resource_index/parent_prefix_path/saber_control
+/home/xiatenghui/saber_joint_controller/install/saber_control/share/saber_control/environment/ament_prefix_path.sh
+/home/xiatenghui/saber_joint_controller/install/saber_control/share/saber_control/environment/ament_prefix_path.dsv
+/home/xiatenghui/saber_joint_controller/install/saber_control/share/saber_control/environment/path.sh
+/home/xiatenghui/saber_joint_controller/install/saber_control/share/saber_control/environment/path.dsv
+/home/xiatenghui/saber_joint_controller/install/saber_control/share/saber_control/local_setup.bash
+/home/xiatenghui/saber_joint_controller/install/saber_control/share/saber_control/local_setup.sh
+/home/xiatenghui/saber_joint_controller/install/saber_control/share/saber_control/local_setup.zsh
+/home/xiatenghui/saber_joint_controller/install/saber_control/share/saber_control/local_setup.dsv
+/home/xiatenghui/saber_joint_controller/install/saber_control/share/saber_control/package.dsv
+/home/xiatenghui/saber_joint_controller/install/saber_control/share/ament_index/resource_index/packages/saber_control
+/home/xiatenghui/saber_joint_controller/install/saber_control/share/saber_control/cmake/saber_controlConfig.cmake
+/home/xiatenghui/saber_joint_controller/install/saber_control/share/saber_control/cmake/saber_controlConfig-version.cmake
+/home/xiatenghui/saber_joint_controller/install/saber_control/share/saber_control/package.xml

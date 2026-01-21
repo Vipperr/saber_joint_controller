@@ -1,0 +1,45 @@
+[01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/saber_joint_controller.cpp:[m[K In member function ‘[01m[Krclcpp_action::GoalResponse saber_joint_controller::[01;32m[Khandle_goal[m[K(const rclcpp_action::GoalUUID&, std::shared_ptr<const control_msgs::action::FollowJointTrajectory_Goal_<std::allocator<void> > >)[m[K’:
+[01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/saber_joint_controller.cpp:128:44:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kuuid[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  128 |             [01;35m[Kconst rclcpp_action::GoalUUID& uuid[m[K,
+      |             [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/saber_joint_controller.cpp:[m[K In member function ‘[01m[Krclcpp_action::CancelResponse saber_joint_controller::[01;32m[Khandle_cancel[m[K(std::shared_ptr<rclcpp_action::ServerGoalHandle<control_msgs::action::FollowJointTrajectory> >)[m[K’:
+[01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/saber_joint_controller.cpp:150:47:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kgoal_handle[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  150 |             [01;35m[Kconst std::shared_ptr<GoalHandle> goal_handle[m[K)
+      |             [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~[m[K
+[01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/saber_joint_controller.cpp:[m[K In member function ‘[01m[Kvoid saber_joint_controller::[01;32m[Kexecute_trajectory_quintic_interpolation[m[K(std::shared_ptr<rclcpp_action::ServerGoalHandle<control_msgs::action::FollowJointTrajectory> >)[m[K’:
+[01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/saber_joint_controller.cpp:171:26:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kjoint_names[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  171 |             const auto & [01;35m[Kjoint_names[m[K = goal->trajectory.joint_names;
+      |                          [01;35m[K^~~~~~~~~~~[m[K
+[01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/saber_joint_controller.cpp:[m[K In member function ‘[01m[Kvoid saber_joint_controller::[01;32m[Kread_can_data[m[K()[m[K’:
+[01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/saber_joint_controller.cpp:331:33:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kssize_t[m[K’ {aka ‘[01m[Klong int[m[K’} and ‘[01m[Klong unsigned int[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  331 |                 else if ([01;35m[Knbytes < sizeof(struct can_frame)[m[K)
+      |                          [01;35m[K~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+/usr/bin/ld: CMakeFiles/saber_joint_controller.dir/src/saber_joint_controller.cpp.o: in function `saber_joint_controller::process_can_msgs()':
+saber_joint_controller.cpp:(.text._ZN22saber_joint_controller16process_can_msgsEv[_ZN22saber_joint_controller16process_can_msgsEv]+0x140): undefined reference to `data_conversion(float, float, float)'
+/usr/bin/ld: saber_joint_controller.cpp:(.text._ZN22saber_joint_controller16process_can_msgsEv[_ZN22saber_joint_controller16process_can_msgsEv]+0x178): undefined reference to `data_conversion(float, float, float)'
+/usr/bin/ld: saber_joint_controller.cpp:(.text._ZN22saber_joint_controller16process_can_msgsEv[_ZN22saber_joint_controller16process_can_msgsEv]+0x1b0): undefined reference to `data_conversion(float, float, float)'
+/usr/bin/ld: CMakeFiles/saber_joint_controller.dir/src/saber_joint_controller.cpp.o: in function `saber_joint_controller::init()':
+saber_joint_controller.cpp:(.text._ZN22saber_joint_controller4initEv[_ZN22saber_joint_controller4initEv]+0x20): undefined reference to `set_mechzero(unsigned char, unsigned short, int)'
+/usr/bin/ld: saber_joint_controller.cpp:(.text._ZN22saber_joint_controller4initEv[_ZN22saber_joint_controller4initEv]+0x40): undefined reference to `set_mechzero(unsigned char, unsigned short, int)'
+/usr/bin/ld: saber_joint_controller.cpp:(.text._ZN22saber_joint_controller4initEv[_ZN22saber_joint_controller4initEv]+0x60): undefined reference to `set_mechzero(unsigned char, unsigned short, int)'
+/usr/bin/ld: saber_joint_controller.cpp:(.text._ZN22saber_joint_controller4initEv[_ZN22saber_joint_controller4initEv]+0x80): undefined reference to `set_mechzero(unsigned char, unsigned short, int)'
+/usr/bin/ld: saber_joint_controller.cpp:(.text._ZN22saber_joint_controller4initEv[_ZN22saber_joint_controller4initEv]+0xa0): undefined reference to `set_mechzero(unsigned char, unsigned short, int)'
+/usr/bin/ld: CMakeFiles/saber_joint_controller.dir/src/saber_joint_controller.cpp.o:saber_joint_controller.cpp:(.text._ZN22saber_joint_controller4initEv[_ZN22saber_joint_controller4initEv]+0xc0): more undefined references to `set_mechzero(unsigned char, unsigned short, int)' follow
+/usr/bin/ld: CMakeFiles/saber_joint_controller.dir/src/saber_joint_controller.cpp.o: in function `saber_joint_controller::init()':
+saber_joint_controller.cpp:(.text._ZN22saber_joint_controller4initEv[_ZN22saber_joint_controller4initEv]+0xe0): undefined reference to `motor_enable(unsigned char, unsigned short, int)'
+/usr/bin/ld: saber_joint_controller.cpp:(.text._ZN22saber_joint_controller4initEv[_ZN22saber_joint_controller4initEv]+0x100): undefined reference to `motor_enable(unsigned char, unsigned short, int)'
+/usr/bin/ld: saber_joint_controller.cpp:(.text._ZN22saber_joint_controller4initEv[_ZN22saber_joint_controller4initEv]+0x120): undefined reference to `motor_enable(unsigned char, unsigned short, int)'
+/usr/bin/ld: saber_joint_controller.cpp:(.text._ZN22saber_joint_controller4initEv[_ZN22saber_joint_controller4initEv]+0x140): undefined reference to `motor_enable(unsigned char, unsigned short, int)'
+/usr/bin/ld: saber_joint_controller.cpp:(.text._ZN22saber_joint_controller4initEv[_ZN22saber_joint_controller4initEv]+0x160): undefined reference to `motor_enable(unsigned char, unsigned short, int)'
+/usr/bin/ld: CMakeFiles/saber_joint_controller.dir/src/saber_joint_controller.cpp.o:saber_joint_controller.cpp:(.text._ZN22saber_joint_controller4initEv[_ZN22saber_joint_controller4initEv]+0x180): more undefined references to `motor_enable(unsigned char, unsigned short, int)' follow
+/usr/bin/ld: CMakeFiles/saber_joint_controller.dir/src/saber_joint_controller.cpp.o: in function `saber_joint_controller::init()':
+saber_joint_controller.cpp:(.text._ZN22saber_joint_controller4initEv[_ZN22saber_joint_controller4initEv]+0x1bc): undefined reference to `motor_controlmode(unsigned char, float, float, float, float, float, int)'
+/usr/bin/ld: saber_joint_controller.cpp:(.text._ZN22saber_joint_controller4initEv[_ZN22saber_joint_controller4initEv]+0x1f8): undefined reference to `motor_controlmode(unsigned char, float, float, float, float, float, int)'
+/usr/bin/ld: saber_joint_controller.cpp:(.text._ZN22saber_joint_controller4initEv[_ZN22saber_joint_controller4initEv]+0x234): undefined reference to `motor_controlmode(unsigned char, float, float, float, float, float, int)'
+/usr/bin/ld: saber_joint_controller.cpp:(.text._ZN22saber_joint_controller4initEv[_ZN22saber_joint_controller4initEv]+0x270): undefined reference to `motor_controlmode(unsigned char, float, float, float, float, float, int)'
+/usr/bin/ld: saber_joint_controller.cpp:(.text._ZN22saber_joint_controller4initEv[_ZN22saber_joint_controller4initEv]+0x2ac): undefined reference to `motor_controlmode(unsigned char, float, float, float, float, float, int)'
+/usr/bin/ld: CMakeFiles/saber_joint_controller.dir/src/saber_joint_controller.cpp.o:saber_joint_controller.cpp:(.text._ZN22saber_joint_controller4initEv[_ZN22saber_joint_controller4initEv]+0x2e8): more undefined references to `motor_controlmode(unsigned char, float, float, float, float, float, int)' follow
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/saber_joint_controller.dir/build.make:250: saber_joint_controller] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/saber_joint_controller.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

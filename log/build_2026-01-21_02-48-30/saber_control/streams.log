@@ -1,0 +1,27 @@
+[0.064s] Invoking command in '/home/xiatenghui/saber_joint_controller/build/saber_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/xiatenghui/saber_joint_controller/build/saber_control -- -j8 -l8
+[0.309s] [ 25%] [32mBuilding CXX object CMakeFiles/saber_joint_controller.dir/src/saber_get_regression.cpp.o[0m
+[0.310s] [ 50%] [32mBuilding CXX object CMakeFiles/saber_joint_controller.dir/src/saber_joint_controller.cpp.o[0m
+[0.314s] [ 75%] [32mBuilding CXX object CMakeFiles/saber_joint_controller.dir/src/disturbance_observer.cpp.o[0m
+[1.776s] In file included from [01m[K/usr/local/include/OpenXLSX/headers/XLCellValue.hpp:66[m[K,
+[1.777s]                  from [01m[K/usr/local/include/OpenXLSX/headers/XLCell.hpp:62[m[K,
+[1.779s]                  from [01m[K/usr/local/include/OpenXLSX/OpenXLSX.hpp:49[m[K,
+[1.781s]                  from [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/saber_joint_controller.cpp:2[m[K:
+[1.781s] [01m[K/usr/local/include/OpenXLSX/headers/XLXmlParser.hpp:52:10:[m[K [01;31m[Kfatal error: [m[Kexternal/pugixml/pugixml.hpp: No such file or directory
+[1.782s]    52 | #include [01;31m[K<external/pugixml/pugixml.hpp>[m[K // not sure why the full include path is needed within the header file
+[1.783s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.784s] compilation terminated.
+[1.784s] gmake[2]: *** [CMakeFiles/saber_joint_controller.dir/build.make:76: CMakeFiles/saber_joint_controller.dir/src/saber_joint_controller.cpp.o] Error 1
+[1.785s] gmake[2]: *** Waiting for unfinished jobs....
+[2.120s] In file included from [01m[K/usr/local/include/OpenXLSX/headers/XLCellValue.hpp:66[m[K,
+[2.121s]                  from [01m[K/usr/local/include/OpenXLSX/headers/XLCell.hpp:62[m[K,
+[2.121s]                  from [01m[K/usr/local/include/OpenXLSX/OpenXLSX.hpp:49[m[K,
+[2.122s]                  from [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/include/disturbance_observer.hpp:8[m[K,
+[2.122s]                  from [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/disturbance_observer.cpp:1[m[K:
+[2.123s] [01m[K/usr/local/include/OpenXLSX/headers/XLXmlParser.hpp:52:10:[m[K [01;31m[Kfatal error: [m[Kexternal/pugixml/pugixml.hpp: No such file or directory
+[2.123s]    52 | #include [01;31m[K<external/pugixml/pugixml.hpp>[m[K // not sure why the full include path is needed within the header file
+[2.124s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.125s] compilation terminated.
+[2.131s] gmake[2]: *** [CMakeFiles/saber_joint_controller.dir/build.make:90: CMakeFiles/saber_joint_controller.dir/src/disturbance_observer.cpp.o] Error 1
+[12.530s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/saber_joint_controller.dir/all] Error 2
+[12.531s] gmake: *** [Makefile:146: all] Error 2
+[12.539s] Invoked command in '/home/xiatenghui/saber_joint_controller/build/saber_control' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/xiatenghui/saber_joint_controller/build/saber_control -- -j8 -l8

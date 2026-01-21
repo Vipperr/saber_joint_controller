@@ -1,0 +1,22 @@
+[01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/saber_get_regression.cpp:1:10:[m[K [01;31m[Kfatal error: [m[Ksaber_get_regression.hpp: No such file or directory
+    1 | #include [01;31m[K"saber_get_regression.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+[01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/disturbance_observer.cpp:1:10:[m[K [01;31m[Kfatal error: [m[Kdisturbance_observer.hpp: No such file or directory
+    1 | #include [01;31m[K"disturbance_observer.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/saber_joint_controller.dir/build.make:104: CMakeFiles/saber_joint_controller.dir/src/saber_get_regression.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[2]: *** [CMakeFiles/saber_joint_controller.dir/build.make:90: CMakeFiles/saber_joint_controller.dir/src/disturbance_observer.cpp.o] Error 1
+In file included from [01m[K/usr/local/include/OpenXLSX/headers/XLCellValue.hpp:66[m[K,
+                 from [01m[K/usr/local/include/OpenXLSX/headers/XLCell.hpp:62[m[K,
+                 from [01m[K/usr/local/include/OpenXLSX/OpenXLSX.hpp:49[m[K,
+                 from [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/saber_joint_controller.cpp:2[m[K:
+[01m[K/usr/local/include/OpenXLSX/headers/XLXmlParser.hpp:52:10:[m[K [01;31m[Kfatal error: [m[Kexternal/pugixml/pugixml.hpp: No such file or directory
+   52 | #include [01;31m[K<external/pugixml/pugixml.hpp>[m[K // not sure why the full include path is needed within the header file
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/saber_joint_controller.dir/build.make:76: CMakeFiles/saber_joint_controller.dir/src/saber_joint_controller.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/saber_joint_controller.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

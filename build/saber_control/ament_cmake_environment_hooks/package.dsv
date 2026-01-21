@@ -1,0 +1,4 @@
+source;share/saber_control/local_setup.bash
+source;share/saber_control/local_setup.dsv
+source;share/saber_control/local_setup.sh
+source;share/saber_control/local_setup.zsh
