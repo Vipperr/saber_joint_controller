@@ -1,4 +1,6 @@
 /home/xiatenghui/saber_joint_controller/install/saber_control/lib/saber_control/saber_joint_controller
+/home/xiatenghui/saber_joint_controller/install/saber_control/lib/saber_control/saber_dynamics_identification
+/home/xiatenghui/saber_joint_controller/install/saber_control/lib/saber_control/saber_gravity_compensation
 /home/xiatenghui/saber_joint_controller/install/saber_control/share/ament_index/resource_index/package_run_dependencies/saber_control
 /home/xiatenghui/saber_joint_controller/install/saber_control/share/ament_index/resource_index/parent_prefix_path/saber_control
 /home/xiatenghui/saber_joint_controller/install/saber_control/share/saber_control/environment/ament_prefix_path.sh

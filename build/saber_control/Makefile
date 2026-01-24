@@ -210,12 +210,40 @@ saber_joint_controller/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/saber_joint_controller.dir/build.make CMakeFiles/saber_joint_controller.dir/build
 .PHONY : saber_joint_controller/fast
 
+#=============================================================================
+# Target rules for targets named saber_dynamics_identification
+
+# Build rule for target.
+saber_dynamics_identification: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 saber_dynamics_identification
+.PHONY : saber_dynamics_identification
+
+# fast build rule for target.
+saber_dynamics_identification/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/saber_dynamics_identification.dir/build.make CMakeFiles/saber_dynamics_identification.dir/build
+.PHONY : saber_dynamics_identification/fast
+
+#=============================================================================
+# Target rules for targets named saber_gravity_compensation
+
+# Build rule for target.
+saber_gravity_compensation: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 saber_gravity_compensation
+.PHONY : saber_gravity_compensation
+
+# fast build rule for target.
+saber_gravity_compensation/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/saber_gravity_compensation.dir/build.make CMakeFiles/saber_gravity_compensation.dir/build
+.PHONY : saber_gravity_compensation/fast
+
 src/Cybergear_control.o: src/Cybergear_control.cpp.o
 .PHONY : src/Cybergear_control.o
 
 # target to build an object file
 src/Cybergear_control.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/saber_joint_controller.dir/build.make CMakeFiles/saber_joint_controller.dir/src/Cybergear_control.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/saber_dynamics_identification.dir/build.make CMakeFiles/saber_dynamics_identification.dir/src/Cybergear_control.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/saber_gravity_compensation.dir/build.make CMakeFiles/saber_gravity_compensation.dir/src/Cybergear_control.cpp.o
 .PHONY : src/Cybergear_control.cpp.o
 
 src/Cybergear_control.i: src/Cybergear_control.cpp.i
@@ -224,6 +252,8 @@ src/Cybergear_control.i: src/Cybergear_control.cpp.i
 # target to preprocess a source file
 src/Cybergear_control.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/saber_joint_controller.dir/build.make CMakeFiles/saber_joint_controller.dir/src/Cybergear_control.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/saber_dynamics_identification.dir/build.make CMakeFiles/saber_dynamics_identification.dir/src/Cybergear_control.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/saber_gravity_compensation.dir/build.make CMakeFiles/saber_gravity_compensation.dir/src/Cybergear_control.cpp.i
 .PHONY : src/Cybergear_control.cpp.i
 
 src/Cybergear_control.s: src/Cybergear_control.cpp.s
@@ -232,6 +262,8 @@ src/Cybergear_control.s: src/Cybergear_control.cpp.s
 # target to generate assembly for a file
 src/Cybergear_control.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/saber_joint_controller.dir/build.make CMakeFiles/saber_joint_controller.dir/src/Cybergear_control.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/saber_dynamics_identification.dir/build.make CMakeFiles/saber_dynamics_identification.dir/src/Cybergear_control.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/saber_gravity_compensation.dir/build.make CMakeFiles/saber_gravity_compensation.dir/src/Cybergear_control.cpp.s
 .PHONY : src/Cybergear_control.cpp.s
 
 src/disturbance_observer.o: src/disturbance_observer.cpp.o
@@ -240,6 +272,8 @@ src/disturbance_observer.o: src/disturbance_observer.cpp.o
 # target to build an object file
 src/disturbance_observer.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/saber_joint_controller.dir/build.make CMakeFiles/saber_joint_controller.dir/src/disturbance_observer.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/saber_dynamics_identification.dir/build.make CMakeFiles/saber_dynamics_identification.dir/src/disturbance_observer.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/saber_gravity_compensation.dir/build.make CMakeFiles/saber_gravity_compensation.dir/src/disturbance_observer.cpp.o
 .PHONY : src/disturbance_observer.cpp.o
 
 src/disturbance_observer.i: src/disturbance_observer.cpp.i
@@ -248,6 +282,8 @@ src/disturbance_observer.i: src/disturbance_observer.cpp.i
 # target to preprocess a source file
 src/disturbance_observer.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/saber_joint_controller.dir/build.make CMakeFiles/saber_joint_controller.dir/src/disturbance_observer.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/saber_dynamics_identification.dir/build.make CMakeFiles/saber_dynamics_identification.dir/src/disturbance_observer.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/saber_gravity_compensation.dir/build.make CMakeFiles/saber_gravity_compensation.dir/src/disturbance_observer.cpp.i
 .PHONY : src/disturbance_observer.cpp.i
 
 src/disturbance_observer.s: src/disturbance_observer.cpp.s
@@ -256,7 +292,33 @@ src/disturbance_observer.s: src/disturbance_observer.cpp.s
 # target to generate assembly for a file
 src/disturbance_observer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/saber_joint_controller.dir/build.make CMakeFiles/saber_joint_controller.dir/src/disturbance_observer.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/saber_dynamics_identification.dir/build.make CMakeFiles/saber_dynamics_identification.dir/src/disturbance_observer.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/saber_gravity_compensation.dir/build.make CMakeFiles/saber_gravity_compensation.dir/src/disturbance_observer.cpp.s
 .PHONY : src/disturbance_observer.cpp.s
+
+src/saber_dynamics_identification.o: src/saber_dynamics_identification.cpp.o
+.PHONY : src/saber_dynamics_identification.o
+
+# target to build an object file
+src/saber_dynamics_identification.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/saber_dynamics_identification.dir/build.make CMakeFiles/saber_dynamics_identification.dir/src/saber_dynamics_identification.cpp.o
+.PHONY : src/saber_dynamics_identification.cpp.o
+
+src/saber_dynamics_identification.i: src/saber_dynamics_identification.cpp.i
+.PHONY : src/saber_dynamics_identification.i
+
+# target to preprocess a source file
+src/saber_dynamics_identification.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/saber_dynamics_identification.dir/build.make CMakeFiles/saber_dynamics_identification.dir/src/saber_dynamics_identification.cpp.i
+.PHONY : src/saber_dynamics_identification.cpp.i
+
+src/saber_dynamics_identification.s: src/saber_dynamics_identification.cpp.s
+.PHONY : src/saber_dynamics_identification.s
+
+# target to generate assembly for a file
+src/saber_dynamics_identification.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/saber_dynamics_identification.dir/build.make CMakeFiles/saber_dynamics_identification.dir/src/saber_dynamics_identification.cpp.s
+.PHONY : src/saber_dynamics_identification.cpp.s
 
 src/saber_get_regression.o: src/saber_get_regression.cpp.o
 .PHONY : src/saber_get_regression.o
@@ -264,6 +326,8 @@ src/saber_get_regression.o: src/saber_get_regression.cpp.o
 # target to build an object file
 src/saber_get_regression.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/saber_joint_controller.dir/build.make CMakeFiles/saber_joint_controller.dir/src/saber_get_regression.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/saber_dynamics_identification.dir/build.make CMakeFiles/saber_dynamics_identification.dir/src/saber_get_regression.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/saber_gravity_compensation.dir/build.make CMakeFiles/saber_gravity_compensation.dir/src/saber_get_regression.cpp.o
 .PHONY : src/saber_get_regression.cpp.o
 
 src/saber_get_regression.i: src/saber_get_regression.cpp.i
@@ -272,6 +336,8 @@ src/saber_get_regression.i: src/saber_get_regression.cpp.i
 # target to preprocess a source file
 src/saber_get_regression.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/saber_joint_controller.dir/build.make CMakeFiles/saber_joint_controller.dir/src/saber_get_regression.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/saber_dynamics_identification.dir/build.make CMakeFiles/saber_dynamics_identification.dir/src/saber_get_regression.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/saber_gravity_compensation.dir/build.make CMakeFiles/saber_gravity_compensation.dir/src/saber_get_regression.cpp.i
 .PHONY : src/saber_get_regression.cpp.i
 
 src/saber_get_regression.s: src/saber_get_regression.cpp.s
@@ -280,7 +346,33 @@ src/saber_get_regression.s: src/saber_get_regression.cpp.s
 # target to generate assembly for a file
 src/saber_get_regression.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/saber_joint_controller.dir/build.make CMakeFiles/saber_joint_controller.dir/src/saber_get_regression.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/saber_dynamics_identification.dir/build.make CMakeFiles/saber_dynamics_identification.dir/src/saber_get_regression.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/saber_gravity_compensation.dir/build.make CMakeFiles/saber_gravity_compensation.dir/src/saber_get_regression.cpp.s
 .PHONY : src/saber_get_regression.cpp.s
+
+src/saber_gravity_compensation.o: src/saber_gravity_compensation.cpp.o
+.PHONY : src/saber_gravity_compensation.o
+
+# target to build an object file
+src/saber_gravity_compensation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/saber_gravity_compensation.dir/build.make CMakeFiles/saber_gravity_compensation.dir/src/saber_gravity_compensation.cpp.o
+.PHONY : src/saber_gravity_compensation.cpp.o
+
+src/saber_gravity_compensation.i: src/saber_gravity_compensation.cpp.i
+.PHONY : src/saber_gravity_compensation.i
+
+# target to preprocess a source file
+src/saber_gravity_compensation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/saber_gravity_compensation.dir/build.make CMakeFiles/saber_gravity_compensation.dir/src/saber_gravity_compensation.cpp.i
+.PHONY : src/saber_gravity_compensation.cpp.i
+
+src/saber_gravity_compensation.s: src/saber_gravity_compensation.cpp.s
+.PHONY : src/saber_gravity_compensation.s
+
+# target to generate assembly for a file
+src/saber_gravity_compensation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/saber_gravity_compensation.dir/build.make CMakeFiles/saber_gravity_compensation.dir/src/saber_gravity_compensation.cpp.s
+.PHONY : src/saber_gravity_compensation.cpp.s
 
 src/saber_joint_controller.o: src/saber_joint_controller.cpp.o
 .PHONY : src/saber_joint_controller.o
@@ -321,6 +413,8 @@ help:
 	@echo "... test"
 	@echo "... saber_control_uninstall"
 	@echo "... uninstall"
+	@echo "... saber_dynamics_identification"
+	@echo "... saber_gravity_compensation"
 	@echo "... saber_joint_controller"
 	@echo "... src/Cybergear_control.o"
 	@echo "... src/Cybergear_control.i"
@@ -328,9 +422,15 @@ help:
 	@echo "... src/disturbance_observer.o"
 	@echo "... src/disturbance_observer.i"
 	@echo "... src/disturbance_observer.s"
+	@echo "... src/saber_dynamics_identification.o"
+	@echo "... src/saber_dynamics_identification.i"
+	@echo "... src/saber_dynamics_identification.s"
 	@echo "... src/saber_get_regression.o"
 	@echo "... src/saber_get_regression.i"
 	@echo "... src/saber_get_regression.s"
+	@echo "... src/saber_gravity_compensation.o"
+	@echo "... src/saber_gravity_compensation.i"
+	@echo "... src/saber_gravity_compensation.s"
 	@echo "... src/saber_joint_controller.o"
 	@echo "... src/saber_joint_controller.i"
 	@echo "... src/saber_joint_controller.s"

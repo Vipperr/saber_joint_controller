@@ -1,0 +1,20 @@
+running egg_info
+writing ../../build/saber_py/saber_py.egg-info/PKG-INFO
+writing dependency_links to ../../build/saber_py/saber_py.egg-info/dependency_links.txt
+writing requirements to ../../build/saber_py/saber_py.egg-info/requires.txt
+writing top-level names to ../../build/saber_py/saber_py.egg-info/top_level.txt
+reading manifest file '../../build/saber_py/saber_py.egg-info/SOURCES.txt'
+writing manifest file '../../build/saber_py/saber_py.egg-info/SOURCES.txt'
+running build
+running build_py
+copying saber_py/param_identify_saber.py -> /home/xiatenghui/saber_joint_controller/build/saber_py/build/lib/saber_py
+running install
+running install_lib
+copying /home/xiatenghui/saber_joint_controller/build/saber_py/build/lib/saber_py/param_identify_saber.py -> /home/xiatenghui/saber_joint_controller/install/saber_py/lib/python3.12/site-packages/saber_py
+byte-compiling /home/xiatenghui/saber_joint_controller/install/saber_py/lib/python3.12/site-packages/saber_py/param_identify_saber.py to param_identify_saber.cpython-312.pyc
+running install_data
+running install_egg_info
+removing '/home/xiatenghui/saber_joint_controller/install/saber_py/lib/python3.12/site-packages/saber_py-0.0.0-py3.12.egg-info' (and everything under it)
+Copying ../../build/saber_py/saber_py.egg-info to /home/xiatenghui/saber_joint_controller/install/saber_py/lib/python3.12/site-packages/saber_py-0.0.0-py3.12.egg-info
+running install_scripts
+writing list of installed files to '/home/xiatenghui/saber_joint_controller/build/saber_py/install.log'

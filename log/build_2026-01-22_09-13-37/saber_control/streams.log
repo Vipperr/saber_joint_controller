@@ -1,0 +1,9 @@
+[0.061s] Invoking command in '/home/xiatenghui/saber_joint_controller/build/saber_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/xiatenghui/saber_joint_controller/build/saber_control -- -j8 -l8
+[0.507s] [ 10%] [32mBuilding CXX object CMakeFiles/saber_param_identification.dir/src/saber_param_identification.cpp.o[0m
+[0.513s] [ 60%] Built target saber_joint_controller
+[0.531s] [01m[Kcc1plus:[m[K [01;31m[Kfatal error: [m[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/saber_param_identification.cpp: No such file or directory
+[0.532s] compilation terminated.
+[0.533s] gmake[2]: *** [CMakeFiles/saber_param_identification.dir/build.make:76: CMakeFiles/saber_param_identification.dir/src/saber_param_identification.cpp.o] Error 1
+[0.534s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/saber_param_identification.dir/all] Error 2
+[0.535s] gmake: *** [Makefile:146: all] Error 2
+[0.551s] Invoked command in '/home/xiatenghui/saber_joint_controller/build/saber_control' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/xiatenghui/saber_joint_controller/build/saber_control -- -j8 -l8

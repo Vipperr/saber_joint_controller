@@ -1,0 +1,41 @@
+[3.145s] Invoking command in '/home/xiatenghui/saber_joint_controller/src/saber_py': PYTHONPATH=/home/xiatenghui/saber_joint_controller/build/saber_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/xiatenghui/saber_joint_controller/install/saber_py/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/saber_py build --build-base /home/xiatenghui/saber_joint_controller/build/saber_py/build install --record /home/xiatenghui/saber_joint_controller/build/saber_py/install.log --single-version-externally-managed install_data
+[4.080s] running egg_info
+[4.081s] creating ../../build/saber_py/saber_py.egg-info
+[4.151s] writing ../../build/saber_py/saber_py.egg-info/PKG-INFO
+[4.152s] writing dependency_links to ../../build/saber_py/saber_py.egg-info/dependency_links.txt
+[4.153s] writing requirements to ../../build/saber_py/saber_py.egg-info/requires.txt
+[4.153s] writing top-level names to ../../build/saber_py/saber_py.egg-info/top_level.txt
+[4.154s] writing manifest file '../../build/saber_py/saber_py.egg-info/SOURCES.txt'
+[4.285s] reading manifest file '../../build/saber_py/saber_py.egg-info/SOURCES.txt'
+[4.288s] writing manifest file '../../build/saber_py/saber_py.egg-info/SOURCES.txt'
+[4.288s] running build
+[4.289s] running build_py
+[4.289s] creating /home/xiatenghui/saber_joint_controller/build/saber_py/build
+[4.290s] creating /home/xiatenghui/saber_joint_controller/build/saber_py/build/lib
+[4.290s] creating /home/xiatenghui/saber_joint_controller/build/saber_py/build/lib/saber_py
+[4.290s] copying saber_py/data_collection_saber.py -> /home/xiatenghui/saber_joint_controller/build/saber_py/build/lib/saber_py
+[4.291s] copying saber_py/__init__.py -> /home/xiatenghui/saber_joint_controller/build/saber_py/build/lib/saber_py
+[4.291s] copying saber_py/saber_get_regression.py -> /home/xiatenghui/saber_joint_controller/build/saber_py/build/lib/saber_py
+[4.292s] copying saber_py/param_identify_saber.py -> /home/xiatenghui/saber_joint_controller/build/saber_py/build/lib/saber_py
+[4.293s] running install
+[4.325s] running install_lib
+[4.395s] creating /home/xiatenghui/saber_joint_controller/install/saber_py/lib/python3.12/site-packages/saber_py
+[4.395s] copying /home/xiatenghui/saber_joint_controller/build/saber_py/build/lib/saber_py/data_collection_saber.py -> /home/xiatenghui/saber_joint_controller/install/saber_py/lib/python3.12/site-packages/saber_py
+[4.396s] copying /home/xiatenghui/saber_joint_controller/build/saber_py/build/lib/saber_py/__init__.py -> /home/xiatenghui/saber_joint_controller/install/saber_py/lib/python3.12/site-packages/saber_py
+[4.397s] copying /home/xiatenghui/saber_joint_controller/build/saber_py/build/lib/saber_py/saber_get_regression.py -> /home/xiatenghui/saber_joint_controller/install/saber_py/lib/python3.12/site-packages/saber_py
+[4.397s] copying /home/xiatenghui/saber_joint_controller/build/saber_py/build/lib/saber_py/param_identify_saber.py -> /home/xiatenghui/saber_joint_controller/install/saber_py/lib/python3.12/site-packages/saber_py
+[4.399s] byte-compiling /home/xiatenghui/saber_joint_controller/install/saber_py/lib/python3.12/site-packages/saber_py/data_collection_saber.py to data_collection_saber.cpython-312.pyc
+[4.405s] byte-compiling /home/xiatenghui/saber_joint_controller/install/saber_py/lib/python3.12/site-packages/saber_py/__init__.py to __init__.cpython-312.pyc
+[4.406s] byte-compiling /home/xiatenghui/saber_joint_controller/install/saber_py/lib/python3.12/site-packages/saber_py/saber_get_regression.py to saber_get_regression.cpython-312.pyc
+[4.434s] byte-compiling /home/xiatenghui/saber_joint_controller/install/saber_py/lib/python3.12/site-packages/saber_py/param_identify_saber.py to param_identify_saber.cpython-312.pyc
+[4.439s] running install_data
+[4.441s] creating /home/xiatenghui/saber_joint_controller/install/saber_py/share/ament_index
+[4.441s] creating /home/xiatenghui/saber_joint_controller/install/saber_py/share/ament_index/resource_index
+[4.442s] creating /home/xiatenghui/saber_joint_controller/install/saber_py/share/ament_index/resource_index/packages
+[4.442s] copying resource/saber_py -> /home/xiatenghui/saber_joint_controller/install/saber_py/share/ament_index/resource_index/packages
+[4.443s] copying package.xml -> /home/xiatenghui/saber_joint_controller/install/saber_py/share/saber_py
+[4.443s] running install_egg_info
+[4.515s] Copying ../../build/saber_py/saber_py.egg-info to /home/xiatenghui/saber_joint_controller/install/saber_py/lib/python3.12/site-packages/saber_py-0.0.0-py3.12.egg-info
+[4.519s] running install_scripts
+[5.003s] writing list of installed files to '/home/xiatenghui/saber_joint_controller/build/saber_py/install.log'
+[5.099s] Invoked command in '/home/xiatenghui/saber_joint_controller/src/saber_py' returned '0': PYTHONPATH=/home/xiatenghui/saber_joint_controller/build/saber_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/xiatenghui/saber_joint_controller/install/saber_py/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/saber_py build --build-base /home/xiatenghui/saber_joint_controller/build/saber_py/build install --record /home/xiatenghui/saber_joint_controller/build/saber_py/install.log --single-version-externally-managed install_data

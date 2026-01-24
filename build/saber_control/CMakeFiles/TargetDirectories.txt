@@ -1,6 +1,8 @@
 /home/xiatenghui/saber_joint_controller/build/saber_control/CMakeFiles/uninstall.dir
 /home/xiatenghui/saber_joint_controller/build/saber_control/CMakeFiles/saber_control_uninstall.dir
 /home/xiatenghui/saber_joint_controller/build/saber_control/CMakeFiles/saber_joint_controller.dir
+/home/xiatenghui/saber_joint_controller/build/saber_control/CMakeFiles/saber_dynamics_identification.dir
+/home/xiatenghui/saber_joint_controller/build/saber_control/CMakeFiles/saber_gravity_compensation.dir
 /home/xiatenghui/saber_joint_controller/build/saber_control/CMakeFiles/test.dir
 /home/xiatenghui/saber_joint_controller/build/saber_control/CMakeFiles/edit_cache.dir
 /home/xiatenghui/saber_joint_controller/build/saber_control/CMakeFiles/rebuild_cache.dir

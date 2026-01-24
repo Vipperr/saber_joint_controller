@@ -1,0 +1,39 @@
+running egg_info
+creating ../../build/saber_py/saber_py.egg-info
+writing ../../build/saber_py/saber_py.egg-info/PKG-INFO
+writing dependency_links to ../../build/saber_py/saber_py.egg-info/dependency_links.txt
+writing requirements to ../../build/saber_py/saber_py.egg-info/requires.txt
+writing top-level names to ../../build/saber_py/saber_py.egg-info/top_level.txt
+writing manifest file '../../build/saber_py/saber_py.egg-info/SOURCES.txt'
+reading manifest file '../../build/saber_py/saber_py.egg-info/SOURCES.txt'
+writing manifest file '../../build/saber_py/saber_py.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/xiatenghui/saber_joint_controller/build/saber_py/build
+creating /home/xiatenghui/saber_joint_controller/build/saber_py/build/lib
+creating /home/xiatenghui/saber_joint_controller/build/saber_py/build/lib/saber_py
+copying saber_py/data_collection_saber.py -> /home/xiatenghui/saber_joint_controller/build/saber_py/build/lib/saber_py
+copying saber_py/__init__.py -> /home/xiatenghui/saber_joint_controller/build/saber_py/build/lib/saber_py
+copying saber_py/saber_get_regression.py -> /home/xiatenghui/saber_joint_controller/build/saber_py/build/lib/saber_py
+copying saber_py/param_identify_saber.py -> /home/xiatenghui/saber_joint_controller/build/saber_py/build/lib/saber_py
+running install
+running install_lib
+creating /home/xiatenghui/saber_joint_controller/install/saber_py/lib/python3.12/site-packages/saber_py
+copying /home/xiatenghui/saber_joint_controller/build/saber_py/build/lib/saber_py/data_collection_saber.py -> /home/xiatenghui/saber_joint_controller/install/saber_py/lib/python3.12/site-packages/saber_py
+copying /home/xiatenghui/saber_joint_controller/build/saber_py/build/lib/saber_py/__init__.py -> /home/xiatenghui/saber_joint_controller/install/saber_py/lib/python3.12/site-packages/saber_py
+copying /home/xiatenghui/saber_joint_controller/build/saber_py/build/lib/saber_py/saber_get_regression.py -> /home/xiatenghui/saber_joint_controller/install/saber_py/lib/python3.12/site-packages/saber_py
+copying /home/xiatenghui/saber_joint_controller/build/saber_py/build/lib/saber_py/param_identify_saber.py -> /home/xiatenghui/saber_joint_controller/install/saber_py/lib/python3.12/site-packages/saber_py
+byte-compiling /home/xiatenghui/saber_joint_controller/install/saber_py/lib/python3.12/site-packages/saber_py/data_collection_saber.py to data_collection_saber.cpython-312.pyc
+byte-compiling /home/xiatenghui/saber_joint_controller/install/saber_py/lib/python3.12/site-packages/saber_py/__init__.py to __init__.cpython-312.pyc
+byte-compiling /home/xiatenghui/saber_joint_controller/install/saber_py/lib/python3.12/site-packages/saber_py/saber_get_regression.py to saber_get_regression.cpython-312.pyc
+byte-compiling /home/xiatenghui/saber_joint_controller/install/saber_py/lib/python3.12/site-packages/saber_py/param_identify_saber.py to param_identify_saber.cpython-312.pyc
+running install_data
+creating /home/xiatenghui/saber_joint_controller/install/saber_py/share/ament_index
+creating /home/xiatenghui/saber_joint_controller/install/saber_py/share/ament_index/resource_index
+creating /home/xiatenghui/saber_joint_controller/install/saber_py/share/ament_index/resource_index/packages
+copying resource/saber_py -> /home/xiatenghui/saber_joint_controller/install/saber_py/share/ament_index/resource_index/packages
+copying package.xml -> /home/xiatenghui/saber_joint_controller/install/saber_py/share/saber_py
+running install_egg_info
+Copying ../../build/saber_py/saber_py.egg-info to /home/xiatenghui/saber_joint_controller/install/saber_py/lib/python3.12/site-packages/saber_py-0.0.0-py3.12.egg-info
+running install_scripts
+writing list of installed files to '/home/xiatenghui/saber_joint_controller/build/saber_py/install.log'

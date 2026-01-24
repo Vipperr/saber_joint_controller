@@ -28,13 +28,54 @@ add_executable(saber_joint_controller
   src/saber_get_regression.cpp
 )
 
+add_executable(saber_dynamics_identification 
+  src/saber_dynamics_identification.cpp
+  src/Cybergear_control.cpp
+  src/disturbance_observer.cpp
+  src/saber_get_regression.cpp
+)
+
+add_executable(saber_gravity_compensation 
+  src/saber_gravity_compensation.cpp
+  src/Cybergear_control.cpp
+  src/disturbance_observer.cpp
+  src/saber_get_regression.cpp
+)
+
 # 处理非ROS包依赖
 target_link_libraries(saber_joint_controller
   OpenXLSX
   Eigen3::Eigen
   )
 
+target_link_libraries(saber_dynamics_identification
+  OpenXLSX
+  Eigen3::Eigen
+  )
+
+target_link_libraries(saber_gravity_compensation
+  OpenXLSX
+  Eigen3::Eigen
+  )
+
+# 处理ROS包依赖
 ament_target_dependencies(saber_joint_controller 
+  rclcpp
+  rclcpp_action
+  sensor_msgs
+  trajectory_msgs
+  control_msgs
+)
+
+ament_target_dependencies(saber_dynamics_identification 
+  rclcpp
+  rclcpp_action
+  sensor_msgs
+  trajectory_msgs
+  control_msgs
+)
+
+ament_target_dependencies(saber_gravity_compensation 
   rclcpp
   rclcpp_action
   sensor_msgs
@@ -47,6 +88,15 @@ install(TARGETS
   DESTINATION lib/${PROJECT_NAME}
 )
 
+install(TARGETS
+  saber_dynamics_identification
+  DESTINATION lib/${PROJECT_NAME}
+)
+
+install(TARGETS
+  saber_gravity_compensation
+  DESTINATION lib/${PROJECT_NAME}
+)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)

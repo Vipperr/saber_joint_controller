@@ -1,0 +1,90 @@
+[0.078s] Invoking command in '/home/xiatenghui/saber_joint_controller/build/saber_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/xiatenghui/saber_joint_controller/build/saber_control -- -j8 -l8
+[0.221s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.388s] -- Found rclcpp: 28.1.12 (/opt/ros/jazzy/share/rclcpp/cmake)
+[1.563s] -- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.662s] -- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.735s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.819s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.149s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[2.166s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[2.496s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.786s] -- Found rclcpp_action: 28.1.13 (/opt/ros/jazzy/share/rclcpp_action/cmake)
+[2.946s] -- Found control_msgs: 5.5.0 (/opt/ros/jazzy/share/control_msgs/cmake)
+[3.387s] -- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[3.805s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[3.808s] -- Configured cppcheck include dirs: /home/xiatenghui/saber_joint_controller/src/saber_control/include
+[3.809s] -- Configured cppcheck exclude dirs and/or files: 
+[3.815s] -- Added test 'lint_cmake' to check CMake code style
+[3.823s] -- Added test 'uncrustify' to check C / C++ code style
+[3.824s] -- Configured uncrustify additional arguments: 
+[3.825s] -- Added test 'xmllint' to check XML markup files
+[3.830s] -- Configuring done (3.7s)
+[4.010s] -- Generating done (0.1s)
+[4.061s] -- Build files have been written to: /home/xiatenghui/saber_joint_controller/build/saber_control
+[4.340s] [  6%] [32mBuilding CXX object CMakeFiles/saber_gravity_compensation.dir/src/disturbance_observer.cpp.o[0m
+[4.386s] [ 13%] [32mBuilding CXX object CMakeFiles/saber_gravity_compensation.dir/src/saber_get_regression.cpp.o[0m
+[4.401s] [ 20%] [32mBuilding CXX object CMakeFiles/saber_gravity_compensation.dir/src/Cybergear_control.cpp.o[0m
+[4.414s] [ 26%] [32mBuilding CXX object CMakeFiles/saber_gravity_compensation.dir/src/saber_gravity_compensation.cpp.o[0m
+[4.624s] [ 33%] [32mBuilding CXX object CMakeFiles/saber_dynamics_identification.dir/src/saber_dynamics_identification.cpp.o[0m
+[4.676s] [ 66%] Built target saber_joint_controller
+[7.451s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/Cybergear_control.cpp:5:25:[m[K [01;35m[Kwarning: [m[K‘[01m[KRxMessage[m[K’ defined but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[7.451s]     5 | static struct can_frame [01;35m[KRxMessage[m[K;
+[7.453s]       |                         [01;35m[K^~~~~~~~~[m[K
+[21.975s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/disturbance_observer.cpp:[m[K In member function ‘[01m[KEigen::VectorXd DisturbanceObserver::[01;32m[Kcompute_friction_term[m[K(const Eigen::VectorXd&, const Eigen::VectorXd&, const Eigen::VectorXd&)[m[K’:
+[21.976s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/disturbance_observer.cpp:345:109:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kqd[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[21.976s]   345 | Eigen::VectorXd DisturbanceObserver::compute_friction_term(const Eigen::VectorXd& q, [01;35m[Kconst Eigen::VectorXd& qd[m[K, const Eigen::VectorXd& tau)
+[21.977s]       |                                                                                      [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[21.977s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/disturbance_observer.cpp:345:136:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktau[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[21.978s]   345 | Eigen::VectorXd DisturbanceObserver::compute_friction_term(const Eigen::VectorXd& q, const Eigen::VectorXd& qd, [01;35m[Kconst Eigen::VectorXd& tau[m[K)
+[21.983s]       |                                                                                                                 [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[22.274s] In file included from [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/disturbance_observer.cpp:1[m[K:
+[22.277s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/include/disturbance_observer.hpp:[m[K In constructor ‘[01m[KDisturbanceObserver::[01;32m[KDisturbanceObserver[m[K(int, double, const rclcpp::Logger&, const Eigen::MatrixXd&, const Eigen::MatrixXd&, const Eigen::MatrixXd&, const Eigen::MatrixXd&)[m[K’:
+[22.277s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/include/disturbance_observer.hpp:134:20:[m[K [01;35m[Kwarning: [m[K‘[01m[KDisturbanceObserver::logger_[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[22.278s]   134 |     rclcpp::Logger [01;35m[Klogger_[m[K;
+[22.279s]       |                    [01;35m[K^~~~~~~[m[K
+[22.280s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/include/disturbance_observer.hpp:102:21:[m[K [01;35m[Kwarning: [m[K  ‘[01m[KEigen::MatrixXd DisturbanceObserver::A_tau_[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[22.281s]   102 |     Eigen::MatrixXd [01;35m[KA_tau_[m[K;      // 外力变化趋势矩阵
+[22.282s]       |                     [01;35m[K^~~~~~[m[K
+[22.282s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/disturbance_observer.cpp:454:1:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[22.283s]   454 | [01;35m[KDisturbanceObserver[m[K::DisturbanceObserver(int n_joints, double fs, const rclcpp::Logger& logger,
+[22.283s]       | [01;35m[K^~~~~~~~~~~~~~~~~~~[m[K
+[22.284s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/include/disturbance_observer.hpp:105:21:[m[K [01;35m[Kwarning: [m[K‘[01m[KDisturbanceObserver::R_c_[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[22.285s]   105 |     Eigen::MatrixXd [01;35m[KR_c_[m[K;        // 测量噪声协方差
+[22.285s]       |                     [01;35m[K^~~~[m[K
+[22.285s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/include/disturbance_observer.hpp:99:10:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kbool DisturbanceObserver::is_initialized_[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[22.287s]    99 |     bool [01;35m[Kis_initialized_[m[K;                   // 是否已初始化
+[22.288s]       |          [01;35m[K^~~~~~~~~~~~~~~[m[K
+[22.289s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/disturbance_observer.cpp:454:1:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[22.289s]   454 | [01;35m[KDisturbanceObserver[m[K::DisturbanceObserver(int n_joints, double fs, const rclcpp::Logger& logger,
+[22.290s]       | [01;35m[K^~~~~~~~~~~~~~~~~~~[m[K
+[22.449s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/saber_gravity_compensation.cpp:[m[K In member function ‘[01m[Krclcpp_action::GoalResponse saber_joint_controller::[01;32m[Khandle_goal[m[K(const rclcpp_action::GoalUUID&, std::shared_ptr<const control_msgs::action::FollowJointTrajectory_Goal_<std::allocator<void> > >)[m[K’:
+[22.451s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/saber_gravity_compensation.cpp:170:44:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kuuid[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[22.452s]   170 |             [01;35m[Kconst rclcpp_action::GoalUUID& uuid[m[K,
+[22.453s]       |             [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[22.454s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/saber_gravity_compensation.cpp:[m[K In member function ‘[01m[Krclcpp_action::CancelResponse saber_joint_controller::[01;32m[Khandle_cancel[m[K(std::shared_ptr<rclcpp_action::ServerGoalHandle<control_msgs::action::FollowJointTrajectory> >)[m[K’:
+[22.454s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/saber_gravity_compensation.cpp:192:47:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kgoal_handle[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[22.455s]   192 |             [01;35m[Kconst std::shared_ptr<GoalHandle> goal_handle[m[K)
+[22.455s]       |             [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~[m[K
+[22.867s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/saber_gravity_compensation.cpp:[m[K In member function ‘[01m[Kvoid saber_joint_controller::[01;32m[Krun[m[K()[m[K’:
+[22.868s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/saber_gravity_compensation.cpp:544:26:[m[K [01;31m[Kerror: [m[Kno post-increment operator for type
+[22.868s]   544 |                 if (count[01;31m[K++[m[K % 100 == 0)
+[22.869s]       |                          [01;31m[K^~[m[K
+[22.959s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/saber_dynamics_identification.cpp:[m[K In member function ‘[01m[Krclcpp_action::GoalResponse saber_joint_controller::[01;32m[Khandle_goal[m[K(const rclcpp_action::GoalUUID&, std::shared_ptr<const control_msgs::action::FollowJointTrajectory_Goal_<std::allocator<void> > >)[m[K’:
+[22.960s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/saber_dynamics_identification.cpp:170:44:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kuuid[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[22.962s]   170 |             [01;35m[Kconst rclcpp_action::GoalUUID& uuid[m[K,
+[22.962s]       |             [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[22.966s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/saber_dynamics_identification.cpp:[m[K In member function ‘[01m[Krclcpp_action::CancelResponse saber_joint_controller::[01;32m[Khandle_cancel[m[K(std::shared_ptr<rclcpp_action::ServerGoalHandle<control_msgs::action::FollowJointTrajectory> >)[m[K’:
+[22.968s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/saber_dynamics_identification.cpp:192:47:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kgoal_handle[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[22.969s]   192 |             [01;35m[Kconst std::shared_ptr<GoalHandle> goal_handle[m[K)
+[22.970s]       |             [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~[m[K
+[30.379s] gmake[2]: *** [CMakeFiles/saber_gravity_compensation.dir/build.make:76: CMakeFiles/saber_gravity_compensation.dir/src/saber_gravity_compensation.cpp.o] Error 1
+[30.381s] gmake[2]: *** Waiting for unfinished jobs....
+[38.229s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/disturbance_observer.cpp:[m[K In member function ‘[01m[KEigen::VectorXd DisturbanceObserver::[01;32m[Kupdate[m[K(const Eigen::VectorXd&, const Eigen::VectorXd&, const Eigen::VectorXd&, Update_Type)[m[K’:
+[38.231s] [01m[K/home/xiatenghui/saber_joint_controller/src/saber_control/src/disturbance_observer.cpp:169:1:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+[38.231s]   169 | [01;35m[K}[m[K
+[38.232s]       | [01;35m[K^[m[K
+[40.982s] [ 73%] [32m[1mLinking CXX executable saber_dynamics_identification[0m
+[43.102s] [ 93%] Built target saber_dynamics_identification
+[51.867s] gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/saber_gravity_compensation.dir/all] Error 2
+[51.868s] gmake: *** [Makefile:146: all] Error 2
+[51.877s] Invoked command in '/home/xiatenghui/saber_joint_controller/build/saber_control' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/xiatenghui/saber_joint_controller/build/saber_control -- -j8 -l8

@@ -338,6 +338,10 @@ class saber_joint_controller : public rclcpp::Node
             current_angular_velocity = data_conversion(RxMessage.data[2]<<8|RxMessage.data[3],angular_velocity_min,angular_velocity_max);
             current_torque = data_conversion(RxMessage.data[4]<<8|RxMessage.data[5],moment_min,moment_max);
             current_temperature = (RxMessage.data[6]<<8|RxMessage.data[7])/10;
+            if(hall_flag || magnetic_flag || overtemperature_flag || undervoltage_flag || current_temperature > 40)
+            {
+                motor_running_ = 0;
+            }
             if(can_id == 2)
             {
                 positions_[can_id-1] = current_angle * DH2motor_directions_[can_id-1] - M_PI/2.0;
@@ -353,6 +357,23 @@ class saber_joint_controller : public rclcpp::Node
             velocities_pre_[can_id-1] = velocities_[can_id-1];
             velocities_[can_id-1] = current_angular_velocity * DH2motor_directions_[can_id-1];
             torques_[can_id-1] = current_torque * DH2motor_directions_[can_id-1];
+        }
+
+        array<double, 3> fourier_serise(double t, array<double, 5> A, array<double, 5> B,double C)
+        {
+            double q = C, qd = 0, qdd = 0;
+            double w = 2 * M_PI * 0.05;
+            for(int k = 1;k <= 5;k++)
+            {
+                q +=  A[k-1]/(w*k) * sin(k*w*t) - B[k-1]/(w*k) * cos(k*w*t);
+                qd += A[k-1] * cos(k*w*t) + B[k-1] * sin(k*w*t);
+                qdd += -A[k-1] * k * w * sin(k*w*t) + B[k-1] * k * w * cos(k*w*t);
+            }
+            std::array<double, 3> target;
+            target[0] = q;
+            target[1] = qd;
+            target[2] = qdd;
+            return target;
         }
 
         void read_can_data()
@@ -442,21 +463,22 @@ class saber_joint_controller : public rclcpp::Node
 
         void write_motors(array<double, 6> torques, array<double, 6> positions)
         {
-            motor_controlmode(motors_id[0], torques[0], positions[0], 0, 50, 0.2, sock_);
+            motor_controlmode(motors_id[0], torques[0], positions[0], 0, 60, 0.2, sock_);
             motor_controlmode(motors_id[1], torques[1], positions[1], 0, 100, 0.2, sock_);
             motor_controlmode(motors_id[2], torques[2], positions[2], 0, 80, 0.2, sock_);
             motor_controlmode(motors_id[3], torques[3], positions[3], 0, 60, 0.2, sock_);
             motor_controlmode(motors_id[4], torques[4], positions[4], 0, 40, 0.2, sock_);
-            motor_controlmode(motors_id[5], torques[5], positions[5], 0, 20, 0.2, sock_);
+            motor_controlmode(motors_id[5], torques[5], positions[5], 0, 30, 0.2, sock_);
         }
 
         void run()
         {
-            // 设置控制频率
-            rclcpp::Rate loop_rate(300);
+            // 设置控制频率3ms
+            rclcpp::Rate loop_rate(333);
             array<double, 6> feedforward_torques;
-            while(rclcpp::ok())
+            while(rclcpp::ok() && motor_running_)
             {
+                //// 统计控制频率代码
                 // auto start = std::chrono::high_resolution_clock::now();
                 // 转换成电机期望的方向和角度
                 array<double, 6> q;
@@ -476,7 +498,11 @@ class saber_joint_controller : public rclcpp::Node
                 // static int count = 0;
                 // if (count++ % 100 == 0)
                 // {
-                //     RCLCPP_INFO(this->get_logger(), "核心控制耗时: %.6f s (秒)", cost_seconds);
+                //     // RCLCPP_INFO(this->get_logger(), "核心控制耗时: %.6f s (秒)", cost_seconds);
+                //     for(int i = 0;i < joint_nums_;i++)
+                //     {
+                //         RCLCPP_INFO(this->get_logger(), "torques_[%d]: %.6f", i, torques_[i]);
+                //     }
                 // }
             }
         }
@@ -527,7 +553,7 @@ class saber_joint_controller : public rclcpp::Node
         struct can_frame RxMessage;
         int sock_;
 
-        //小米微电机反馈数据
+        // 小米微电机反馈数据
         uint8_t can_id = 0;
         uint8_t uncalibrated_flag = 0;
         uint8_t hall_flag = 0;
@@ -540,6 +566,9 @@ class saber_joint_controller : public rclcpp::Node
         double current_angular_velocity = 0;
         double current_torque = 0;
         double current_temperature = 0;
+
+        // 电机可运行标志位
+        uint8_t motor_running_ = 1;
 
         // 电机ID定义
         array<uint8_t, 6> motors_id = {1, 2, 3, 4, 5, 6};

@@ -1,0 +1,19 @@
+[4.036s] Invoking command in '/home/xiatenghui/saber_joint_controller/src/saber_py': PYTHONPATH=/home/xiatenghui/saber_joint_controller/build/saber_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/xiatenghui/saber_joint_controller/install/saber_py/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/saber_py build --build-base /home/xiatenghui/saber_joint_controller/build/saber_py/build install --record /home/xiatenghui/saber_joint_controller/build/saber_py/install.log --single-version-externally-managed install_data
+[5.225s] running egg_info
+[5.303s] writing ../../build/saber_py/saber_py.egg-info/PKG-INFO
+[5.304s] writing dependency_links to ../../build/saber_py/saber_py.egg-info/dependency_links.txt
+[5.305s] writing requirements to ../../build/saber_py/saber_py.egg-info/requires.txt
+[5.306s] writing top-level names to ../../build/saber_py/saber_py.egg-info/top_level.txt
+[5.465s] reading manifest file '../../build/saber_py/saber_py.egg-info/SOURCES.txt'
+[5.505s] writing manifest file '../../build/saber_py/saber_py.egg-info/SOURCES.txt'
+[5.506s] running build
+[5.506s] running build_py
+[5.508s] running install
+[5.541s] running install_lib
+[5.626s] running install_data
+[5.627s] running install_egg_info
+[5.713s] removing '/home/xiatenghui/saber_joint_controller/install/saber_py/lib/python3.12/site-packages/saber_py-0.0.0-py3.12.egg-info' (and everything under it)
+[5.714s] Copying ../../build/saber_py/saber_py.egg-info to /home/xiatenghui/saber_joint_controller/install/saber_py/lib/python3.12/site-packages/saber_py-0.0.0-py3.12.egg-info
+[5.754s] running install_scripts
+[6.330s] writing list of installed files to '/home/xiatenghui/saber_joint_controller/build/saber_py/install.log'
+[6.445s] Invoked command in '/home/xiatenghui/saber_joint_controller/src/saber_py' returned '0': PYTHONPATH=/home/xiatenghui/saber_joint_controller/build/saber_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/xiatenghui/saber_joint_controller/install/saber_py/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/saber_py build --build-base /home/xiatenghui/saber_joint_controller/build/saber_py/build install --record /home/xiatenghui/saber_joint_controller/build/saber_py/install.log --single-version-externally-managed install_data

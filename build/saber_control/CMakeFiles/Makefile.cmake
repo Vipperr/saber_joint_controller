@@ -843,4 +843,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/uninstall.dir/DependInfo.cmake"
   "CMakeFiles/saber_control_uninstall.dir/DependInfo.cmake"
   "CMakeFiles/saber_joint_controller.dir/DependInfo.cmake"
+  "CMakeFiles/saber_dynamics_identification.dir/DependInfo.cmake"
+  "CMakeFiles/saber_gravity_compensation.dir/DependInfo.cmake"
   )

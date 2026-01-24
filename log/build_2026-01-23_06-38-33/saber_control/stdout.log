@@ -1,0 +1,3 @@
+[ 33%] Built target saber_dynamics_identification
+[ 66%] Built target saber_joint_controller
+[ 73%] [32mBuilding CXX object CMakeFiles/saber_gravity_compensation.dir/src/saber_gravity_compensation.cpp.o[0m
